@@ -349,7 +349,7 @@ export default function BuildingHero3D({ onDoorsOpen }: { onDoorsOpen?: () => vo
         // gradually to a complete stop exactly when the van parks.
         // Use quadratic falloff so wheels stay fast longer, then slow
         // down sharply near the end (like real braking).
-        const wheelSpeed = 2.0 * Math.pow(1 - eased, 2);
+        const wheelSpeed = 6.0 * Math.pow(1 - eased, 2);
         wheelSpinTime += dt * wheelSpeed;
         if (wheelActions.length > 0) {
           const wheelClipDuration = wheelActions[0].getClip().duration;
