@@ -26,8 +26,8 @@ export default function BuildingHero3D({ onDoorsOpen }: { onDoorsOpen?: () => vo
       0.1,
       2000
     );
-    camera.position.set(0, 4, 15);
-    camera.lookAt(0, 1.5, 0);
+    camera.position.set(0, 3, 15);
+    camera.lookAt(0, 1, 0);
 
     const renderer = new THREE.WebGLRenderer({
       antialias: true,
@@ -403,8 +403,8 @@ export default function BuildingHero3D({ onDoorsOpen }: { onDoorsOpen?: () => vo
     // turning to face the camera, which we don't want).
     // ============================================
     function updateCamera() {
-      camera.position.set(0, 4, 15);
-      camera.lookAt(0, 1.5, 0);
+      camera.position.set(0, 3, 15);
+      camera.lookAt(0, 1, 0);
     }
 
     // ============================================
