@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-ink text-cream font-body relative">
         <Chef3DWrapper />
         <Header />
-        <div className="relative z-10 flex flex-col flex-1 pt-20">
+        <div className="relative z-10 flex flex-col flex-1">
           {children}
         </div>
         <Footer />
