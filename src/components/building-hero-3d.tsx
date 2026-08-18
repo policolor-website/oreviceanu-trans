@@ -208,16 +208,20 @@ export default function BuildingHero3D({ onDoorsOpen }: { onDoorsOpen?: () => vo
 
           doorDuration = doorClips.length > 0 ? Math.max(...doorClips.map((c) => c.duration)) : 1;
 
-          const setupAction = (clip: THREE.AnimationClip) => {
+          const setupAction = (clip: THREE.AnimationClip, loop: boolean) => {
             const action = mixer!.clipAction(clip);
-            action.setLoop(THREE.LoopOnce, 1);
-            action.clampWhenFinished = true;
+            if (loop) {
+              action.setLoop(THREE.LoopRepeat, Infinity);
+            } else {
+              action.setLoop(THREE.LoopOnce, 1);
+              action.clampWhenFinished = true;
+            }
             action.play();
             action.paused = true;
             return action;
           };
-          wheelActions = wheelClips.map(setupAction);
-          doorActions = doorClips.map(setupAction);
+          wheelActions = wheelClips.map(c => setupAction(c, true));
+          doorActions = doorClips.map(c => setupAction(c, false));
         } else {
           console.warn("No animations found in truck.glb!");
         }
@@ -251,7 +255,7 @@ export default function BuildingHero3D({ onDoorsOpen }: { onDoorsOpen?: () => vo
     // ============================================
     let scrollUnlocked = false;
     let doorsOpened = false;
-    const heroHeight = () => window.innerHeight * 3;
+    const heroHeight = () => window.innerHeight * 2;
     const animRange = () => heroHeight() - window.innerHeight;
 
     const onScroll = () => {
@@ -345,19 +349,18 @@ export default function BuildingHero3D({ onDoorsOpen }: { onDoorsOpen?: () => vo
           truckModel.position.x = lerp(slideStartX, parkedX, eased);
         }
 
-        // Wheels: spin continuously throughout arrival, slowing down
-        // gradually to a complete stop exactly when the van parks.
-        // Use quadratic falloff so wheels stay fast longer, then slow
-        // down sharply near the end (like real braking).
-        const wheelSpeed = 6.0 * Math.pow(1 - eased, 2);
-        wheelSpinTime += dt * wheelSpeed;
+        // Wheels: use timeScale for smooth speed control
+        // Constant speed first 80%, then linear slowdown to stop
+        const wheelTimeScale = eased < 0.8 ? 1.0 : (1 - eased) / 0.2;
         if (wheelActions.length > 0) {
-          const wheelClipDuration = wheelActions[0].getClip().duration;
-          const targetTime = wheelSpinTime % wheelClipDuration;
           wheelActions.forEach((action) => {
-            action.time = targetTime;
+            action.paused = false;
+            action.timeScale = wheelTimeScale;
           });
-          if (mixer) mixer.update(0);
+        }
+        if (mixer) mixer.update(dt);
+        if (wheelActions.length > 0 && eased >= 1) {
+          wheelActions.forEach((action) => { action.paused = true; });
         }
 
         if (arrivalProgress >= 1) {
