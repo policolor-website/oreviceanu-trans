@@ -80,7 +80,7 @@ export default function HomePage() {
       {/* ============================================ */}
       {/* HERO — 3D Building animation */}
       {/* ============================================ */}
-      <section className="relative h-[400vh] bg-ink">
+      <section className="relative h-[300vh] bg-ink">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
           <BuildingHero3D onDoorsOpen={handleDoorsOpen} />
           <div className="absolute inset-0 z-[1] bg-gradient-to-b from-ink/40 via-transparent to-ink/80 pointer-events-none" />
