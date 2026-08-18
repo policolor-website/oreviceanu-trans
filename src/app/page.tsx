@@ -96,7 +96,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass mb-8"
             >
               <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-              <span className="text-xs tracking-[0.25em] uppercase text-gold">Transport marfă • Logistică • Livrări naționale & internaționale</span>
+              <span className="text-xs tracking-[0.25em] uppercase text-gold">Transport marfă • Logistică • Livrări naționale</span>
             </motion.div>
 
             <motion.h1
