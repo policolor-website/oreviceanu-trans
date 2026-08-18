@@ -1,0 +1,1447 @@
+{
+  "home": {
+    "url": "https://ilcalcio.ro/",
+    "title": "Povestea restaurantelor noastre",
+    "content": {
+      "Povestea restaurantelor noastre": "Povestea restaurantelor noastre Il Calcio by Mr. VAL este un restaurant cu specific italian ce prezinta un concept nou, adus pe piata de fondatorul Trattoria II Calcio, Valentin Salagean, care imbina bucataria italiana cu elemente din bucataria asiatica si internationala, in dorinta de a crea un meniu contemporan, pastrand in acelasi timp preparatele care au consacrat brand-ul II Calcio de-a lungul timpului.",
+      "Locatiile noastre": "Locatiile noastre Te invitam sa descoperi cele 6 restaurante din lantul Il Calcio. In fiecare locatie te asteaptam cu preparate delicioase cu specific italian.",
+      "Il Calcio Barbu Vacarescu": "Il Calcio Barbu Vacarescu Il Calcio Clucerului Il Calcio Herastrau Mr.Val Ateneu Il Calcio Romancierilor Il Calcio Carol Park",
+      "Il Calcio Clucerului": "Il Calcio Barbu Vacarescu Il Calcio Clucerului Il Calcio Herastrau Mr.Val Ateneu Il Calcio Romancierilor Il Calcio Carol Park",
+      "Il Calcio Herastrau": "Il Calcio Barbu Vacarescu Il Calcio Clucerului Il Calcio Herastrau Mr.Val Ateneu Il Calcio Romancierilor Il Calcio Carol Park",
+      "Mr.Val Ateneu": "Il Calcio Barbu Vacarescu Il Calcio Clucerului Il Calcio Herastrau Mr.Val Ateneu Il Calcio Romancierilor Il Calcio Carol Park",
+      "Il Calcio Romancierilor": "Il Calcio Barbu Vacarescu Il Calcio Clucerului Il Calcio Herastrau Mr.Val Ateneu Il Calcio Romancierilor Il Calcio Carol Park",
+      "Il Calcio Carol Park": "Il Calcio Barbu Vacarescu Il Calcio Clucerului Il Calcio Herastrau Mr.Val Ateneu Il Calcio Romancierilor Il Calcio Carol Park",
+      "Recenziile clientilor": "Recenziile clientilor Totul a fost foarte ok, mancarea exceptional de buna, iar personalul foarte atent la nevoile clientului si primitori. O energie pozitiva din toate punctele de vedere. Recomand! Ionut Popa Mâncare foarte bună · Porţii mari · Local de lux · Interior elegant · Atmosferă romantică · Preparate creative · Opţiuni sănătoase Codrin Topor Atmosfera relaxanta, personal foarte amabil si bine pregatit, mancare excelenta. Vom reveni cu drag! Vlad Vornic Previous Next"
+    },
+    "images": [
+      {
+        "src": "/images/home_0.jpeg",
+        "alt": ""
+      },
+      {
+        "src": "/images/home_1.jpg",
+        "alt": "Barbu Vacarescu Photo"
+      },
+      {
+        "src": "/images/home_2.jpg",
+        "alt": ""
+      },
+      {
+        "src": "/images/home_3.jpeg",
+        "alt": "Restaurant Il Calcio Herastrau"
+      },
+      {
+        "src": "/images/home_4.jpeg",
+        "alt": ""
+      },
+      {
+        "src": "/images/home_5.jpeg",
+        "alt": "Restaurant Il Calcio Romancierilor"
+      },
+      {
+        "src": "/images/home_6.jpg",
+        "alt": ""
+      },
+      {
+        "src": "/images/home_7.jpeg",
+        "alt": "Ionut Popa"
+      },
+      {
+        "src": "/images/home_8.jpeg",
+        "alt": "Codrin Topor"
+      },
+      {
+        "src": "/images/home_9.jpeg",
+        "alt": "Vlad Vornic"
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Vezi restaurantele",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Il Calcio Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "barbu-vacarescu": {
+    "url": "https://ilcalcio.ro/barbu-vacarescu/",
+    "title": "",
+    "content": {
+      "Bine ati venit la Il Calcio „Barbu Vacarescu”": "Bine ati venit la Il Calcio „Barbu Vacarescu” Restaurantul Il Calcio „Barbu Vacarescu” va ofera o atmosfera prietenoasa si preparate delicioase cu specific italian. Bauturile fine isi au locul lor in meniu si deserturile sunt absolut de neratat. Va asteptam!",
+      "Meniul restaurantului": "Meniul restaurantului Te asteptam la Restaurantul Il Calcio „Barbu Vacarescu” situat pe strada Glodeni, nr. 6 si poti alege din multe feluri de paste, pizza sau fructe de mare atent pregatite. Aceasta locatie va ofera zilnic serviciul de delivery la numerele de telefon 0734 380 188 si 0731 700 442. Nota: „Daily Lunch Formula” si „Children Menu” sunt valabile doar in restaurant. Descarca meniul",
+      "Informatii de contact": "Informatii de contact Adresa: Strada Glodeni nr. 3 , sector 1, Bucuresti Telefon rezervari si comenzi: 0734 380 188 | 0731 700 442 Email: barbu-vacarescu@ilcalcio.ro Program Luni – Joi, Duminica: 12:00-23:00 Vineri – Sambata: 12:00 – 00:00 Vezi pe harta Suna acum!"
+    },
+    "images": [
+      {
+        "src": "/images/barbu-vacarescu_0.jpg",
+        "alt": "Barbu Vacarescu Photo"
+      },
+      {
+        "src": "/images/barbu-vacarescu_1.jpg",
+        "alt": "Barbu Vacarescu Photo"
+      },
+      {
+        "src": "/images/barbu-vacarescu_2.jpg",
+        "alt": "Barbu Vacarescu Photo"
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Descarca meniul",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_pescariu.pdf"
+      },
+      {
+        "text": "Vezi pe harta",
+        "href": "https://www.google.ro/maps/place/Il+Calcio/@44.471199,26.1105283,18.3z/data=!4m12!1m6!3m5!1s0x40b1f9b718497b0d:0xa0cfb3dbc0fc9c48!2sIl+Calcio!8m2!3d44.4710656!4d26.1106844!3m4!1s0x40b1f9b718497b0d:0xa0cfb3dbc0fc9c48!8m2!3d44.4710656!4d26.1106844"
+      },
+      {
+        "text": "Suna acum!",
+        "href": "tel:0734380188"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "clucerului": {
+    "url": "https://ilcalcio.ro/clucerului/",
+    "title": "",
+    "content": {
+      "Bine ati venit la Il Calcio „Clucerului”": "Bine ati venit la Il Calcio „Clucerului” Restaurantul Il Calcio Clucerului va ofera o atmosfera prietenoasa și preparate delicioase cu specific italian. Bauturile fine isi au locul lor in meniu si deserturile sunt absolut de neratat. Va asteptam!",
+      "Meniul restaurantului": "Meniul restaurantului Va punem la dispozitie personal amabil cu experienta culinara in gastronomia italiana si un meniu generos pentru toate gusturile. Aceasta locatie va ofera zilnic serviciul de delivery la numarul de telefon 0729 155 202 . Nota: „Daily Lunch Formula” si „Children Menu” sunt valabile doar in restaurant. Descarca meniul",
+      "Informatii de contact": "Informatii de contact Adresa: Strada Clucerului nr. 7, Sector 1, Bucuresti Telefon rezervari: 0729 574 802 Telefon comenzi: 0729 155 202 | Email: clucerului@ilcalcio.ro Program restaurant: Luni – Duminica: 11:00 – 21:00 Program livrari: Luni – Duminica: 11:00 – 22:00 Vezi pe harta Suna acum!"
+    },
+    "images": [
+      {
+        "src": "/images/clucerului_0.jpg",
+        "alt": ""
+      },
+      {
+        "src": "/images/clucerului_1.jpg",
+        "alt": ""
+      },
+      {
+        "src": "/images/clucerului_2.jpg",
+        "alt": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Descarca meniul",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_clucerului.pdf"
+      },
+      {
+        "text": "Vezi pe harta",
+        "href": "https://www.google.ro/maps/place/Il+Calcio+by+Mr+Val/@44.459828,26.0756673,17z/data=!3m1!4b1!4m5!3m4!1s0x40b2021c9f74a793:0x88e8b06e81bee627!8m2!3d44.459828!4d26.077856"
+      },
+      {
+        "text": "Suna acum!",
+        "href": "tel:0729574802"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "parc-herastrau": {
+    "url": "https://ilcalcio.ro/parc-herastrau/",
+    "title": "",
+    "content": {
+      "Bine ati venit la Il Calcio „Parc Herastrau”": "Bine ati venit la Il Calcio „Parc Herastrau” Locatia este situata intr-un cadru natural deosebit, inconjurat de o oaza de verdeata si va asigura o priveliste de neuitat.",
+      "Meniul restaurantului": "Meniul restaurantului In restaurantul Il Calcio „Herastrau” gasesti adevarata bucatarie italiana, in inima Bucurestiului! Va invitam sa descoperiti adevarata esenta culinara a Italiei, mai mult decat paste si pizza. Va punem la dispozitie ingrediente proaspete, talent si pasiune pentru a avea cea mai buna experienta italiana. Descarca meniul",
+      "Informatii de contact": "Informatii de contact Adresă: Sos. Nordului nr. 7-9 Telefon : 0724 706 665 Email : herastrau@ilcalcio.ro Program: Luni – Joi, Duminica: 12:00-23:00 Vineri – Sambata: 12:00 – 00:00 Vezi pe harta Suna acum!"
+    },
+    "images": [
+      {
+        "src": "/images/parc-herastrau_0.jpeg",
+        "alt": "Restaurant Il Calcio Herastrau"
+      },
+      {
+        "src": "/images/parc-herastrau_1.jpg",
+        "alt": "Meniu restaurant"
+      },
+      {
+        "src": "/images/parc-herastrau_2.jpeg",
+        "alt": "Restaurant Il Calcio Herastrau"
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Descarca meniul",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_herastrau.pdf"
+      },
+      {
+        "text": "Vezi pe harta",
+        "href": "https://www.google.ro/maps/place/Trattoria+il+Calcio/@44.4809427,26.0846377,17.25z/data=!4m5!3m4!1s0x40b2025d4bb3341f:0xa09bf1cd3e7ba8a8!8m2!3d44.4827172!4d26.0850701"
+      },
+      {
+        "text": "Suna acum!",
+        "href": "tel:0724706665"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "romancierilor": {
+    "url": "https://ilcalcio.ro/romancierilor/",
+    "title": "Bine ati venit la Il Calcio „Romancierilor”",
+    "content": {
+      "Bine ati venit la Il Calcio „Romancierilor”": "Bine ati venit la Il Calcio „Romancierilor” Restaurantul Il Calcio „Romancierilor” va ofera o atmosfera prietenoasa și preparate delicioase cu specific italian. Bauturile fine isi au locul lor in meniu si deserturile sunt absolut de neratat. Va asteptam!",
+      "Meniul restaurantului": "Meniul restaurantului Te asteptam la Restaurantul Il Calcio „Romancierilor” si poti alege din multe feluri de paste, pizza sau fructe de mare atent pregatite. Aceasta locatie va ofera zilnic serviciul de delivery la numarul de telefon 0722 886 151. Descarca meniul",
+      "Informatii de contact": "Informatii de contact Adresa: Drumul Taberei, nr. 68 , sector 6, Bucuresti Telefon rezervari: 0730 900 806 Telefon comenzi: 0722 886 151 Email: romancierilor@ilcalcio.ro Program Luni – Joi, Duminica: 12:00-23:00 Vineri – Sambata: 12:00 – 00:00 Vezi pe harta Suna acum!"
+    },
+    "images": [
+      {
+        "src": "/images/romancierilor_0.jpeg",
+        "alt": "Restaurant Il Calcio Romancierilor"
+      },
+      {
+        "src": "/images/romancierilor_1.jpg",
+        "alt": "Meniu Restaurant Il Calcio Romancierilor"
+      },
+      {
+        "src": "/images/romancierilor_2.jpg",
+        "alt": "Restaurant Il Calcio Romancierilor"
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Descarca meniul",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_romancierilor.pdf"
+      },
+      {
+        "text": "Vezi pe harta",
+        "href": "https://www.google.ro/maps/place/Trattoria+Il+Calcio/@44.4235795,26.0238016,17z/data=!3m1!4b1!4m5!3m4!1s0x40b2004a2c69c455:0xb738a636445c14f3!8m2!3d44.4235795!4d26.0259903"
+      },
+      {
+        "text": "Suna acum!",
+        "href": "tel:0730900806"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "ateneu": {
+    "url": "https://ilcalcio.ro/ateneu/",
+    "title": "Bine ati venit la Mr. Val „Ateneu”",
+    "content": {
+      "Bine ati venit la Mr. Val „Ateneu”": "Bine ati venit la Mr. Val „Ateneu” Restaurantul Mr Val „Ateneu” va ofera o atmosfera prietenoasa și preparate delicioase cu specific italian. Bauturile fine isi au locul lor in meniu si deserturile sunt absolut de neratat. Va asteptam!",
+      "Meniul restaurantului": "Meniul restaurantului Te asteptam la Restaurantul Mr. Val „Ateneu” si poti alege din multe feluri de paste, pizza sau fructe de mare atent pregatite. Aceasta locatie va ofera zilnic serviciul de delivery la numarul de telefon . Descarca meniul",
+      "Informatii de contact": "Informatii de contact Adresa: Nicolae Golescu , nr. 14 , sector 1, Bucuresti Telefon rezervari / comenzi : 0729 155 207 Email: ateneu@ilcalcio.ro Program Luni – Joi, Duminica: 12:00-23:00 Vineri – Sambata: 12:00 – 00:00 Vezi pe harta Suna acum!"
+    },
+    "images": [
+      {
+        "src": "/images/ateneu_0.jpeg",
+        "alt": ""
+      },
+      {
+        "src": "/images/ateneu_1.jpeg",
+        "alt": ""
+      },
+      {
+        "src": "/images/ateneu_2.jpeg",
+        "alt": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Descarca meniul",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_ateneu.pdf"
+      },
+      {
+        "text": "Vezi pe harta",
+        "href": "https://maps.app.goo.gl/D1TMFYJni8DzU3oD8"
+      },
+      {
+        "text": "Suna acum!",
+        "href": "tel:0729155207"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "carol-park": {
+    "url": "https://ilcalcio.ro/carol-park/",
+    "title": "",
+    "content": {
+      "Carol Park": "Carol Park Restaurantul Il Calcio „Carol Park” va ofera o atmosfera prietenoasa si preparate delicioase cu specific italian. Bauturile fine isi au locul lor in meniu si deserturile sunt absolut de neratat. Va asteptam!",
+      "Meniul restaurantului": "Meniul restaurantului Te asteptam la Restaurantul Il Calcio „Carol Park” situat pe Bld. Marasesti 2B, si poti alege din multe feluri de paste, pizza sau fructe de mare atent pregatite. Aceasta locatie va ofera zilnic serviciul de delivery la numarul de telefon 0731 440 493 . Nota: „Daily Lunch Formula” si „Children Menu” sunt valabile doar in restaurant. Descarca meniul",
+      "Informatii de contact": "Informatii de contact Adresa: Bld. Marasesti 2B , sector 4, Bucuresti Telefon rezervari si comenzi: 0731 440 493 Email: carolpark@ilcalcio.ro Program restaurant: Luni – Duminica: 11:00 – 21:00 Program livrari: Luni – Duminica: 11:00 – 22:00 Vezi pe harta Suna acum!"
+    },
+    "images": [
+      {
+        "src": "/images/carol-park_0.jpg",
+        "alt": ""
+      },
+      {
+        "src": "/images/carol-park_1.jpg",
+        "alt": ""
+      },
+      {
+        "src": "/images/carol-park_2.jpg",
+        "alt": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "0731 440 493",
+        "href": "tel:0731440493"
+      },
+      {
+        "text": "Descarca meniul",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_carol.pdf"
+      },
+      {
+        "text": "0731 440 493",
+        "href": "tel:0731440493"
+      },
+      {
+        "text": "carolpark@ilcalcio.ro",
+        "href": "mailto:carolpark@ilcalcio.ro"
+      },
+      {
+        "text": "Vezi pe harta",
+        "href": "https://www.google.com/maps/place/Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+2B,+Bucure%C8%99ti/@44.4185642,26.0959048,18z/data=!4m5!3m4!1s0x40b1ff0ef07b6a21:0x281376823d333023!8m2!3d44.41857!4d26.09623"
+      },
+      {
+        "text": "Suna acum!",
+        "href": "tel:0731440493"
+      }
+    ]
+  },
+  "delivery": {
+    "url": "https://ilcalcio.ro/delivery/",
+    "title": "",
+    "content": {
+      "Livrari": "Livrari Livram mancare gatita traditionala la domiciliu sau la birou. Accesati meniul cu mancare pentru a comanda orice, iar timpul de livrare va fi precizat telefonic si variaza in functie de comanda sau zona de livrare. Sectorul 1 Livrarile se vor efectua din Il Calcio „Clucerului”si „Barbu Vacarescu”. Vizualizeaza meniul de livrari: Descarcă Meniu Suma minima este 50 RON, dar poate varia in functie de adresa de livrare. Telefon Il Calcio Clucerului: 0729 155 202 Telefon Il Calcio Barbu Vacare"
+    },
+    "images": [
+      {
+        "src": "/images/delivery_0.jpg",
+        "alt": "Livrari mancare | Il Calcio by Mr. Val"
+      }
+    ],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Descarcă Meniu",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_clucerului.pdf"
+      },
+      {
+        "text": "Descarcă Meniu",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_pescariu.pdf"
+      },
+      {
+        "text": "Descarcă Meniu",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_carol.pdf"
+      },
+      {
+        "text": "0731 440 493",
+        "href": "tel:0731440493"
+      },
+      {
+        "text": "Descarcă Meniu",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2025/08/meniu_romancierilor.pdf"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      }
+    ],
+    "phones": [
+      "0734 380 188",
+      "0730 900 806",
+      "0731 440 493",
+      "0729 574 802",
+      "0729 155 207",
+      "0731 700 442",
+      "0722 886 151",
+      "0724 706 665",
+      "0729 155 202"
+    ],
+    "emails": [
+      "188barbu-vacarescu@ilcalcio.roIl",
+      "493carolpark@ilcalcio.roMr.",
+      "207mrval.ateneu@ilcalcio.roProgramul",
+      "806romancierilor@ilcalcio.roIl",
+      "665herastrau@ilcalcio.roIl",
+      "802clucerului@ilcalcio.roIl"
+    ]
+  },
+  "galerie-foto": {
+    "url": "https://ilcalcio.ro/galerie-foto/",
+    "title": "",
+    "content": {},
+    "images": [],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/ilcalciobucharest/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/ilcalciobucharest/?hl=ro"
+      }
+    ]
+  },
+  "contact": {
+    "url": "https://ilcalcio.ro/contact/",
+    "title": "",
+    "content": {
+      "Formular de contact": "Formular de contact Nume Email Telefon Mesaj Trimite mesajul Dragi clienti, Completand acest formular, puteti transmite direct catre noi un mesaj si aveti garantia ca veti primi un raspuns in cel mai scurt timp. Odata receptionat mesajul, acesta va fi vazut de persoana responsabila cu elaborarea unui raspuns in urma mesajului dumneavoastra. Va garantam ca veti fi contactat in maxim 24 de ore de la trimiterea mesajului. Va multumim.",
+      "Restaurant Il Calcio Barbu Vacarescu": "Restaurant Il Calcio Barbu Vacarescu Adresa: Strada Glodeni nr. 3, sector 1, Bucuresti Email: barbu-vacarescu@ilcalcio.ro Numar de telefon: 0734 380 188 Restaurant Il Calcio Clucerului Adresa: Strada Clucerului nr. 7, Sector 1, Bucuresti Email: clucerului@ilcalcio.ro Numar de telefon: 0729 574 802",
+      "Restaurant Il Calcio Clucerului": "Restaurant Il Calcio Barbu Vacarescu Adresa: Strada Glodeni nr. 3, sector 1, Bucuresti Email: barbu-vacarescu@ilcalcio.ro Numar de telefon: 0734 380 188 Restaurant Il Calcio Clucerului Adresa: Strada Clucerului nr. 7, Sector 1, Bucuresti Email: clucerului@ilcalcio.ro Numar de telefon: 0729 574 802",
+      "Restaurant Il Calcio Herastrau": "Restaurant Il Calcio Herastrau Adresa: Sos. Nordului nr. 7-9, sector 1, Bucuresti Email: herastrau@ilcalcio.ro Numar de telefon: 0724 706 665 Restaurant Il Calcio Romancierilor Adresa: Drumul Taberei, nr. 68, sector 6, Bucuresti Email: romancierilor@ilcalcio.ro Numar de telefon: 0730 900 806",
+      "Restaurant Il Calcio Romancierilor": "Restaurant Il Calcio Herastrau Adresa: Sos. Nordului nr. 7-9, sector 1, Bucuresti Email: herastrau@ilcalcio.ro Numar de telefon: 0724 706 665 Restaurant Il Calcio Romancierilor Adresa: Drumul Taberei, nr. 68, sector 6, Bucuresti Email: romancierilor@ilcalcio.ro Numar de telefon: 0730 900 806",
+      "Restaurant Il Calcio Carol Park": "Restaurant Il Calcio Carol Park Adresa: Bulevardul Mărășești 2B, București Email: carolpark@ilcalcio.ro Numar de telefon: 0731 440 493 Restaurant Mr. Val Ateneu Adresa: Nicolae Golescu 14, Sector 1 , București Email: ateneu@ilcalcio.ro Numar de telefon: 0729 155 207",
+      "Restaurant Mr. Val Ateneu": "Restaurant Il Calcio Carol Park Adresa: Bulevardul Mărășești 2B, București Email: carolpark@ilcalcio.ro Numar de telefon: 0731 440 493 Restaurant Mr. Val Ateneu Adresa: Nicolae Golescu 14, Sector 1 , București Email: ateneu@ilcalcio.ro Numar de telefon: 0729 155 207"
+    },
+    "images": [],
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "Home",
+        "href": "https://ilcalcio.ro/"
+      },
+      {
+        "text": "Restaurante",
+        "href": "https://ilcalcio.ro/restaurante/"
+      },
+      {
+        "text": "Barbu Văcărescu",
+        "href": "https://ilcalcio.ro/barbu-vacarescu/"
+      },
+      {
+        "text": "Clucerului",
+        "href": "https://ilcalcio.ro/clucerului/"
+      },
+      {
+        "text": "Parc Herăstrău",
+        "href": "https://ilcalcio.ro/parc-herastrau/"
+      },
+      {
+        "text": "Romancierilor",
+        "href": "https://ilcalcio.ro/romancierilor/"
+      },
+      {
+        "text": "Mr. Val Ateneu",
+        "href": "https://ilcalcio.ro/ateneu/"
+      },
+      {
+        "text": "Carol Park",
+        "href": "https://ilcalcio.ro/carol-park/"
+      },
+      {
+        "text": "Livrari",
+        "href": "https://ilcalcio.ro/delivery/"
+      },
+      {
+        "text": "Galerie",
+        "href": "https://ilcalcio.ro/galerie-foto/"
+      },
+      {
+        "text": "Valori Nutritionale si Alergeni",
+        "href": "https://ilcalcio.ro/wp-content/uploads/2023/04/Valori_Nutritionale.pdf"
+      },
+      {
+        "text": "Contact",
+        "href": "https://ilcalcio.ro/contact/"
+      },
+      {
+        "text": "barbu-vacarescu@ilcalcio.ro",
+        "href": "mailto:barbu-vacarescu@ilcalcio.ro"
+      },
+      {
+        "text": "0734 380 188",
+        "href": "tel:0734380188"
+      },
+      {
+        "text": "clucerului@ilcalcio.ro",
+        "href": "mailto:clucerului@ilcalcio.ro"
+      },
+      {
+        "text": "0729 574 802",
+        "href": "tel:0729574802"
+      },
+      {
+        "text": "herastrau@ilcalcio.ro",
+        "href": "mailto:herastrau@ilcalcio.ro"
+      },
+      {
+        "text": "0724 706 665",
+        "href": "tel:0724706665"
+      }
+    ],
+    "phones": [
+      "0734 380 188",
+      "0730 900 806",
+      "0731 440 493",
+      "0729 574 802",
+      "0729 155 207",
+      "0724 706 665"
+    ],
+    "emails": [
+      "barbu-vacarescu@ilcalcio.roNumar",
+      "herastrau@ilcalcio.ro",
+      "188barbu-vacarescu@ilcalcio.roIl",
+      "carolpark@ilcalcio.roNumar",
+      "493carolpark@ilcalcio.roMr.",
+      "romancierilor@ilcalcio.ro",
+      "clucerului@ilcalcio.ro",
+      "ateneu@ilcalcio.roNumar",
+      "207mrval.ateneu@ilcalcio.roProgramul",
+      "806romancierilor@ilcalcio.roIl",
+      "665herastrau@ilcalcio.roIl",
+      "802clucerului@ilcalcio.roIl"
+    ]
+  }
+}
