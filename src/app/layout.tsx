@@ -5,10 +5,10 @@ import Chef3DWrapper from "@/components/chef-3d-wrapper";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Oreviceanu Trans | Transport Marfă București și Național",
+  title: "Oreviceanu Logistic | Transport Marfă București și Național",
   description: "Transport marfă național, transport mobilă și obiecte voluminoase, mutări rezidențiale și sedii. Flotă modernă, șoferi profesioniști, livrări rapide și sigure.",
   openGraph: {
-    title: "Oreviceanu Trans | Transport Marfă București și Național",
+    title: "Oreviceanu Logistic | Transport Marfă București și Național",
     description: "Transport marfă, mobilă și mutări în toată țara. Flotă modernă, șoferi profesioniști, livrări rapide și sigure. Laureați Șoimii Transporturilor 2024-2026.",
     locale: "ro_RO",
     type: "website",

@@ -18,7 +18,7 @@ const servicesData: Record<string, {
     icon: Truck,
     title: "Transport Marfă Național",
     hero: "Transport Marfă Național",
-    description: "Oreviceanu Trans oferă servicii de transport rutier de mărfuri pe tot teritoriul României. Cu autoutilitare moderne și șoferi profesioniști, asigurăm livrări rapide și sigure indiferent de destinație. Transportăm marfă generală, colete, paleți, materiale de construcții, echipamente și orice tip de încărcătură care necesită transport rutier. Ne adaptăm la nevoile fiecărui client, oferind soluții flexibile și prețuri corecte. Indiferent dacă ai nevoie de o cursă locală în București sau de un transport național, suntem partenerul de încredere de care ai nevoie.",
+    description: "Oreviceanu Logistic oferă servicii de transport rutier de mărfuri pe tot teritoriul României. Cu autoutilitare moderne și șoferi profesioniști, asigurăm livrări rapide și sigure indiferent de destinație. Transportăm marfă generală, colete, paleți, materiale de construcții, echipamente și orice tip de încărcătură care necesită transport rutier. Ne adaptăm la nevoile fiecărui client, oferind soluții flexibile și prețuri corecte. Indiferent dacă ai nevoie de o cursă locală în București sau de un transport național, suntem partenerul de încredere de care ai nevoie.",
     features: [
       "Transport rutier de mărfuri în toată țara",
       "Autoutilitare moderne și întreținute",

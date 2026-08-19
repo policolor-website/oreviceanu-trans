@@ -25,7 +25,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/transport/van-hero.jpg" alt="Oreviceanu Trans" className="w-full h-full object-cover" />
+          <img src="/transport/van-hero.jpg" alt="Oreviceanu Logistic" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-ink/70" />
         </div>
         <div className="relative z-10 h-full flex items-center justify-center px-6">
@@ -81,7 +81,7 @@ export default function AboutPage() {
               <div className="rounded-2xl overflow-hidden glass">
                 <img
                   src="/transport/van-about.jpg"
-                  alt="Oreviceanu Trans"
+                  alt="Oreviceanu Logistic"
                   className="w-full h-[400px] object-cover"
                 />
               </div>

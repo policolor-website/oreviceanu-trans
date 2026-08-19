@@ -8,7 +8,7 @@ import BuildingHero3D from "@/components/building-hero-3d";
 import { brand } from "@/lib/brand";
 
 // ============================================
-// SERVICII — 3 servicii Oreviceanu Trans
+// SERVICII — 3 servicii Oreviceanu Logistic
 // ============================================
 const services = [
   {
@@ -38,7 +38,7 @@ const services = [
 ];
 
 // ============================================
-// VALORI — Oreviceanu Trans
+// VALORI — Oreviceanu Logistic
 // ============================================
 const values = [
   { icon: ShieldCheck, title: "Siguranță", text: "Transportăm marfa ta cu maximă grijă. Asigurăm manipularea și livrarea în condiții de siguranță deplină." },
@@ -159,7 +159,7 @@ export default function HomePage() {
                 Transportăm sigur, livrăm <span className="gold-text">la timp</span>
               </h2>
               <p className="text-lg text-ash leading-relaxed mb-6">
-                Oreviceanu Trans SRL este o firmă de transport marfă din București, cu experiență în livrări rapide și sigure pe tot teritoriul României. Flotă modernă, șoferi profesioniști și soluții de transport adaptate nevoilor fiecărui client. Laureați Șoimii Transporturilor 2024-2026.
+                Oreviceanu Logistic SRL este o firmă de transport marfă din București, cu experiență în livrări rapide și sigure pe tot teritoriul României. Flotă modernă, șoferi profesioniști și soluții de transport adaptate nevoilor fiecărui client. Laureați Șoimii Transporturilor 2024-2026.
               </p>
               <ul className="grid grid-cols-2 gap-3 mb-8">
                 {["Transport marfă național", "Transport mobilă & obiecte voluminoase", "Mutări rezidențiale & sedii", "Autoutilitare moderne", "Șoferi profesioniști", "Livrări rapide & sigure"].map((item, i) => (
@@ -184,7 +184,7 @@ export default function HomePage() {
               <div className="rounded-2xl overflow-hidden glass">
                 <img
                   src="/transport/van-about.jpg"
-                  alt="Oreviceanu Trans"
+                  alt="Oreviceanu Logistic"
                   className="w-full h-[400px] object-cover"
                 />
               </div>
