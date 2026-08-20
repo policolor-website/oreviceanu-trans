@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0D0D0D;
+  --color-ink: #0a0a0a;
   --color-canvas: #141414;
   --color-surface: #1A1A1A;
   --color-wine: #722F37;
   --color-wine-light: #9B4446;
-  --color-gold: #FF6B00;
-  --color-gold-light: #FF8533;
-  --color-gold-pale: #FFAA66;
+  --color-gold: #ffffff;
+  --color-gold-light: #f0f0f0;
+  --color-gold-pale: #e0e0e0;
+  --color-neon: #39FF14;
+  --color-electric: #0080FF;
   --color-cream: #F5F5F5;
   --color-bone: #E8E8E8;
   --color-ash: #A0A0A0;
@@ -81,20 +83,20 @@ body {
   background: rgba(26, 26, 26, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 107, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .glass:hover {
-  border-color: rgba(255, 107, 0, 0.35);
-  box-shadow: 0 8px 40px rgba(255, 107, 0, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 40px rgba(255, 255, 255, 0.08);
 }
 
 .glass-light {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 107, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
@@ -105,6 +107,18 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: var(--animate-shimmer);
+}
+
+.neon-text {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(57, 255, 20, 0.7);
+  paint-order: stroke fill;
+}
+
+.neon-white {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.7);
+  paint-order: stroke fill;
 }
 
 .hairline {
@@ -118,4 +132,9 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 1;
+}
+
+/* Black & white image filter with subtle dark overlay */
+.bw-image {
+  filter: grayscale(1) contrast(1.05) brightness(0.85);
 }
