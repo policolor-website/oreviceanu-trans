@@ -226,7 +226,7 @@ export default function ContactPage() {
 
           <div className="text-center mt-10">
             <Link
-              href="/"
+              href="/booking"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors"
             >
               {tNav("bookNow")} <ArrowRight size={18} />

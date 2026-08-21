@@ -47,7 +47,7 @@ export default function ServicePageLayout({ serviceKey, image }: ServicePageLayo
               </h1>
               <p className="text-lg text-ash leading-relaxed mb-8">{t(`${serviceKey}.description`)}</p>
               <Link
-                href="/"
+                href="/booking"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors"
               >
                 {t("bookNow")} <ArrowRight size={18} />
@@ -166,7 +166,7 @@ export default function ServicePageLayout({ serviceKey, image }: ServicePageLayo
           <p className="text-ash mb-8">{t("readyToBookDesc")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/"
+              href="/booking"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors"
             >
               {t("bookNow")} <ArrowRight size={18} />
