@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, Globe, User, LogOut, LayoutDashboard } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { brand } from "@/lib/brand";
+import { supabase } from "@/lib/supabase-client";
 
 interface NavItem {
   href: string;
@@ -56,7 +57,18 @@ export default function Header() {
   const [langOpen, setLangOpen] = useState(false);
   const [activeLang, setActiveLang] = useState("EN");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [user, setUser] = useState<any>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const pathname = usePathname();
+  const router = useRouter();
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null));
+    const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => authListener.subscription.unsubscribe();
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -67,6 +79,7 @@ export default function Header() {
   useEffect(() => {
     setMobileOpen(false);
     setOpenDropdown(null);
+    setMobileExpanded(null);
   }, [pathname]);
 
   return (
@@ -182,6 +195,45 @@ export default function Header() {
             <Phone size={14} />
             <span>Book now</span>
           </a>
+
+          {/* Auth buttons */}
+          {user ? (
+            <div className="flex items-center gap-3">
+              <Link
+                href="/dashboard"
+                className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <LayoutDashboard size={15} />
+                <span>Dashboard</span>
+              </Link>
+              <button
+                onClick={async () => {
+                  await supabase.auth.signOut();
+                  router.push("/");
+                }}
+                className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <LogOut size={15} />
+                <span>Logout</span>
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-3">
+              <Link
+                href="/login"
+                className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <User size={15} />
+                <span>Login</span>
+              </Link>
+              <Link
+                href="/register"
+                className="px-4 py-2 text-sm font-semibold bg-electric text-ink rounded-lg hover:bg-electric/80 transition-colors"
+              >
+                Register
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* Mobile toggle */}
@@ -200,13 +252,26 @@ export default function Header() {
           <nav className="flex flex-col gap-1">
             {navItems.map((item) => (
               <div key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-white hover:text-white text-base block py-3 border-b border-white/5"
-                >
-                  {item.label}
-                </Link>
-                {item.children && (
+                {item.children ? (
+                  <button
+                    onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
+                    className="w-full flex items-center justify-between text-white text-base py-3 border-b border-white/5"
+                  >
+                    <span>{item.label}</span>
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-300 ${mobileExpanded === item.label ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="text-white hover:text-white text-base block py-3 border-b border-white/5"
+                  >
+                    {item.label}
+                  </Link>
+                )}
+                {item.children && mobileExpanded === item.label && (
                   <div className="pl-4 pb-2">
                     {item.children.map((child) => (
                       <Link
@@ -242,6 +307,38 @@ export default function Header() {
             >
               <Phone size={14} /> {brand.phone}
             </a>
+
+            {/* Auth mobile */}
+            <div className="flex items-center gap-3 mt-4 pt-4 border-t border-white/5">
+              {user ? (
+                <>
+                  <Link href="/dashboard" className="flex items-center gap-2 text-white text-sm">
+                    <LayoutDashboard size={16} /> Dashboard
+                  </Link>
+                  <button
+                    onClick={async () => {
+                      await supabase.auth.signOut();
+                      router.push("/");
+                    }}
+                    className="flex items-center gap-2 text-ash text-sm ml-auto"
+                  >
+                    <LogOut size={16} /> Logout
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link href="/login" className="flex items-center gap-2 text-white text-sm">
+                    <User size={16} /> Login
+                  </Link>
+                  <Link
+                    href="/register"
+                    className="px-4 py-2 text-sm font-semibold bg-electric text-ink rounded-lg ml-auto"
+                  >
+                    Register
+                  </Link>
+                </>
+              )}
+            </div>
           </nav>
         </div>
       )}

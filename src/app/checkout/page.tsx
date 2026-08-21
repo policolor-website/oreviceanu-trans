@@ -22,6 +22,7 @@ export default function CheckoutPage() {
   const router = useRouter();
   const [booking, setBooking] = useState<BookingData | null>(null);
   const [mode, setMode] = useState<"guest" | "login" | "register">("guest");
+  const [user, setUser] = useState<any>(null);
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -38,6 +39,19 @@ export default function CheckoutPage() {
       return;
     }
     setBooking(JSON.parse(data));
+
+    // Check if user is already logged in
+    supabase.auth.getSession().then(({ data: sessionData }) => {
+      if (sessionData.session?.user) {
+        setUser(sessionData.session.user);
+        setForm({
+          fullName: sessionData.session.user.user_metadata?.full_name || "",
+          email: sessionData.session.user.email || "",
+          phone: sessionData.session.user.user_metadata?.phone || "",
+          password: "",
+        });
+      }
+    });
   }, [router]);
 
   if (!booking) {
@@ -55,42 +69,47 @@ export default function CheckoutPage() {
     e.preventDefault();
     setError(null);
 
-    if (mode === "guest") {
-      if (!form.fullName || !form.email || !form.phone) {
-        setError("Please fill in all fields.");
-        return;
-      }
-    } else {
-      if (!form.email || !form.password) {
-        setError("Please fill in email and password.");
-        return;
-      }
-      if (mode === "register" && (!form.fullName || !form.phone)) {
-        setError("Please enter your full name and phone.");
-        return;
+    // If already logged in, skip validation
+    if (!user) {
+      if (mode === "guest") {
+        if (!form.fullName || !form.email || !form.phone) {
+          setError("Please fill in all fields.");
+          return;
+        }
+      } else {
+        if (!form.email || !form.password) {
+          setError("Please fill in email and password.");
+          return;
+        }
+        if (mode === "register" && (!form.fullName || !form.phone)) {
+          setError("Please enter your full name and phone.");
+          return;
+        }
       }
     }
 
     setLoading(true);
 
     try {
-      let userId: string | null = null;
+      let userId: string | null = user?.id ?? null;
 
-      if (mode === "login") {
-        const { data, error: authError } = await supabase.auth.signInWithPassword({
-          email: form.email,
-          password: form.password,
-        });
-        if (authError) throw new Error(authError.message);
-        userId = data.user?.id ?? null;
-      } else if (mode === "register") {
-        const { data, error: authError } = await supabase.auth.signUp({
-          email: form.email,
-          password: form.password,
-          options: { data: { full_name: form.fullName, phone: form.phone } },
-        });
-        if (authError) throw new Error(authError.message);
-        userId = data.user?.id ?? null;
+      if (!user) {
+        if (mode === "login") {
+          const { data, error: authError } = await supabase.auth.signInWithPassword({
+            email: form.email,
+            password: form.password,
+          });
+          if (authError) throw new Error(authError.message);
+          userId = data.user?.id ?? null;
+        } else if (mode === "register") {
+          const { data, error: authError } = await supabase.auth.signUp({
+            email: form.email,
+            password: form.password,
+            options: { data: { full_name: form.fullName, phone: form.phone } },
+          });
+          if (authError) throw new Error(authError.message);
+          userId = data.user?.id ?? null;
+        }
       }
 
       // Insert booking into Supabase
@@ -99,9 +118,9 @@ export default function CheckoutPage() {
 
       const { error: bookingError } = await supabase.from("bookings").insert({
         user_id: userId,
-        guest_name: mode === "guest" ? form.fullName : null,
-        guest_email: form.email,
-        guest_phone: mode === "guest" ? form.phone : null,
+        guest_name: user ? null : (mode === "guest" ? form.fullName : null),
+        guest_email: user ? user.email : form.email,
+        guest_phone: user ? null : (mode === "guest" ? form.phone : null),
         origin: booking.origin,
         destination: booking.destination,
         pickup_date: booking.date || null,
@@ -253,56 +272,75 @@ export default function CheckoutPage() {
             )}
           </div>
 
-          {/* RIGHT — Guest / Login / Register */}
+          {/* RIGHT — Guest / Login / Register / Logged in */}
           <div className="lg:col-span-2">
             <div className="glass rounded-2xl p-6">
-              {/* Tabs */}
-              <div className="flex gap-1 mb-6 bg-ink/50 rounded-lg p-1">
-                <button
-                  onClick={() => setMode("guest")}
-                  className={`flex-1 py-2.5 rounded-md text-sm font-medium transition-colors ${
-                    mode === "guest" ? "bg-white text-ink" : "text-ash hover:text-white"
-                  }`}
-                >
-                  Guest
-                </button>
-                <button
-                  onClick={() => setMode("login")}
-                  className={`flex-1 py-2.5 rounded-md text-sm font-medium transition-colors ${
-                    mode === "login" ? "bg-white text-ink" : "text-ash hover:text-white"
-                  }`}
-                >
-                  Login
-                </button>
-                <button
-                  onClick={() => setMode("register")}
-                  className={`flex-1 py-2.5 rounded-md text-sm font-medium transition-colors ${
-                    mode === "register" ? "bg-white text-ink" : "text-ash hover:text-white"
-                  }`}
-                >
-                  Register
-                </button>
-              </div>
+              {user ? (
+                <>
+                  <div className="flex items-center gap-3 mb-6 pb-6 border-b border-white/10">
+                    <div className="w-12 h-12 rounded-full bg-electric/20 flex items-center justify-center">
+                      <User size={24} className="text-electric" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{user.user_metadata?.full_name || user.email}</p>
+                      <p className="text-xs text-ash">Signed in</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-ash mb-5">
+                    Your booking will be saved to your account. Review the details and continue to payment.
+                  </p>
+                </>
+              ) : (
+                <>
+                  {/* Tabs */}
+                  <div className="flex gap-1 mb-6 bg-ink/50 rounded-lg p-1">
+                    <button
+                      onClick={() => setMode("guest")}
+                      className={`flex-1 py-2.5 rounded-md text-sm font-medium transition-colors ${
+                        mode === "guest" ? "bg-white text-ink" : "text-ash hover:text-white"
+                      }`}
+                    >
+                      Guest
+                    </button>
+                    <button
+                      onClick={() => setMode("login")}
+                      className={`flex-1 py-2.5 rounded-md text-sm font-medium transition-colors ${
+                        mode === "login" ? "bg-white text-ink" : "text-ash hover:text-white"
+                      }`}
+                    >
+                      Login
+                    </button>
+                    <button
+                      onClick={() => setMode("register")}
+                      className={`flex-1 py-2.5 rounded-md text-sm font-medium transition-colors ${
+                        mode === "register" ? "bg-white text-ink" : "text-ash hover:text-white"
+                      }`}
+                    >
+                      Register
+                    </button>
+                  </div>
 
-              {mode === "guest" && (
-                <p className="text-xs text-ash mb-5">
-                  Book without an account. You&apos;ll receive a confirmation by email.
-                </p>
-              )}
-              {mode === "login" && (
-                <p className="text-xs text-ash mb-5">
-                  Sign in to access your booking history and invoices.
-                </p>
-              )}
-              {mode === "register" && (
-                <p className="text-xs text-ash mb-5">
-                  Create an account for booking history, invoices, and faster checkout.
-                </p>
+                  {mode === "guest" && (
+                    <p className="text-xs text-ash mb-5">
+                      Book without an account. You&apos;ll receive a confirmation by email.
+                    </p>
+                  )}
+                  {mode === "login" && (
+                    <p className="text-xs text-ash mb-5">
+                      Sign in to access your booking history and invoices.
+                    </p>
+                  )}
+                  {mode === "register" && (
+                    <p className="text-xs text-ash mb-5">
+                      Create an account for booking history, invoices, and faster checkout.
+                    </p>
+                  )}
+                </>
               )}
 
               <form onSubmit={handleSubmit} className="space-y-4">
-                {/* Full name — guest + register */}
-                {(mode === "guest" || mode === "register") && (
+                {/* Full name — guest + register (not for logged in) */}
+                {!user && (mode === "guest" || mode === "register") && (
                   <div>
                     <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Full name</label>
                     <div className="relative">
@@ -318,23 +356,25 @@ export default function CheckoutPage() {
                   </div>
                 )}
 
-                {/* Email — all modes */}
-                <div>
-                  <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Email</label>
-                  <div className="relative">
-                    <Mail size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
-                    <input
-                      type="email"
-                      value={form.email}
-                      onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      placeholder="john@example.com"
-                      className="w-full bg-ink/50 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors"
-                    />
+                {/* Email — all modes (not for logged in) */}
+                {!user && (
+                  <div>
+                    <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Email</label>
+                    <div className="relative">
+                      <Mail size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
+                      <input
+                        type="email"
+                        value={form.email}
+                        onChange={(e) => setForm({ ...form, email: e.target.value })}
+                        placeholder="john@example.com"
+                        className="w-full bg-ink/50 border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors"
+                      />
+                    </div>
                   </div>
-                </div>
+                )}
 
-                {/* Phone — guest + register */}
-                {(mode === "guest" || mode === "register") && (
+                {/* Phone — guest + register (not for logged in) */}
+                {!user && (mode === "guest" || mode === "register") && (
                   <div>
                     <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Phone</label>
                     <div className="relative">
@@ -350,8 +390,8 @@ export default function CheckoutPage() {
                   </div>
                 )}
 
-                {/* Password — login + register */}
-                {mode !== "guest" && (
+                {/* Password — login + register (not for logged in) */}
+                {!user && mode !== "guest" && (
                   <div>
                     <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Password</label>
                     <div className="relative">
