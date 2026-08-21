@@ -947,7 +947,7 @@ function FleetStackedSection({
       className="hidden md:block relative"
       style={{ height: `calc(100vh + ${transitions * 60}vh)` }}
     >
-      <div className="sticky top-0 h-screen flex items-start gap-12 px-6 max-w-7xl mx-auto pt-12">
+      <div className="sticky top-0 h-screen flex items-center gap-12 px-6 max-w-7xl mx-auto">
         {/* Left — text (sticky, stays visible) */}
         <div className="w-[35%] shrink-0">
           <motion.div
@@ -976,7 +976,7 @@ function FleetStackedSection({
         </div>
 
         {/* Right — stacked cards */}
-        <div className="flex-1 relative h-full overflow-hidden">
+        <div className="flex-1 relative h-[55vh]">
           {fleet.map((vehicle, i) => (
             <div key={i} className="absolute inset-0 flex flex-col items-center justify-start">
               <FleetStackCard
@@ -1007,9 +1007,12 @@ function FleetStackCard({
   progress: ReturnType<typeof useScroll>["scrollYProgress"];
 }) {
   // Card 0 is visible from the start at y=0
-  // Card i (i>0) slides up from y=offset to y=0 during segment [(i-1)/transitions, i/transitions]
-  const segStart = (index - 1) / transitions;
-  const segEnd = index / transitions;
+  // Card i (i>0) slides up from y=offset to y=0 during its segment
+  // Hold time: animations complete at 0.8, leaving 20% for last card to stay visible
+  const HOLD = 0.2;
+  const animRange = 1 - HOLD;
+  const segStart = ((index - 1) / transitions) * animRange;
+  const segEnd = (index / transitions) * animRange;
 
   // Entry animation: slide up from below + fade in
   const y = useTransform(progress, [segStart, segEnd], [400, 0]);
