@@ -193,13 +193,13 @@ export default function Header() {
             )}
           </div>
 
-          <a
-            href={`tel:${brand.phone}`}
+          <Link
+            href="/booking"
             className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
           >
             <Phone size={14} />
             <span>{t("bookNow")}</span>
-          </a>
+          </Link>
 
           {/* Auth buttons */}
           {user ? (
