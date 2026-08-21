@@ -172,7 +172,17 @@
     "profile": "Profil",
     "memberSince": "Mitglied seit",
     "invoices": "Rechnungen",
-    "noInvoices": "Noch keine Rechnungen"
+    "noInvoices": "Noch keine Rechnungen",
+    "edit": "Bearbeiten",
+    "save": "Speichern",
+    "saving": "Speichern...",
+    "cancel": "Abbrechen",
+    "overview": "Übersicht",
+    "downloadInvoice": "Rechnung herunterladen",
+    "statusPending": "Ausstehend",
+    "statusConfirmed": "Bestätigt",
+    "statusCompleted": "Abgeschlossen",
+    "statusCancelled": "Storniert"
   },
   "Footer": {
     "tagline": "Premium-Fahrerservice — 24/7 Flughafentransfers und Geschäftsfahrten in ganz Deutschland.",
@@ -205,12 +215,30 @@
         "Tür-zu-Tür-Service inklusive Gepäckhilfe"
       ],
       "includes": [
-        { "label": "Flugverfolgung", "value": "Inklusive" },
-        { "label": "Wartezeit", "value": "60 Min. gratis" },
-        { "label": "Meet & greet", "value": "Inklusive" },
-        { "label": "Stornierung", "value": "Gratis 24 Std." },
-        { "label": "Flaschenwasser", "value": "Inklusive" },
-        { "label": "WLAN", "value": "Gratis" }
+        {
+          "label": "Flugverfolgung",
+          "value": "Inklusive"
+        },
+        {
+          "label": "Wartezeit",
+          "value": "60 Min. gratis"
+        },
+        {
+          "label": "Meet & greet",
+          "value": "Inklusive"
+        },
+        {
+          "label": "Stornierung",
+          "value": "Gratis 24 Std."
+        },
+        {
+          "label": "Flaschenwasser",
+          "value": "Inklusive"
+        },
+        {
+          "label": "WLAN",
+          "value": "Gratis"
+        }
       ],
       "faq": [
         {
@@ -253,12 +281,30 @@
         "Vertraulichkeit garantiert — ideal für Führungskräfte und prominente Kunden"
       ],
       "includes": [
-        { "label": "Fahrer", "value": "Professionell" },
-        { "label": "Kleidung", "value": "Anzug & Krawatte" },
-        { "label": "Stopps", "value": "Mehrere" },
-        { "label": "Buchung", "value": "Stunden-/Tageweise" },
-        { "label": "Sprachen", "value": "Auf Anfrage" },
-        { "label": "Wasser", "value": "Inklusive" }
+        {
+          "label": "Fahrer",
+          "value": "Professionell"
+        },
+        {
+          "label": "Kleidung",
+          "value": "Anzug & Krawatte"
+        },
+        {
+          "label": "Stopps",
+          "value": "Mehrere"
+        },
+        {
+          "label": "Buchung",
+          "value": "Stunden-/Tageweise"
+        },
+        {
+          "label": "Sprachen",
+          "value": "Auf Anfrage"
+        },
+        {
+          "label": "Wasser",
+          "value": "Inklusive"
+        }
       ],
       "faq": [
         {
@@ -301,12 +347,30 @@
         "Diplomatische Flughafenabfertigung und VIP-Fast-Track-Unterstützung"
       ],
       "includes": [
-        { "label": "Sicherheit", "value": "Überprüft" },
-        { "label": "Protokoll", "value": "Geschult" },
-        { "label": "Gepanzert", "value": "Auf Anfrage" },
-        { "label": "Verfügbarkeit", "value": "24/7" },
-        { "label": "Diskretion", "value": "Garantiert" },
-        { "label": "Mehrere Stopps", "value": "Inklusive" }
+        {
+          "label": "Sicherheit",
+          "value": "Überprüft"
+        },
+        {
+          "label": "Protokoll",
+          "value": "Geschult"
+        },
+        {
+          "label": "Gepanzert",
+          "value": "Auf Anfrage"
+        },
+        {
+          "label": "Verfügbarkeit",
+          "value": "24/7"
+        },
+        {
+          "label": "Diskretion",
+          "value": "Garantiert"
+        },
+        {
+          "label": "Mehrere Stopps",
+          "value": "Inklusive"
+        }
       ],
       "faq": [
         {
@@ -349,12 +413,30 @@
         "Namensschilder, Einsteigehilfe und Gruppen-Begrüßungsservice"
       ],
       "includes": [
-        { "label": "Kapazität", "value": "7-50+ Sitze" },
-        { "label": "Gepäck", "value": "Anhänger verfügbar" },
-        { "label": "Koordinator", "value": "Engagiert" },
-        { "label": "Mehrere Fahrzeuge", "value": "Koordiniert" },
-        { "label": "Fahrer", "value": "Professionell" },
-        { "label": "Wasser", "value": "Inklusive" }
+        {
+          "label": "Kapazität",
+          "value": "7-50+ Sitze"
+        },
+        {
+          "label": "Gepäck",
+          "value": "Anhänger verfügbar"
+        },
+        {
+          "label": "Koordinator",
+          "value": "Engagiert"
+        },
+        {
+          "label": "Mehrere Fahrzeuge",
+          "value": "Koordiniert"
+        },
+        {
+          "label": "Fahrer",
+          "value": "Professionell"
+        },
+        {
+          "label": "Wasser",
+          "value": "Inklusive"
+        }
       ],
       "faq": [
         {
@@ -397,12 +479,30 @@
         "Mehrsprachiger Reiseführer-Service auf Anfrage"
       ],
       "includes": [
-        { "label": "Reiseroute", "value": "Maßgeschneidert" },
-        { "label": "Stopps", "value": "Unbegrenzt" },
-        { "label": "Dauer", "value": "Ganzer Tag" },
-        { "label": "Ortskundiger Führer", "value": "Ortskenntnis" },
-        { "label": "Flexibilität", "value": "Spontan" },
-        { "label": "Wasser", "value": "Inklusive" }
+        {
+          "label": "Reiseroute",
+          "value": "Maßgeschneidert"
+        },
+        {
+          "label": "Stopps",
+          "value": "Unbegrenzt"
+        },
+        {
+          "label": "Dauer",
+          "value": "Ganzer Tag"
+        },
+        {
+          "label": "Ortskundiger Führer",
+          "value": "Ortskenntnis"
+        },
+        {
+          "label": "Flexibilität",
+          "value": "Spontan"
+        },
+        {
+          "label": "Wasser",
+          "value": "Inklusive"
+        }
       ],
       "faq": [
         {
@@ -445,12 +545,30 @@
         "Koordination der Abfahrten nach dem Event — alle kommen sicher nach Hause"
       ],
       "includes": [
-        { "label": "Koordination", "value": "Mehrere Gäste" },
-        { "label": "Dekoration", "value": "Auf Anfrage" },
-        { "label": "Manager", "value": "Engagiert" },
-        { "label": "Zeitplanung", "value": "Flexibel" },
-        { "label": "Fahrzeuge", "value": "Elegant" },
-        { "label": "Wasser", "value": "Inklusive" }
+        {
+          "label": "Koordination",
+          "value": "Mehrere Gäste"
+        },
+        {
+          "label": "Dekoration",
+          "value": "Auf Anfrage"
+        },
+        {
+          "label": "Manager",
+          "value": "Engagiert"
+        },
+        {
+          "label": "Zeitplanung",
+          "value": "Flexibel"
+        },
+        {
+          "label": "Fahrzeuge",
+          "value": "Elegant"
+        },
+        {
+          "label": "Wasser",
+          "value": "Inklusive"
+        }
       ],
       "faq": [
         {
@@ -493,12 +611,30 @@
         "Koordinierter Gruppentransport für Delegationen und Teams"
       ],
       "includes": [
-        { "label": "Messegelände", "value": "Alle großen" },
-        { "label": "Zeitplanung", "value": "Flexibel" },
-        { "label": "Rückfahrt", "value": "Vorausgebucht" },
-        { "label": "Materialien", "value": "Transportiert" },
-        { "label": "Fahrer", "value": "Professionell" },
-        { "label": "Wasser", "value": "Inklusive" }
+        {
+          "label": "Messegelände",
+          "value": "Alle großen"
+        },
+        {
+          "label": "Zeitplanung",
+          "value": "Flexibel"
+        },
+        {
+          "label": "Rückfahrt",
+          "value": "Vorausgebucht"
+        },
+        {
+          "label": "Materialien",
+          "value": "Transportiert"
+        },
+        {
+          "label": "Fahrer",
+          "value": "Professionell"
+        },
+        {
+          "label": "Wasser",
+          "value": "Inklusive"
+        }
       ],
       "faq": [
         {
@@ -541,12 +677,30 @@
         "Kostenlose Stornierung bis zu 24 Stunden vor Abholung — ohne Rückfragen"
       ],
       "includes": [
-        { "label": "E-Class", "value": "€3.0/km" },
-        { "label": "S-Class", "value": "€4.5/km" },
-        { "label": "V-Class", "value": "€3.5/km" },
-        { "label": "Grundtarif", "value": "€10-15" },
-        { "label": "Nacht", "value": "+25%" },
-        { "label": "Flughafen", "value": "+€8" }
+        {
+          "label": "E-Class",
+          "value": "€3.0/km"
+        },
+        {
+          "label": "S-Class",
+          "value": "€4.5/km"
+        },
+        {
+          "label": "V-Class",
+          "value": "€3.5/km"
+        },
+        {
+          "label": "Grundtarif",
+          "value": "€10-15"
+        },
+        {
+          "label": "Nacht",
+          "value": "+25%"
+        },
+        {
+          "label": "Flughafen",
+          "value": "+€8"
+        }
       ],
       "faq": [
         {

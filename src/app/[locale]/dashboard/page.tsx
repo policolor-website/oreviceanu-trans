@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
 import { User, Mail, Phone, Calendar, Car, MapPin, Clock, FileText, LogOut, CheckCircle2, XCircle, Clock as ClockIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase-client";
 
@@ -30,15 +29,17 @@ interface Booking {
   created_at: string;
 }
 
-const statusConfig: Record<string, { label: string; color: string; icon: any }> = {
-  pending: { label: "Pending", color: "text-yellow-400 bg-yellow-400/10", icon: ClockIcon },
-  confirmed: { label: "Confirmed", color: "text-green-400 bg-green-400/10", icon: CheckCircle2 },
-  completed: { label: "Completed", color: "text-blue-400 bg-blue-400/10", icon: CheckCircle2 },
-  cancelled: { label: "Cancelled", color: "text-red-400 bg-red-400/10", icon: XCircle },
+const statusConfig: Record<string, { labelKey: string; color: string; icon: any }> = {
+  pending: { labelKey: "statusPending", color: "text-yellow-400 bg-yellow-400/10", icon: ClockIcon },
+  confirmed: { labelKey: "statusConfirmed", color: "text-green-400 bg-green-400/10", icon: CheckCircle2 },
+  completed: { labelKey: "statusCompleted", color: "text-blue-400 bg-blue-400/10", icon: CheckCircle2 },
+  cancelled: { labelKey: "statusCancelled", color: "text-red-400 bg-red-400/10", icon: XCircle },
 };
 
 export default function DashboardPage() {
   const t = useTranslations("Dashboard");
+  const tAuth = useTranslations("Auth");
+  const tNav = useTranslations("Nav");
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
@@ -122,7 +123,7 @@ export default function DashboardPage() {
             onClick={handleLogout}
             className="flex items-center gap-2 text-sm text-ash hover:text-white transition-colors px-4 py-2 rounded-lg border border-white/10 hover:border-white/20"
           >
-            <LogOut size={16} /> Logout
+            <LogOut size={16} /> {tNav("logout")}
           </button>
         </div>
 
@@ -136,7 +137,7 @@ export default function DashboardPage() {
                   onClick={() => setEditing(true)}
                   className="text-xs text-ash hover:text-white transition-colors"
                 >
-                  Edit
+                  {t("edit")}
                 </button>
               )}
             </div>
@@ -144,7 +145,7 @@ export default function DashboardPage() {
             {editing ? (
               <div className="space-y-4">
                 <div>
-                  <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Full name</label>
+                  <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tAuth("fullName")}</label>
                   <input
                     type="text"
                     value={editForm.full_name}
@@ -153,7 +154,7 @@ export default function DashboardPage() {
                   />
                 </div>
                 <div>
-                  <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Phone</label>
+                  <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tAuth("phone")}</label>
                   <input
                     type="tel"
                     value={editForm.phone}
@@ -167,13 +168,13 @@ export default function DashboardPage() {
                     disabled={saving}
                     className="flex-1 bg-white text-ink font-semibold rounded-lg py-2.5 text-sm hover:bg-white/90 transition-colors disabled:opacity-50"
                   >
-                    {saving ? "Saving..." : "Save"}
+                    {saving ? t("saving") : t("save")}
                   </button>
                   <button
                     onClick={() => setEditing(false)}
                     className="px-4 py-2.5 text-sm text-ash hover:text-white border border-white/10 rounded-lg transition-colors"
                   >
-                    Cancel
+                    {t("cancel")}
                   </button>
                 </div>
               </div>
@@ -182,21 +183,21 @@ export default function DashboardPage() {
                 <div className="flex items-center gap-3">
                   <User size={18} className="text-white/40" />
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide">Full name</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide">{tAuth("fullName")}</p>
                     <p className="text-sm text-white">{profile?.full_name || "—"}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail size={18} className="text-white/40" />
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide">Email</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide">{tAuth("email")}</p>
                     <p className="text-sm text-white">{user.email}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone size={18} className="text-white/40" />
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide">Phone</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide">{tAuth("phone")}</p>
                     <p className="text-sm text-white">{profile?.phone || "—"}</p>
                   </div>
                 </div>
@@ -206,7 +207,7 @@ export default function DashboardPage() {
 
           {/* Stats */}
           <div className="glass rounded-2xl p-6">
-            <h2 className="font-display text-xl font-bold text-white mb-6">Overview</h2>
+            <h2 className="font-display text-xl font-bold text-white mb-6">{t("overview")}</h2>
             <div className="space-y-4">
               <div className="flex items-center justify-between py-3 border-b border-white/10">
                 <span className="text-sm text-ash">{t("totalBookings")}</span>
@@ -287,7 +288,7 @@ export default function DashboardPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <span className={`text-xs px-3 py-1 rounded-full flex items-center gap-1 ${status.color}`}>
-                          <StatusIcon size={12} /> {status.label}
+                          <StatusIcon size={12} /> {t(status.labelKey)}
                         </span>
                         <span className="font-display text-xl font-bold text-white">
                           €{booking.price}
@@ -330,7 +331,7 @@ export default function DashboardPage() {
                     {booking.status === "completed" && (
                       <div className="mt-3 pt-3 border-t border-white/10 flex justify-end">
                         <button className="inline-flex items-center gap-2 text-xs text-ash hover:text-white transition-colors">
-                          <FileText size={14} /> Download invoice
+                          <FileText size={14} /> {t("downloadInvoice")}
                         </button>
                       </div>
                     )}

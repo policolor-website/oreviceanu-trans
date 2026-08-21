@@ -172,7 +172,17 @@
     "profile": "个人资料",
     "memberSince": "注册时间",
     "invoices": "发票",
-    "noInvoices": "暂无发票"
+    "noInvoices": "暂无发票",
+    "edit": "编辑",
+    "save": "保存",
+    "saving": "保存中...",
+    "cancel": "取消",
+    "overview": "概览",
+    "downloadInvoice": "下载发票",
+    "statusPending": "待处理",
+    "statusConfirmed": "已确认",
+    "statusCompleted": "已完成",
+    "statusCancelled": "已取消"
   },
   "Footer": {
     "tagline": "高端司机服务 — 全天候机场接送及德国全境商务出行。",
@@ -205,12 +215,30 @@
         "门到门服务，包含行李协助"
       ],
       "includes": [
-        { "label": "航班跟踪", "value": "包含" },
-        { "label": "等待时间", "value": "60分钟免费" },
-        { "label": "迎宾服务", "value": "包含" },
-        { "label": "取消", "value": "24小时免费" },
-        { "label": "瓶装水", "value": "包含" },
-        { "label": "WiFi", "value": "免费" }
+        {
+          "label": "航班跟踪",
+          "value": "包含"
+        },
+        {
+          "label": "等待时间",
+          "value": "60分钟免费"
+        },
+        {
+          "label": "迎宾服务",
+          "value": "包含"
+        },
+        {
+          "label": "取消",
+          "value": "24小时免费"
+        },
+        {
+          "label": "瓶装水",
+          "value": "包含"
+        },
+        {
+          "label": "WiFi",
+          "value": "免费"
+        }
       ],
       "faq": [
         {
@@ -253,12 +281,30 @@
         "保证保密 — 适合高管和知名人士"
       ],
       "includes": [
-        { "label": "司机", "value": "专业" },
-        { "label": "着装", "value": "西装领带" },
-        { "label": "停靠", "value": "多处" },
-        { "label": "预订", "value": "按小时/按天" },
-        { "label": "语言", "value": "应要求" },
-        { "label": "饮用水", "value": "包含" }
+        {
+          "label": "司机",
+          "value": "专业"
+        },
+        {
+          "label": "着装",
+          "value": "西装领带"
+        },
+        {
+          "label": "停靠",
+          "value": "多处"
+        },
+        {
+          "label": "预订",
+          "value": "按小时/按天"
+        },
+        {
+          "label": "语言",
+          "value": "应要求"
+        },
+        {
+          "label": "饮用水",
+          "value": "包含"
+        }
       ],
       "faq": [
         {
@@ -301,12 +347,30 @@
         "外交机场通关和贵宾快速通道协助"
       ],
       "includes": [
-        { "label": "安全", "value": "已审查" },
-        { "label": "礼仪", "value": "已培训" },
-        { "label": "防弹", "value": "应要求" },
-        { "label": "可用性", "value": "全天候" },
-        { "label": "谨慎", "value": "保证" },
-        { "label": "多处停靠", "value": "包含" }
+        {
+          "label": "安全",
+          "value": "已审查"
+        },
+        {
+          "label": "礼仪",
+          "value": "已培训"
+        },
+        {
+          "label": "防弹",
+          "value": "应要求"
+        },
+        {
+          "label": "可用性",
+          "value": "全天候"
+        },
+        {
+          "label": "谨慎",
+          "value": "保证"
+        },
+        {
+          "label": "多处停靠",
+          "value": "包含"
+        }
       ],
       "faq": [
         {
@@ -349,12 +413,30 @@
         "名牌、登车协助和团队欢迎服务"
       ],
       "includes": [
-        { "label": "容量", "value": "7-50+座位" },
-        { "label": "行李", "value": "可提供拖车" },
-        { "label": "协调员", "value": "专属" },
-        { "label": "多车辆", "value": "已协调" },
-        { "label": "司机", "value": "专业" },
-        { "label": "饮用水", "value": "包含" }
+        {
+          "label": "容量",
+          "value": "7-50+座位"
+        },
+        {
+          "label": "行李",
+          "value": "可提供拖车"
+        },
+        {
+          "label": "协调员",
+          "value": "专属"
+        },
+        {
+          "label": "多车辆",
+          "value": "已协调"
+        },
+        {
+          "label": "司机",
+          "value": "专业"
+        },
+        {
+          "label": "饮用水",
+          "value": "包含"
+        }
       ],
       "faq": [
         {
@@ -397,12 +479,30 @@
         "可应要求提供多语种导游服务"
       ],
       "includes": [
-        { "label": "行程", "value": "定制" },
-        { "label": "停靠", "value": "不限" },
-        { "label": "时长", "value": "全天" },
-        { "label": "本地向导", "value": "熟悉" },
-        { "label": "灵活性", "value": "随时" },
-        { "label": "饮用水", "value": "包含" }
+        {
+          "label": "行程",
+          "value": "定制"
+        },
+        {
+          "label": "停靠",
+          "value": "不限"
+        },
+        {
+          "label": "时长",
+          "value": "全天"
+        },
+        {
+          "label": "本地向导",
+          "value": "熟悉"
+        },
+        {
+          "label": "灵活性",
+          "value": "随时"
+        },
+        {
+          "label": "饮用水",
+          "value": "包含"
+        }
       ],
       "faq": [
         {
@@ -445,12 +545,30 @@
         "活动后出发协调 — 确保每个人安全到家"
       ],
       "includes": [
-        { "label": "协调", "value": "多宾客" },
-        { "label": "装饰", "value": "应要求" },
-        { "label": "经理", "value": "专属" },
-        { "label": "时间", "value": "灵活" },
-        { "label": "车辆", "value": "优雅" },
-        { "label": "饮用水", "value": "包含" }
+        {
+          "label": "协调",
+          "value": "多宾客"
+        },
+        {
+          "label": "装饰",
+          "value": "应要求"
+        },
+        {
+          "label": "经理",
+          "value": "专属"
+        },
+        {
+          "label": "时间",
+          "value": "灵活"
+        },
+        {
+          "label": "车辆",
+          "value": "优雅"
+        },
+        {
+          "label": "饮用水",
+          "value": "包含"
+        }
       ],
       "faq": [
         {
@@ -493,12 +611,30 @@
         "为代表团和团队协调团队接送"
       ],
       "includes": [
-        { "label": "场馆", "value": "所有主要" },
-        { "label": "安排", "value": "灵活" },
-        { "label": "返程", "value": "已预订" },
-        { "label": "材料", "value": "已运输" },
-        { "label": "司机", "value": "专业" },
-        { "label": "饮用水", "value": "包含" }
+        {
+          "label": "场馆",
+          "value": "所有主要"
+        },
+        {
+          "label": "安排",
+          "value": "灵活"
+        },
+        {
+          "label": "返程",
+          "value": "已预订"
+        },
+        {
+          "label": "材料",
+          "value": "已运输"
+        },
+        {
+          "label": "司机",
+          "value": "专业"
+        },
+        {
+          "label": "饮用水",
+          "value": "包含"
+        }
       ],
       "faq": [
         {
@@ -541,12 +677,30 @@
         "上车前24小时免费取消 — 无需理由"
       ],
       "includes": [
-        { "label": "E-Class", "value": "€3.0/km" },
-        { "label": "S-Class", "value": "€4.5/km" },
-        { "label": "V-Class", "value": "€3.5/km" },
-        { "label": "起步价", "value": "€10-15" },
-        { "label": "夜间", "value": "+25%" },
-        { "label": "机场", "value": "+€8" }
+        {
+          "label": "E-Class",
+          "value": "€3.0/km"
+        },
+        {
+          "label": "S-Class",
+          "value": "€4.5/km"
+        },
+        {
+          "label": "V-Class",
+          "value": "€3.5/km"
+        },
+        {
+          "label": "起步价",
+          "value": "€10-15"
+        },
+        {
+          "label": "夜间",
+          "value": "+25%"
+        },
+        {
+          "label": "机场",
+          "value": "+€8"
+        }
       ],
       "faq": [
         {

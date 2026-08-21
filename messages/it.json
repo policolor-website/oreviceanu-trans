@@ -172,7 +172,17 @@
     "profile": "Profilo",
     "memberSince": "Membro dal",
     "invoices": "Fatture",
-    "noInvoices": "Nessuna fattura ancora"
+    "noInvoices": "Nessuna fattura ancora",
+    "edit": "Modifica",
+    "save": "Salva",
+    "saving": "Salvataggio...",
+    "cancel": "Annulla",
+    "overview": "Panoramica",
+    "downloadInvoice": "Scarica fattura",
+    "statusPending": "In attesa",
+    "statusConfirmed": "Confermato",
+    "statusCompleted": "Completato",
+    "statusCancelled": "Annullato"
   },
   "Footer": {
     "tagline": "Servizio autista premium — transfer aeroporto 24/7 e viaggi business in tutta la Germania.",
@@ -205,12 +215,30 @@
         "Servizio porta a porta con assistenza bagagli inclusa"
       ],
       "includes": [
-        { "label": "Monitoraggio volo", "value": "Incluso" },
-        { "label": "Tempo di attesa", "value": "60 min gratis" },
-        { "label": "Meet & greet", "value": "Incluso" },
-        { "label": "Cancellazione", "value": "Gratuita 24h" },
-        { "label": "Acqua in bottiglia", "value": "Inclusa" },
-        { "label": "WiFi", "value": "Gratuito" }
+        {
+          "label": "Monitoraggio volo",
+          "value": "Incluso"
+        },
+        {
+          "label": "Tempo di attesa",
+          "value": "60 min gratis"
+        },
+        {
+          "label": "Meet & greet",
+          "value": "Incluso"
+        },
+        {
+          "label": "Cancellazione",
+          "value": "Gratuita 24h"
+        },
+        {
+          "label": "Acqua in bottiglia",
+          "value": "Inclusa"
+        },
+        {
+          "label": "WiFi",
+          "value": "Gratuito"
+        }
       ],
       "faq": [
         {
@@ -253,12 +281,30 @@
         "Riservatezza garantita — ideale per dirigenti e clienti di alto profilo"
       ],
       "includes": [
-        { "label": "Autista", "value": "Professionista" },
-        { "label": "Abbigliamento", "value": "Giacca e cravatta" },
-        { "label": "Tappe", "value": "Multiple" },
-        { "label": "Prenotazione", "value": "Oraria/Giornaliera" },
-        { "label": "Lingue", "value": "Su richiesta" },
-        { "label": "Acqua", "value": "Inclusa" }
+        {
+          "label": "Autista",
+          "value": "Professionista"
+        },
+        {
+          "label": "Abbigliamento",
+          "value": "Giacca e cravatta"
+        },
+        {
+          "label": "Tappe",
+          "value": "Multiple"
+        },
+        {
+          "label": "Prenotazione",
+          "value": "Oraria/Giornaliera"
+        },
+        {
+          "label": "Lingue",
+          "value": "Su richiesta"
+        },
+        {
+          "label": "Acqua",
+          "value": "Inclusa"
+        }
       ],
       "faq": [
         {
@@ -301,12 +347,30 @@
         "Autorizzazione aeroportuale diplomatica e assistenza VIP fast-track"
       ],
       "includes": [
-        { "label": "Sicurezza", "value": "Autorizzato" },
-        { "label": "Protocollo", "value": "Formato" },
-        { "label": "Blindato", "value": "Su richiesta" },
-        { "label": "Disponibilità", "value": "24/7" },
-        { "label": "Discrezione", "value": "Garantita" },
-        { "label": "Tappe multiple", "value": "Incluse" }
+        {
+          "label": "Sicurezza",
+          "value": "Autorizzato"
+        },
+        {
+          "label": "Protocollo",
+          "value": "Formato"
+        },
+        {
+          "label": "Blindato",
+          "value": "Su richiesta"
+        },
+        {
+          "label": "Disponibilità",
+          "value": "24/7"
+        },
+        {
+          "label": "Discrezione",
+          "value": "Garantita"
+        },
+        {
+          "label": "Tappe multiple",
+          "value": "Incluse"
+        }
       ],
       "faq": [
         {
@@ -349,12 +413,30 @@
         "Cartelli con nome, assistenza all'imbarco e servizio di benvenuto per il gruppo"
       ],
       "includes": [
-        { "label": "Capacità", "value": "7-50+ posti" },
-        { "label": "Bagagli", "value": "Rimorchi disponibili" },
-        { "label": "Coordinatore", "value": "Dedicato" },
-        { "label": "Multi-veicolo", "value": "Coordinato" },
-        { "label": "Autista", "value": "Professionista" },
-        { "label": "Acqua", "value": "Inclusa" }
+        {
+          "label": "Capacità",
+          "value": "7-50+ posti"
+        },
+        {
+          "label": "Bagagli",
+          "value": "Rimorchi disponibili"
+        },
+        {
+          "label": "Coordinatore",
+          "value": "Dedicato"
+        },
+        {
+          "label": "Multi-veicolo",
+          "value": "Coordinato"
+        },
+        {
+          "label": "Autista",
+          "value": "Professionista"
+        },
+        {
+          "label": "Acqua",
+          "value": "Inclusa"
+        }
       ],
       "faq": [
         {
@@ -397,12 +479,30 @@
         "Servizio guida multilingue disponibile su richiesta"
       ],
       "includes": [
-        { "label": "Itinerario", "value": "Personalizzato" },
-        { "label": "Tappe", "value": "Illimitate" },
-        { "label": "Durata", "value": "Giornata intera" },
-        { "label": "Guida locale", "value": "Conoscenza" },
-        { "label": "Flessibilità", "value": "In viaggio" },
-        { "label": "Acqua", "value": "Inclusa" }
+        {
+          "label": "Itinerario",
+          "value": "Personalizzato"
+        },
+        {
+          "label": "Tappe",
+          "value": "Illimitate"
+        },
+        {
+          "label": "Durata",
+          "value": "Giornata intera"
+        },
+        {
+          "label": "Guida locale",
+          "value": "Conoscenza"
+        },
+        {
+          "label": "Flessibilità",
+          "value": "In viaggio"
+        },
+        {
+          "label": "Acqua",
+          "value": "Inclusa"
+        }
       ],
       "faq": [
         {
@@ -445,12 +545,30 @@
         "Coordinamento delle partenze post-evento — tutti tornano a casa in sicurezza"
       ],
       "includes": [
-        { "label": "Coordinazione", "value": "Multi-ospite" },
-        { "label": "Decorazione", "value": "Su richiesta" },
-        { "label": "Responsabile", "value": "Dedicato" },
-        { "label": "Orari", "value": "Flessibili" },
-        { "label": "Veicoli", "value": "Eleganti" },
-        { "label": "Acqua", "value": "Inclusa" }
+        {
+          "label": "Coordinazione",
+          "value": "Multi-ospite"
+        },
+        {
+          "label": "Decorazione",
+          "value": "Su richiesta"
+        },
+        {
+          "label": "Responsabile",
+          "value": "Dedicato"
+        },
+        {
+          "label": "Orari",
+          "value": "Flessibili"
+        },
+        {
+          "label": "Veicoli",
+          "value": "Eleganti"
+        },
+        {
+          "label": "Acqua",
+          "value": "Inclusa"
+        }
       ],
       "faq": [
         {
@@ -493,12 +611,30 @@
         "Trasporto di gruppo coordinato per delegazioni e team"
       ],
       "includes": [
-        { "label": "Sedi", "value": "Tutte le principali" },
-        { "label": "Programmazione", "value": "Flessibile" },
-        { "label": "Ritorno", "value": "Pre-prenotato" },
-        { "label": "Materiali", "value": "Trasportati" },
-        { "label": "Autista", "value": "Professionista" },
-        { "label": "Acqua", "value": "Inclusa" }
+        {
+          "label": "Sedi",
+          "value": "Tutte le principali"
+        },
+        {
+          "label": "Programmazione",
+          "value": "Flessibile"
+        },
+        {
+          "label": "Ritorno",
+          "value": "Pre-prenotato"
+        },
+        {
+          "label": "Materiali",
+          "value": "Trasportati"
+        },
+        {
+          "label": "Autista",
+          "value": "Professionista"
+        },
+        {
+          "label": "Acqua",
+          "value": "Inclusa"
+        }
       ],
       "faq": [
         {
@@ -541,12 +677,30 @@
         "Cancellazione gratuita fino a 24 ore prima del ritiro — senza domande"
       ],
       "includes": [
-        { "label": "E-Class", "value": "€3.0/km" },
-        { "label": "S-Class", "value": "€4.5/km" },
-        { "label": "V-Class", "value": "€3.5/km" },
-        { "label": "Tariffa base", "value": "€10-15" },
-        { "label": "Notte", "value": "+25%" },
-        { "label": "Aeroporto", "value": "+€8" }
+        {
+          "label": "E-Class",
+          "value": "€3.0/km"
+        },
+        {
+          "label": "S-Class",
+          "value": "€4.5/km"
+        },
+        {
+          "label": "V-Class",
+          "value": "€3.5/km"
+        },
+        {
+          "label": "Tariffa base",
+          "value": "€10-15"
+        },
+        {
+          "label": "Notte",
+          "value": "+25%"
+        },
+        {
+          "label": "Aeroporto",
+          "value": "+€8"
+        }
       ],
       "faq": [
         {

@@ -172,7 +172,17 @@
     "profile": "Profile",
     "memberSince": "Member since",
     "invoices": "Invoices",
-    "noInvoices": "No invoices yet"
+    "noInvoices": "No invoices yet",
+    "edit": "Edit",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "overview": "Overview",
+    "downloadInvoice": "Download invoice",
+    "statusPending": "Pending",
+    "statusConfirmed": "Confirmed",
+    "statusCompleted": "Completed",
+    "statusCancelled": "Cancelled"
   },
   "Footer": {
     "tagline": "Premium chauffeur service — 24/7 airport transfers and business rides across Germany.",
