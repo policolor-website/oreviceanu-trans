@@ -945,9 +945,9 @@ function FleetStackedSection({
     <div
       ref={containerRef}
       className="hidden md:block relative"
-      style={{ height: `${transitions * 120}vh` }}
+      style={{ height: `calc(100vh + ${transitions * 60}vh)` }}
     >
-      <div className="sticky top-0 h-[65vh] flex items-start gap-12 px-6 max-w-7xl mx-auto pt-12">
+      <div className="sticky top-0 h-screen flex items-start gap-12 px-6 max-w-7xl mx-auto pt-12">
         {/* Left — text (sticky, stays visible) */}
         <div className="w-[35%] shrink-0">
           <motion.div
