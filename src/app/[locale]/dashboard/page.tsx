@@ -243,7 +243,7 @@ export default function DashboardPage() {
               </p>
             </div>
             <Link
-              href="/"
+              href="/booking"
               className="inline-flex items-center justify-center gap-2 bg-white text-ink font-semibold rounded-lg py-3 hover:bg-white/90 transition-colors"
             >
               {t("bookNow")} <Car size={16} />
@@ -259,7 +259,7 @@ export default function DashboardPage() {
             <div className="glass rounded-2xl p-12 text-center">
               <Car size={40} className="text-white/20 mx-auto mb-4" />
               <p className="text-ash mb-2">{t("noBookings")}</p>
-              <Link href="/" className="text-sm text-white hover:underline">
+              <Link href="/booking" className="text-sm text-white hover:underline">
                 {t("bookFirstRide")} →
               </Link>
             </div>
