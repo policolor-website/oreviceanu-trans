@@ -196,6 +196,7 @@ export default function HomePage() {
     time: "",
     passengers: "1",
     vehicle: "E-Class",
+    extraInfo: "",
   });
   const [priceResult, setPriceResult] = useState<any>(null);
   const [priceLoading, setPriceLoading] = useState(false);
@@ -375,6 +376,15 @@ export default function HomePage() {
                   className="w-full bg-ink/50 border border-white/10 rounded-lg px-3 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors"
                 />
               </div>
+              <div className="md:col-span-1">
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Time</label>
+                <input
+                  type="time"
+                  value={bookingForm.time}
+                  onChange={(e) => setBookingForm({ ...bookingForm, time: e.target.value })}
+                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-2 py-3 text-white text-sm focus:border-electric/50 focus:outline-none transition-colors"
+                />
+              </div>
               <div className="md:col-span-2">
                 <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Vehicle</label>
                 <select
@@ -389,16 +399,16 @@ export default function HomePage() {
                   <option>Coach</option>
                 </select>
               </div>
-              <div className="md:col-span-2">
+              <div className="md:col-span-1">
                 <button
                   type="submit"
                   disabled={priceLoading}
-                  className="w-full bg-ink text-white font-semibold rounded-lg py-3 border border-white/20 hover:bg-ink/80 hover:border-white/40 transition-colors duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
+                  className="w-full bg-ink text-white font-semibold rounded-lg py-3 border border-white/20 hover:bg-ink/80 hover:border-white/40 transition-colors duration-300 flex items-center justify-center gap-1 disabled:opacity-50"
                 >
                   {priceLoading ? (
                     <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                   ) : (
-                    <>Get price <ArrowRight size={16} /></>
+                    <>Go <ArrowRight size={14} /></>
                   )}
                 </button>
               </div>
@@ -469,12 +479,31 @@ export default function HomePage() {
                 </div>
               </div>
 
+              {/* Extra info */}
+              <div className="mt-4">
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">
+                  Extra info — pickup details
+                </label>
+                <textarea
+                  value={bookingForm.extraInfo}
+                  onChange={(e) => setBookingForm({ ...bookingForm, extraInfo: e.target.value })}
+                  placeholder="Gate number, terminal, building entrance, meeting point details..."
+                  rows={2}
+                  className="w-full bg-ink/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-stone focus:border-electric/50 focus:outline-none transition-colors resize-none"
+                />
+              </div>
+
               <div className="mt-4 flex justify-center">
                 <button
                   type="button"
                   onClick={() => {
-                    // TODO: Stripe checkout — redirect to /api/checkout
-                    alert("Stripe checkout coming soon!");
+                    const bookingData = {
+                      ...bookingForm,
+                      priceResult,
+                      createdAt: new Date().toISOString(),
+                    };
+                    localStorage.setItem("trendmydrive_booking", JSON.stringify(bookingData));
+                    window.location.href = "/checkout";
                   }}
                   className="inline-flex items-center gap-2 px-10 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors duration-300"
                 >
