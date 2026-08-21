@@ -580,7 +580,8 @@ export default function HomePage() {
       </section>
 
       {/* ============================================ */}
-      {/* SERVICES — 4 cards */}
+      {/* ============================================ */}
+      {/* SERVICES — 4 cards with zoom-in on scroll */}
       {/* ============================================ */}
       <section className="py-24 px-6 bg-canvas">
         <div className="max-w-7xl mx-auto">
@@ -600,14 +601,15 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{ perspective: "1200px" }}>
             {services.map((srv, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                initial={{ opacity: 0, rotateX: 45, rotateY: 15, z: -600, scale: 1.8, filter: "blur(20px)" }}
+                whileInView={{ opacity: 1, rotateX: 0, rotateY: 0, z: 0, scale: 1, filter: "blur(0px)" }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 1.8, delay: i * 0.2, ease: [0.16, 1, 0.3, 1] }}
+                style={{ transformStyle: "preserve-3d" }}
               >
                 <Link
                   href="/services"
@@ -640,8 +642,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8 px-6 bg-canvas">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-8 px-6 bg-canvas relative overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url(/steps.webp)" }}
+        />
+        <div className="absolute inset-0 z-0 bg-canvas/60" />
+        <div className="max-w-5xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -850,8 +858,14 @@ export default function HomePage() {
       {/* ============================================ */}
       {/* POPULAR ROUTES — from Munich */}
       {/* ============================================ */}
-      <section className="py-24 px-6 bg-canvas">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-24 px-6 bg-canvas relative overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: "url(/routes.webp)" }}
+        />
+        <div className="absolute inset-0 z-0 bg-canvas/60" />
+        <div className="max-w-5xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -935,7 +949,7 @@ function FleetStackedSection({
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"],
+    offset: ["start center", "end center"],
   });
 
   const n = fleet.length;
@@ -945,11 +959,11 @@ function FleetStackedSection({
     <div
       ref={containerRef}
       className="hidden md:block relative"
-      style={{ height: `calc(100vh + ${transitions * 60}vh)` }}
+      style={{ height: `${transitions * 60}vh` }}
     >
-      <div className="sticky top-0 h-screen flex items-center gap-12 px-6 max-w-7xl mx-auto">
-        {/* Left — text (sticky, stays visible) */}
-        <div className="w-[35%] shrink-0">
+      <div className="sticky top-20 flex items-start gap-12 px-6 max-w-7xl mx-auto">
+        {/* Left — text (fixed, stays visible) */}
+        <div className="w-[35%] shrink-0 pointer-events-auto">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -975,8 +989,8 @@ function FleetStackedSection({
           </motion.div>
         </div>
 
-        {/* Right — stacked cards */}
-        <div className="flex-1 relative h-[55vh]">
+        {/* Right — stacked cards (fixed) */}
+        <div className="flex-1 relative h-[55vh] pointer-events-auto">
           {fleet.map((vehicle, i) => (
             <div key={i} className="absolute inset-0 flex flex-col items-center justify-start">
               <FleetStackCard
