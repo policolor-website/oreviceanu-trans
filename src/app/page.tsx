@@ -260,11 +260,17 @@ export default function HomePage() {
       {/* ============================================ */}
       <section className="relative h-[110vh] bg-ink">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+          {/* Background image behind 3D model */}
+          <div
+            className="absolute inset-0 z-0 bg-cover bg-center"
+            style={{ backgroundImage: "url(/background-hero.webp)" }}
+          />
+          <div className="absolute inset-0 z-0 bg-ink/60" />
           <BuildingHero3D onDoorsOpen={handleDoorsOpen} />
           <div className="absolute inset-0 z-[1] bg-gradient-to-b from-ink/40 via-transparent to-ink/80 pointer-events-none" />
 
           <div
-            className="absolute top-[20%] left-1/2 -translate-x-1/2 z-10 pointer-events-none transition-opacity duration-700"
+            className="absolute top-[35%] left-1/2 -translate-x-1/2 z-10 pointer-events-none transition-opacity duration-700"
             style={{ opacity: heroTextOpacity }}
           >
             <motion.div
@@ -279,7 +285,7 @@ export default function HomePage() {
           </div>
 
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-4xl text-center px-6 pointer-events-none transition-opacity duration-700"
+            className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-4xl text-center px-6 pointer-events-none transition-opacity duration-700"
             style={{ opacity: heroTextOpacity }}
           >
             <motion.h1
@@ -302,7 +308,7 @@ export default function HomePage() {
           </div>
 
           <div
-            className="absolute top-[68%] left-1/2 -translate-x-1/2 z-10 w-full max-w-4xl text-center px-6 pointer-events-none transition-opacity duration-700"
+            className="absolute top-[78%] left-1/2 -translate-x-1/2 z-10 w-full max-w-4xl text-center px-6 pointer-events-none transition-opacity duration-700"
             style={{ opacity: heroTextOpacity }}
           >
             <motion.div
@@ -573,6 +579,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ============================================ */}
+      {/* SERVICES — 4 cards */}
+      {/* ============================================ */}
+      <section className="py-24 px-6 bg-canvas">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">What we offer</span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
+              Our <span className="neon-text">services</span>
+            </h2>
+            <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
+              We specialize in first-class chauffeur service — focused on comfort, punctuality and professionalism.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {services.map((srv, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link
+                  href="/services"
+                  className="group block glass rounded-2xl overflow-hidden hover:border-electric/30 transition-all duration-500 h-full"
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    <img
+                      src={srv.image}
+                      alt={srv.title}
+                      className="w-full h-full object-cover bw-image group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+                    <div className="absolute bottom-4 left-4 flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-electric/20 backdrop-blur-sm flex items-center justify-center">
+                        <srv.icon size={20} className="text-electric" />
+                      </div>
+                      <h3 className="font-display text-lg font-bold text-cream">{srv.title}</h3>
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <p className="text-sm text-ash leading-relaxed mb-4">{srv.desc}</p>
+                    <span className="text-white text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Learn more <ArrowRight size={14} />
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-8 px-6 bg-canvas">
         <div className="max-w-5xl mx-auto">
           <motion.div
@@ -694,67 +761,6 @@ export default function HomePage() {
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================ */}
-      {/* SERVICES — 4 cards */}
-      {/* ============================================ */}
-      <section className="py-24 px-6 bg-canvas">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: -40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">What we offer</span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              Our <span className="neon-text">services</span>
-            </h2>
-            <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
-              We specialize in first-class chauffeur service — focused on comfort, punctuality and professionalism.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map((srv, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
-                <Link
-                  href="/services"
-                  className="group block glass rounded-2xl overflow-hidden hover:border-electric/30 transition-all duration-500 h-full"
-                >
-                  <div className="relative h-56 overflow-hidden">
-                    <img
-                      src={srv.image}
-                      alt={srv.title}
-                      className="w-full h-full object-cover bw-image group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-                    <div className="absolute bottom-4 left-4 flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-electric/20 backdrop-blur-sm flex items-center justify-center">
-                        <srv.icon size={20} className="text-electric" />
-                      </div>
-                      <h3 className="font-display text-lg font-bold text-cream">{srv.title}</h3>
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <p className="text-sm text-ash leading-relaxed mb-4">{srv.desc}</p>
-                    <span className="text-white text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Learn more <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
@@ -941,7 +947,7 @@ function FleetStackedSection({
       className="hidden md:block relative"
       style={{ height: `${transitions * 120}vh` }}
     >
-      <div className="sticky top-0 h-screen flex items-center gap-12 px-6 max-w-7xl mx-auto">
+      <div className="sticky top-0 h-[65vh] flex items-start gap-12 px-6 max-w-7xl mx-auto pt-12">
         {/* Left — text (sticky, stays visible) */}
         <div className="w-[35%] shrink-0">
           <motion.div
@@ -959,13 +965,20 @@ function FleetStackedSection({
             <p className="text-lg text-ash mt-6">
               From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.
             </p>
+            <div className="mt-8 rounded-2xl overflow-hidden border border-white/10">
+              <img
+                src="/welcome.webp"
+                alt="Welcome to TrendMyDrive"
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </motion.div>
         </div>
 
         {/* Right — stacked cards */}
         <div className="flex-1 relative h-full overflow-hidden">
           {fleet.map((vehicle, i) => (
-            <div key={i} className="absolute inset-0 flex items-center justify-center">
+            <div key={i} className="absolute inset-0 flex flex-col items-center justify-start">
               <FleetStackCard
                 vehicle={vehicle}
                 index={i}
