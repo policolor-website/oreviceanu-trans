@@ -71,7 +71,14 @@
     "badge": "Réservation facile",
     "title": "Votre chauffeur en quelques",
     "highlight": "étapes",
-    "description": "Saisissez votre trajet, recevez un prix fixe transparent et détendez-vous. Pas d'attente, pas de frais cachés — juste un chauffeur professionnel prêt à l'heure."
+    "description": "Saisissez votre trajet, recevez un prix fixe transparent et détendez-vous. Pas d'attente, pas de frais cachés — juste un chauffeur professionnel prêt à l'heure.",
+    "step1Title": "Saisissez votre trajet",
+    "step1Desc": "Lieu de prise en charge, destination, date et heure — dites-nous où et quand.",
+    "step2Title": "Obtenez un prix fixe",
+    "step2Desc": "Tarification transparente avec tous les services inclus. Aucune surprise, aucun frais caché.",
+    "step3Title": "Détendez-vous et voyagez",
+    "step3Desc": "Votre chauffeur arrive à l'heure et vous emmène en toute sécurité à destination.",
+    "cta": "Réserver maintenant"
   },
   "WhyUs": {
     "badge": "Pourquoi nous choisir",

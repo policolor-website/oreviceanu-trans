@@ -71,7 +71,14 @@
     "badge": "Einfache Buchung",
     "title": "In wenigen Schritten zu Ihrem",
     "highlight": "Fahrer",
-    "description": "Geben Sie Ihre Route ein, erhalten Sie einen transparenten Festpreis und lehnen Sie sich zurück. Kein Warten, keine versteckten Kosten — nur ein professioneller Fahrer, der pünktlich bereitsteht."
+    "description": "Geben Sie Ihre Route ein, erhalten Sie einen transparenten Festpreis und lehnen Sie sich zurück. Kein Warten, keine versteckten Kosten — nur ein professioneller Fahrer, der pünktlich bereitsteht.",
+    "step1Title": "Route eingeben",
+    "step1Desc": "Abholort, Ziel, Datum und Uhrzeit — sagen Sie uns, wohin und wann.",
+    "step2Title": "Festpreis erhalten",
+    "step2Desc": "Transparente Preise inklusive aller Leistungen. Keine Überraschungen, keine versteckten Kosten.",
+    "step3Title": "Zurücklehnen und reisen",
+    "step3Desc": "Ihr Fahrer kommt pünktlich und bringt Sie sicher an Ihr Ziel.",
+    "cta": "Jetzt buchen"
   },
   "WhyUs": {
     "badge": "Warum wir",

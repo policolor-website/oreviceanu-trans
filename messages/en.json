@@ -71,7 +71,14 @@
     "badge": "Easy booking",
     "title": "In a few steps to your",
     "highlight": "chauffeur",
-    "description": "Enter your route, receive a transparent fixed price and lean back. No waiting, no hidden costs — just a professional chauffeur ready on time."
+    "description": "Enter your route, receive a transparent fixed price and lean back. No waiting, no hidden costs — just a professional chauffeur ready on time.",
+    "step1Title": "Enter your route",
+    "step1Desc": "Pickup location, destination, date and time — tell us where and when.",
+    "step2Title": "Get a fixed price",
+    "step2Desc": "Transparent pricing with all services included. No surprises, no hidden fees.",
+    "step3Title": "Relax and travel",
+    "step3Desc": "Your chauffeur arrives on time and takes you safely to your destination.",
+    "cta": "Book now"
   },
   "WhyUs": {
     "badge": "Why choose us",

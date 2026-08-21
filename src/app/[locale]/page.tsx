@@ -28,21 +28,9 @@ import { brand } from "@/lib/brand";
 // ============================================
 
 const howItWorks = [
-  {
-    icon: MapPin,
-    title: "Enter your route",
-    desc: "Pickup location, destination, date and time — tell us where and when.",
-  },
-  {
-    icon: Star,
-    title: "Get a fixed price",
-    desc: "Transparent pricing with all services included. No surprises, no hidden fees.",
-  },
-  {
-    icon: Car,
-    title: "Relax and travel",
-    desc: "Your chauffeur arrives on time and takes you safely to your destination.",
-  },
+  { icon: MapPin, titleKey: "step1Title", descKey: "step1Desc" },
+  { icon: Star, titleKey: "step2Title", descKey: "step2Desc" },
+  { icon: Car, titleKey: "step3Title", descKey: "step3Desc" },
 ];
 
 const whyUs = [
@@ -654,14 +642,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8 px-6 bg-canvas relative overflow-hidden">
+      <section className="py-24 px-6 bg-canvas relative overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: "url(/steps.webp)" }}
         />
         <div className="absolute inset-0 z-0 bg-canvas/60" />
-        <div className="max-w-5xl mx-auto relative z-10">
+        <div className="max-w-6xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -678,25 +666,63 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Cinematic step cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {howItWorks.map((step, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.5, delay: i * 0.15 }}
-                className="text-center"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{
+                  duration: 0.8,
+                  delay: i * 0.6,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="glass rounded-2xl p-8 relative group"
               >
-                <div className="w-16 h-16 rounded-2xl bg-electric/10 flex items-center justify-center mb-6 mx-auto">
-                  <step.icon size={28} className="text-electric" />
+                {/* Connector line between cards (desktop only) */}
+                {i < 2 && (
+                  <div className="hidden md:block absolute top-1/2 -right-4 md:-right-4 w-8 h-px bg-gradient-to-r from-electric/40 to-transparent z-10" />
+                )}
+
+                {/* Big white number */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.3 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: i * 0.6 + 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="absolute -top-6 -left-2 font-display text-8xl font-black text-white/90 select-none leading-none"
+                >
+                  0{i + 1}
+                </motion.div>
+
+                <div className="relative z-10 mt-8">
+                  <div className="w-14 h-14 rounded-xl bg-electric/10 flex items-center justify-center mb-6 group-hover:bg-electric/20 transition-colors duration-500">
+                    <step.icon size={26} className="text-electric" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-cream mb-3">{tEasy(step.titleKey as any)}</h3>
+                  <p className="text-sm text-ash leading-relaxed">{tEasy(step.descKey as any)}</p>
                 </div>
-                <div className="font-display text-5xl font-bold text-stone mb-4">0{i + 1}</div>
-                <h3 className="font-display text-xl font-bold text-cream mb-3">{step.title}</h3>
-                <p className="text-sm text-ash leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}
           </div>
+
+          {/* CTA button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 2.2 }}
+            className="text-center mt-12"
+          >
+            <Link
+              href="/booking"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors duration-300"
+            >
+              {tEasy("cta")} <ArrowRight size={18} />
+            </Link>
+          </motion.div>
         </div>
       </section>
 

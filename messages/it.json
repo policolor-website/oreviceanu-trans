@@ -71,7 +71,14 @@
     "badge": "Prenotazione facile",
     "title": "In pochi passi al tuo",
     "highlight": "autista",
-    "description": "Inserisci il tuo percorso, ricevi un prezzo fisso trasparente e rilassati. Nessuna attesa, nessun costo nascosto — solo un autista professionista pronto in orario."
+    "description": "Inserisci il tuo percorso, ricevi un prezzo fisso trasparente e rilassati. Nessuna attesa, nessun costo nascosto — solo un autista professionista pronto in orario.",
+    "step1Title": "Inserisci il percorso",
+    "step1Desc": "Luogo di ritiro, destinazione, data e ora — dicci dove e quando.",
+    "step2Title": "Ottieni un prezzo fisso",
+    "step2Desc": "Prezzi trasparenti con tutti i servizi inclusi. Nessuna sorpresa, nessun costo nascosto.",
+    "step3Title": "Rilassati e viaggia",
+    "step3Desc": "Il tuo autista arriva puntuale e ti porta in sicurezza a destinazione.",
+    "cta": "Prenota ora"
   },
   "WhyUs": {
     "badge": "Perché sceglierci",
