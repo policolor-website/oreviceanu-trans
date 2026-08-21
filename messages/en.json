@@ -184,6 +184,55 @@
     "statusCompleted": "Completed",
     "statusCancelled": "Cancelled"
   },
+  "About": {
+    "badge": "About us",
+    "title": "TrendMyDrive — Premium chauffeur service since 2020",
+    "subtitle": "Your comfort and safety are our top priority",
+    "intro": "At TrendMyDrive, we redefine airport travel across Munich, Germany, and Europe — with first-class chauffeur service focused on comfort, reliability, and style. Whether arrival or departure: our promise is a smooth, stress-free ride from your doorstep to any major European airport — and back.",
+    "statsPassengers": "Happy passengers",
+    "statsRating": "Rating",
+    "statsRatingDesc": "Customer love the travel experience",
+    "statsDrivers": "Professional chauffeurs",
+    "statsCities": "Cities covered",
+    "statsVehicles": "Vehicles",
+    "whyTitle": "Why customers stay with us",
+    "whyText": "We started in 2020 with just a few vehicles and have grown through recommendations, not advertising. The reason is simple: the car is there when it's supposed to be. Once you experience that reliability, you call us again next time.",
+    "journeyTitle": "Where comfort meets class",
+    "journeyText": "Travel with confidence and comfort. TrendMyDrive offers first-class chauffeur service with professional drivers, luxury vehicles, and seamless transfers to major airports and destinations across Germany and Europe — on every kilometer of the journey.",
+    "learnMore": "Learn more",
+    "faqBadge": "FAQ",
+    "faqTitle": "Questions & answers",
+    "faq": [
+      {
+        "question": "When did TrendMyDrive start?",
+        "answer": "In 2020. We began with a small fleet in Munich and have since focused on premium chauffeur service. We've grown primarily through recommendations from business clients and hotels."
+      },
+      {
+        "question": "How do you select your chauffeurs?",
+        "answer": "Personally. We look at driving experience, local knowledge, and appearance — and we train them afterwards. Every chauffeur is regularly vetted. Our drivers know Munich from everyday experience, not from a navigation device."
+      },
+      {
+        "question": "Where is TrendMyDrive based?",
+        "answer": "Our base is Munich. From here we cover the entire region and handle long-distance trips across Germany and neighboring countries. Our dispatch team is reachable by phone, even outside office hours."
+      },
+      {
+        "question": "What vehicles do you have?",
+        "answer": "Mercedes E-Class, S-Class, and V-Class for individuals and small groups. This covers everything from a single trip to a business meeting to a family transfer."
+      },
+      {
+        "question": "Who do you drive for?",
+        "answer": "Predominantly business travelers, companies, and international guests. We also serve private clients for weddings, day tours, and special occasions. The standard is the same for both: punctual, discreet, no discussion about the price afterwards."
+      },
+      {
+        "question": "Can I book TrendMyDrive as a corporate client?",
+        "answer": "Yes. For companies, we set up a client profile with stored preferences and monthly invoicing. Assistants then book by phone or email without re-entering details each time. Contact us about a framework agreement."
+      }
+    ],
+    "ctaTitle": "Get to know us on your next ride",
+    "ctaDesc": "Experience the TrendMyDrive difference — book your first ride today.",
+    "ctaContact": "Get in touch",
+    "ctaBook": "Book now"
+  },
   "Footer": {
     "tagline": "Premium chauffeur service — 24/7 airport transfers and business rides across Germany.",
     "fleet": "Fleet",

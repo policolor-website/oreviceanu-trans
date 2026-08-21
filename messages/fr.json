@@ -184,6 +184,55 @@
     "statusCompleted": "Terminé",
     "statusCancelled": "Annulé"
   },
+  "About": {
+    "badge": "À propos de nous",
+    "title": "TrendMyDrive — Service de chauffeur premium depuis 2020",
+    "subtitle": "Votre confort et votre sécurité sont notre priorité absolue",
+    "intro": "Chez TrendMyDrive, nous redéfinissons le voyage aéroportuaire à travers Munich, l'Allemagne et l'Europe — avec un service de chauffeur haut de gamme axé sur le confort, la fiabilité et l'élégance. Que ce soit pour une arrivée ou un départ : notre promesse est un trajet fluide et sans stress de votre porte d'entrée à tout grand aéroport européen — et inversement.",
+    "statsPassengers": "Passagers satisfaits",
+    "statsRating": "Note",
+    "statsRatingDesc": "Les clients adorent l'expérience de voyage",
+    "statsDrivers": "Chauffeurs professionnels",
+    "statsCities": "Villes couvertes",
+    "statsVehicles": "Véhicules",
+    "whyTitle": "Pourquoi les clients restent avec nous",
+    "whyText": "Nous avons commencé en 2020 avec seulement quelques véhicules et avons grandi grâce aux recommandations, non à la publicité. La raison est simple : la voiture est là quand elle doit l'être. Une fois que vous avez expérimenté cette fiabilité, vous nous rappelez la prochaine fois.",
+    "journeyTitle": "Là où le confort rencontre l'élégance",
+    "journeyText": "Voyagez en toute confiance et confort. TrendMyDrive propose un service de chauffeur haut de gamme avec des chauffeurs professionnels, des véhicules de luxe et des transferts fluides vers les principaux aéroports et destinations à travers l'Allemagne et l'Europe — à chaque kilomètre du trajet.",
+    "learnMore": "En savoir plus",
+    "faqBadge": "FAQ",
+    "faqTitle": "Questions & réponses",
+    "faq": [
+      {
+        "question": "Quand TrendMyDrive a-t-il commencé ?",
+        "answer": "En 2020. Nous avons commencé avec une petite flotte à Munich et nous sommes depuis concentrés sur le service de chauffeur premium. Nous avons grandi principalement grâce aux recommandations de clients d'affaires et d'hôtels."
+      },
+      {
+        "question": "Comment sélectionnez-vous vos chauffeurs ?",
+        "answer": "Personnellement. Nous examinons l'expérience de conduite, la connaissance locale et la présentation — et nous les formons ensuite. Chaque chauffeur est régulièrement évalué. Nos chauffeurs connaissent Munich par l'expérience quotidienne, non par un appareil de navigation."
+      },
+      {
+        "question": "Où TrendMyDrive est-il basé ?",
+        "answer": "Notre base est à Munich. De là, nous couvrons toute la région et gérons les trajets longue distance à travers l'Allemagne et les pays voisins. Notre équipe de dispatch est joignable par téléphone, même en dehors des heures de bureau."
+      },
+      {
+        "question": "Quels véhicules possédez-vous ?",
+        "answer": "Mercedes E-Class, S-Class et V-Class pour les individus et les petits groupes. Cela couvre tout, d'un simple trajet à une réunion d'affaires jusqu'à un transfert familial."
+      },
+      {
+        "question": "Pour qui conduisez-vous ?",
+        "answer": "Principalement des voyageurs d'affaires, des entreprises et des invités internationaux. Nous servons également des clients privés pour des mariages, des excursions à la journée et des occasions spéciales. Le standard est le même pour les deux : ponctuel, discret, sans discussion sur le prix ensuite."
+      },
+      {
+        "question": "Puis-je réserver TrendMyDrive en tant que client entreprise ?",
+        "answer": "Oui. Pour les entreprises, nous créons un profil client avec des préférences enregistrées et une facturation mensuelle. Les assistants réservent ensuite par téléphone ou par e-mail sans avoir à ressaisir les détails à chaque fois. Contactez-nous pour un accord-cadre."
+      }
+    ],
+    "ctaTitle": "Découvrez-nous lors de votre prochain trajet",
+    "ctaDesc": "Expérimentez la différence TrendMyDrive — réservez votre premier trajet dès aujourd'hui.",
+    "ctaContact": "Nous contacter",
+    "ctaBook": "Réserver maintenant"
+  },
   "Footer": {
     "tagline": "Service de chauffeur premium — transferts aéroport 24h/24 et trajets d'affaires dans toute l'Allemagne.",
     "fleet": "Flotte",

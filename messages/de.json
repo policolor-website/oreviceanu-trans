@@ -184,6 +184,55 @@
     "statusCompleted": "Abgeschlossen",
     "statusCancelled": "Storniert"
   },
+  "About": {
+    "badge": "Über uns",
+    "title": "TrendMyDrive — Premium-Fahrerservice seit 2020",
+    "subtitle": "Ihr Komfort und Ihre Sicherheit haben bei uns oberste Priorität",
+    "intro": "Bei TrendMyDrive definieren wir Flughafenreisen in München, Deutschland und Europa neu — mit erstklassigem Fahrerservice, der auf Komfort, Zuverlässigkeit und Stil ausgerichtet ist. Ob Ankunft oder Abreise: Unser Versprechen ist eine reibungslose, stressfreie Fahrt von Ihrer Haustür bis zu jedem großen europäischen Flughafen — und zurück.",
+    "statsPassengers": "Zufriedene Passagiere",
+    "statsRating": "Bewertung",
+    "statsRatingDesc": "Kunden lieben das Reiseerlebnis",
+    "statsDrivers": "Professionelle Fahrer",
+    "statsCities": "Städte abgedeckt",
+    "statsVehicles": "Fahrzeuge",
+    "whyTitle": "Warum Kunden bei uns bleiben",
+    "whyText": "Wir starteten 2020 mit nur wenigen Fahrzeugen und sind durch Empfehlungen gewachsen, nicht durch Werbung. Der Grund ist einfach: Das Auto ist da, wenn es da sein soll. Wer diese Zuverlässigkeit einmal erlebt hat, ruft uns beim nächsten Mal wieder an.",
+    "journeyTitle": "Wo Komfort auf Klasse trifft",
+    "journeyText": "Reisen Sie mit Zuversicht und Komfort. TrendMyDrive bietet erstklassigen Fahrerservice mit professionellen Fahrern, Luxusfahrzeugen und nahtlosen Transfers zu großen Flughäfen und Zielen in ganz Deutschland und Europa — auf jedem Kilometer der Reise.",
+    "learnMore": "Mehr erfahren",
+    "faqBadge": "FAQ",
+    "faqTitle": "Fragen & Antworten",
+    "faq": [
+      {
+        "question": "Wann wurde TrendMyDrive gegründet?",
+        "answer": "Im Jahr 2020. Wir begannen mit einer kleinen Flotte in München und haben uns seitdem auf Premium-Fahrerservice konzentriert. Wir sind hauptsächlich durch Empfehlungen von Geschäftskunden und Hotels gewachsen."
+      },
+      {
+        "question": "Wie wählen Sie Ihre Fahrer aus?",
+        "answer": "Persönlich. Wir achten auf Fahrerfahrung, Ortskenntnis und Erscheinungsbild — und schulen sie anschließend. Jeder Fahrer wird regelmäßig überprüft. Unsere Fahrer kennen München aus der täglichen Praxis, nicht vom Navigationsgerät."
+      },
+      {
+        "question": "Wo hat TrendMyDrive seinen Sitz?",
+        "answer": "Unser Sitz ist München. Von hier aus decken wir die gesamte Region ab und führen Langstreckenfahrten in ganz Deutschland und den Nachbarländern durch. Unsere Disposition ist telefonisch erreichbar, auch außerhalb der Bürozeiten."
+      },
+      {
+        "question": "Welche Fahrzeuge haben Sie?",
+        "answer": "Mercedes E-Class, S-Class und V-Class für Einzelpersonen und kleine Gruppen. Damit decken wir alles ab — von einer einfachen Fahrt über ein Geschäftstreffen bis hin zu einem Familien-Transfer."
+      },
+      {
+        "question": "Für wen fahren Sie?",
+        "answer": "Überwiegend Geschäftsreisende, Unternehmen und internationale Gäste. Wir bedienen auch Privatkunden für Hochzeiten, Tagesausflüge und besondere Anlässe. Der Standard ist für beide gleich: pünktlich, diskret, keine Diskussion über den Preis danach."
+      },
+      {
+        "question": "Kann ich TrendMyDrive als Geschäftskunde buchen?",
+        "answer": "Ja. Für Unternehmen richten wir ein Kundenprofil mit gespeicherten Präferenzen und monatlicher Abrechnung ein. Assistenten buchen dann telefonisch oder per E-Mail, ohne jedes Mal Daten neu einzugeben. Kontaktieren Sie uns für einen Rahmenvertrag."
+      }
+    ],
+    "ctaTitle": "Lernen Sie uns bei Ihrer nächsten Fahrt kennen",
+    "ctaDesc": "Erleben Sie den TrendMyDrive-Unterschied — buchen Sie heute Ihre erste Fahrt.",
+    "ctaContact": "Kontakt aufnehmen",
+    "ctaBook": "Jetzt buchen"
+  },
   "Footer": {
     "tagline": "Premium-Fahrerservice — 24/7 Flughafentransfers und Geschäftsfahrten in ganz Deutschland.",
     "fleet": "Fuhrpark",

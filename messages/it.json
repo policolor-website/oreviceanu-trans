@@ -184,6 +184,55 @@
     "statusCompleted": "Completato",
     "statusCancelled": "Annullato"
   },
+  "About": {
+    "badge": "Chi siamo",
+    "title": "TrendMyDrive — Servizio autista premium dal 2020",
+    "subtitle": "Il tuo comfort e la tua sicurezza sono la nostra priorità",
+    "intro": "In TrendMyDrive, ridefiniamo i viaggi aeroportuali in tutta Monaco, Germania ed Europa — con un servizio autista di prima classe focalizzato su comfort, affidabilità ed eleganza. Che si tratti di arrivi o partenze: la nostra promessa è un viaggio fluido e senza stress dalla tua porta a qualsiasi grande aeroporto europeo — e ritorno.",
+    "statsPassengers": "Passeggeri soddisfatti",
+    "statsRating": "Valutazione",
+    "statsRatingDesc": "I clienti amano l'esperienza di viaggio",
+    "statsDrivers": "Autisti professionisti",
+    "statsCities": "Città coperte",
+    "statsVehicles": "Veicoli",
+    "whyTitle": "Perché i clienti rimangono con noi",
+    "whyText": "Abbiamo iniziato nel 2020 con solo pochi veicoli e siamo cresciuti grazie alle raccomandazioni, non alla pubblicità. Il motivo è semplice: l'auto è lì quando dovrebbe esserlo. Una volta che provi quell'affidabilità, ci chiami di nuovo la volta successiva.",
+    "journeyTitle": "Dove il comfort incontra la classe",
+    "journeyText": "Viaggia con fiducia e comfort. TrendMyDrive offre un servizio autista di prima classe con autisti professionisti, veicoli di lusso e transfer senza soluzione di continuità verso i principali aeroporti e destinazioni in tutta Germania ed Europa — in ogni chilometro del viaggio.",
+    "learnMore": "Scopri di più",
+    "faqBadge": "FAQ",
+    "faqTitle": "Domande & risposte",
+    "faq": [
+      {
+        "question": "Quando è nato TrendMyDrive?",
+        "answer": "Nel 2020. Abbiamo iniziato con una piccola flotta a Monaco e da allora ci siamo concentrati sul servizio autista premium. Siamo cresciuti principalmente grazie alle raccomandazioni dei clienti business e degli hotel."
+      },
+      {
+        "question": "Come selezionate i vostri autisti?",
+        "answer": "Personalmente. Valutiamo l'esperienza di guida, la conoscenza del territorio e l'aspetto — e li formiamo successivamente. Ogni autista viene regolarmente verificato. I nostri autisti conoscono Monaco dall'esperienza quotidiana, non da un dispositivo di navigazione."
+      },
+      {
+        "question": "Dove ha sede TrendMyDrive?",
+        "answer": "La nostra base è a Monaco. Da qui copriamo l'intera regione e gestiamo viaggi a lunga distanza in tutta Germania e nei paesi limitrofi. Il nostro team di coordinamento è raggiungibile telefonicamente, anche fuori dall'orario di ufficio."
+      },
+      {
+        "question": "Quali veicoli avete?",
+        "answer": "Mercedes E-Class, S-Class, and V-Class per individui e piccoli gruppi. Questo copre tutto, da un singolo viaggio a una riunione business fino a un transfer familiare."
+      },
+      {
+        "question": "Per chi guidate?",
+        "answer": "Predominantemente viaggiatori business, aziende e ospiti internazionali. Serviamo anche clienti privati per matrimoni, gite giornaliere e occasioni speciali. Lo standard è lo stesso per entrambi: puntuali, discreti, nessuna discussione sul prezzo a posteriori."
+      },
+      {
+        "question": "Posso prenotare TrendMyDrive come cliente aziendale?",
+        "answer": "Sì. Per le aziende, creiamo un profilo cliente con preferenze memorizzate e fatturazione mensile. Gli assistenti prenotano poi per telefono o email senza reinserire i dettagli ogni volta. Contattaci per un accordo quadro."
+      }
+    ],
+    "ctaTitle": "Conoscici nel tuo prossimo viaggio",
+    "ctaDesc": "Scopri la differenza TrendMyDrive — prenota il tuo primo viaggio oggi.",
+    "ctaContact": "Contattaci",
+    "ctaBook": "Prenota ora"
+  },
   "Footer": {
     "tagline": "Servizio autista premium — transfer aeroporto 24/7 e viaggi business in tutta la Germania.",
     "fleet": "Flotta",
