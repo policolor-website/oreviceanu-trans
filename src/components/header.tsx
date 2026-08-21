@@ -23,8 +23,6 @@ const navItems: NavItem[] = [
       { href: "/fleet/s-class", label: "First Class Limousine" },
       { href: "/fleet/e-class", label: "Business Class Limousine" },
       { href: "/fleet/v-class", label: "Business Van" },
-      { href: "/fleet/sprinter", label: "Group Shuttle" },
-      { href: "/fleet/coach", label: "Coach with Driver" },
     ],
   },
   {

@@ -7,8 +7,6 @@ const VEHICLE_TARIFFS: Record<string, { perKm: number; base: number; name: strin
   "S-Class": { perKm: 4.5, base: 15, name: "Mercedes S-Class" },
   "E-Class": { perKm: 3.0, base: 10, name: "Mercedes E-Class" },
   "V-Class": { perKm: 3.5, base: 12, name: "Mercedes V-Class" },
-  Sprinter: { perKm: 4.0, base: 20, name: "Mercedes Sprinter" },
-  Coach: { perKm: 5.0, base: 30, name: "Large Coach" },
 };
 
 // Night surcharge (22:00 - 06:00) = +25%

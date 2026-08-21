@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -99,8 +99,6 @@ const fleet = [
   { name: "Mercedes S-Class", class: "First Class Limousine", passengers: 3, luggage: 3, image: "/fleet/veh-s-klasse.webp" },
   { name: "Mercedes E-Class", class: "Business Class Limousine", passengers: 3, luggage: 3, image: "/fleet/veh-e-klasse.webp" },
   { name: "Mercedes V-Class", class: "Business Van", passengers: 7, luggage: 7, image: "/fleet/veh-v-klasse.webp" },
-  { name: "Mercedes Sprinter", class: "Group Shuttle", passengers: 20, luggage: 20, image: "/fleet/veh-sprinter.webp" },
-  { name: "Large Coach", class: "Travel Coach", passengers: 50, luggage: 50, image: "/fleet/veh-reisebus.webp" },
 ];
 
 const routes = [
@@ -160,7 +158,7 @@ const faqItems = [
   },
   {
     q: "What vehicle types do you offer?",
-    a: "Mercedes E-Class and S-Class for up to three passengers, V-Class for up to six people with luggage, a Sprinter for 20 passengers and a 50-seat coach for larger groups.",
+    a: "Mercedes E-Class and S-Class for up to three passengers, V-Class for up to six people with luggage.",
   },
   {
     q: "Are your services available 24/7?",
@@ -341,7 +339,7 @@ export default function HomePage() {
       {/* ============================================ */}
       {/* BOOKING BAR — wide linear form below hero */}
       {/* ============================================ */}
-      <section className="bg-canvas px-6 py-12 relative z-20">
+      <section className="bg-canvas px-6 py-4 relative z-20">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -395,8 +393,6 @@ export default function HomePage() {
                   <option>E-Class</option>
                   <option>S-Class</option>
                   <option>V-Class</option>
-                  <option>Sprinter</option>
-                  <option>Coach</option>
                 </select>
               </div>
               <div className="md:col-span-1">
@@ -515,7 +511,69 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-      <section className="py-24 px-6 bg-canvas">
+      {/* ============================================ */}
+      {/* FLEET — 5 vehicles (moved below booking bar) */}
+      {/* ============================================ */}
+      <section className="py-4 px-6 bg-surface">
+        <div className="max-w-7xl mx-auto">
+          {/* Mobile header */}
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+            className="md:hidden text-center mb-16"
+          >
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Our vehicles</span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
+              Our <span className="neon-text">fleet</span>
+            </h2>
+            <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
+              From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.
+            </p>
+          </motion.div>
+
+          {/* Desktop: split layout — text left, stacked cards right */}
+          <FleetStackedSection fleet={fleet} />
+
+          {/* Grid — mobile */}
+          <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {fleet.map((vehicle, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="glass rounded-2xl overflow-hidden"
+              >
+                <div className="relative h-40 overflow-hidden bg-ink/50">
+                  <img
+                    src={vehicle.image}
+                    alt={vehicle.name}
+                    className="w-full h-full object-cover bw-image"
+                  />
+                  <div className="absolute inset-0 bg-ink/30" />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display text-lg font-bold text-cream mb-1">{vehicle.name}</h3>
+                  <p className="text-xs text-white/60 uppercase tracking-wide mb-4">{vehicle.class}</p>
+                  <div className="flex items-center gap-4 text-xs text-ash">
+                    <span className="flex items-center gap-1">
+                      <Users size={14} className="text-electric" /> {vehicle.passengers}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Plane size={14} className="text-electric" /> {vehicle.luggage}
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8 px-6 bg-canvas">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: -40 }}
@@ -702,63 +760,6 @@ export default function HomePage() {
       </section>
 
       {/* ============================================ */}
-      {/* FLEET — 5 vehicles */}
-      {/* ============================================ */}
-      <section className="py-24 px-6 bg-surface">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: -40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Our vehicles</span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              Our <span className="neon-text">fleet</span>
-            </h2>
-            <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
-              From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            {fleet.map((vehicle, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="glass rounded-2xl overflow-hidden hover:border-electric/30 transition-all duration-500"
-              >
-                <div className="relative h-40 overflow-hidden bg-ink/50">
-                  <img
-                    src={vehicle.image}
-                    alt={vehicle.name}
-                    className="w-full h-full object-cover bw-image"
-                  />
-                  <div className="absolute inset-0 bg-ink/30" />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-display text-lg font-bold text-cream mb-1">{vehicle.name}</h3>
-                  <p className="text-xs text-white/60 uppercase tracking-wide mb-4">{vehicle.class}</p>
-                  <div className="flex items-center gap-4 text-xs text-ash">
-                    <span className="flex items-center gap-1">
-                      <Users size={14} className="text-electric" /> {vehicle.passengers}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Plane size={14} className="text-electric" /> {vehicle.luggage}
-                    </span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================ */}
       {/* CTA — Book your chauffeur */}
       {/* ============================================ */}
       <section className="py-32 px-6 bg-canvas relative overflow-hidden">
@@ -914,5 +915,157 @@ export default function HomePage() {
         </motion.div>
       </section>
     </main>
+  );
+}
+
+/* ============================================ */
+/* FleetStackedSection — stacked cards scroll  */
+/* ============================================ */
+function FleetStackedSection({
+  fleet,
+}: {
+  fleet: { name: string; class: string; passengers: number; luggage: number; image: string }[];
+}) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  const n = fleet.length;
+  const transitions = Math.max(n - 1, 1);
+
+  return (
+    <div
+      ref={containerRef}
+      className="hidden md:block relative"
+      style={{ height: `${transitions * 120}vh` }}
+    >
+      <div className="sticky top-0 h-screen flex items-center gap-12 px-6 max-w-7xl mx-auto">
+        {/* Left — text (sticky, stays visible) */}
+        <div className="w-[35%] shrink-0">
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">
+              Our vehicles
+            </span>
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-cream leading-tight">
+              Our <span className="neon-text">fleet</span>
+            </h2>
+            <p className="text-lg text-ash mt-6">
+              From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Right — stacked cards */}
+        <div className="flex-1 relative h-full overflow-hidden">
+          {fleet.map((vehicle, i) => (
+            <div key={i} className="absolute inset-0 flex items-center justify-center">
+              <FleetStackCard
+                vehicle={vehicle}
+                index={i}
+                total={n}
+                transitions={transitions}
+                progress={scrollYProgress}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FleetStackCard({
+  vehicle,
+  index,
+  transitions,
+  progress,
+}: {
+  vehicle: { name: string; class: string; passengers: number; luggage: number; image: string };
+  index: number;
+  total: number;
+  transitions: number;
+  progress: ReturnType<typeof useScroll>["scrollYProgress"];
+}) {
+  // Card 0 is visible from the start at y=0
+  // Card i (i>0) slides up from y=offset to y=0 during segment [(i-1)/transitions, i/transitions]
+  const segStart = (index - 1) / transitions;
+  const segEnd = index / transitions;
+
+  // Entry animation: slide up from below + fade in
+  const y = useTransform(progress, [segStart, segEnd], [400, 0]);
+  const opacity = useTransform(progress, [segStart, segEnd * 0.9], [0, 1]);
+
+  // Card 0: always at y=0, fully visible
+  const finalY = index === 0 ? 0 : y;
+  const finalOpacity = index === 0 ? 1 : opacity;
+
+  return (
+    <motion.div
+      style={{
+        y: finalY,
+        opacity: finalOpacity,
+        zIndex: index,
+      }}
+      className="w-full max-w-lg"
+    >
+      <div
+        className="glass rounded-3xl overflow-hidden border border-white/10"
+        style={{
+          boxShadow: "0 25px 80px -20px rgba(0,0,0,0.8), 0 0 40px rgba(57,255,20,0.05)",
+        }}
+      >
+        {/* Image */}
+        <div className="relative h-72 md:h-80 overflow-hidden bg-ink/50">
+          <img
+            src={vehicle.image}
+            alt={vehicle.name}
+            className="w-full h-full object-cover bw-image"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
+          {/* Class badge */}
+          <div className="absolute top-4 left-4 px-3 py-1.5 bg-ink/80 backdrop-blur-sm rounded-full border border-white/10">
+            <span className="text-xs text-electric uppercase tracking-wider font-semibold">
+              {vehicle.class}
+            </span>
+          </div>
+          {/* Vehicle number */}
+          <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-ink/80 backdrop-blur-sm border border-white/10 flex items-center justify-center">
+            <span className="text-sm font-bold text-white/80">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="p-8 md:p-10">
+          <h3 className="font-display text-2xl md:text-3xl font-bold text-cream mb-2">
+            {vehicle.name}
+          </h3>
+          <p className="text-sm text-white/50 uppercase tracking-wide mb-6">{vehicle.class}</p>
+
+          <div className="flex items-center gap-8 text-sm text-ash">
+            <span className="flex items-center gap-2">
+              <Users size={18} className="text-electric" />
+              <span>
+                <span className="text-cream font-bold">{vehicle.passengers}</span> Passengers
+              </span>
+            </span>
+            <span className="flex items-center gap-2">
+              <Plane size={18} className="text-electric" />
+              <span>
+                <span className="text-cream font-bold">{vehicle.luggage}</span> Luggage
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </motion.div>
   );
 }

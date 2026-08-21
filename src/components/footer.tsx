@@ -26,8 +26,6 @@ export default function Footer() {
               <li><Link href="/fleet/s-class" className="text-sm text-ash hover:text-white transition-colors">First Class Limousine</Link></li>
               <li><Link href="/fleet/e-class" className="text-sm text-ash hover:text-white transition-colors">Business Class Limousine</Link></li>
               <li><Link href="/fleet/v-class" className="text-sm text-ash hover:text-white transition-colors">Business Van</Link></li>
-              <li><Link href="/fleet/sprinter" className="text-sm text-ash hover:text-white transition-colors">Group Shuttle</Link></li>
-              <li><Link href="/fleet/coach" className="text-sm text-ash hover:text-white transition-colors">Coach with Driver</Link></li>
             </ul>
           </div>
 
