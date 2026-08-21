@@ -75,7 +75,17 @@ export default function Footer() {
         <div className="h-px w-full mb-8 bg-white/10" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-stone">
-            © {new Date().getFullYear()} {brand.name}. {t("rights")}
+            © {new Date().getFullYear()} {brand.name}. {t("rights")}{" "}
+            <span className="text-stone/60">·</span>{" "}
+            <a
+              href="https://forsite.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-electric hover:text-electric/80 transition-colors"
+              aria-label="FORSITE.RO — Web Design & Development"
+            >
+              Created &amp; Designed by FORSITE.RO
+            </a>
           </p>
           <div className="flex items-center gap-6">
             <Link href="/" className="text-xs text-stone hover:text-white transition-colors">{tNav("home")}</Link>
