@@ -81,7 +81,7 @@ export default function Footer() {
               href="https://forsite.ro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-electric hover:text-electric/80 transition-colors"
+              className="text-white hover:text-white/70 transition-colors"
               aria-label="FORSITE.RO — Web Design & Development"
             >
               Created &amp; Designed by FORSITE.RO
