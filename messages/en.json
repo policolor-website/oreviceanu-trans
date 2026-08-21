@@ -1,0 +1,579 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About us",
+    "fleet": "Fleet",
+    "services": "Services",
+    "contact": "Contact",
+    "bookNow": "Book now",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "fleetOverview": "Overview",
+    "fleetSClass": "First Class Limousine",
+    "fleetEClass": "Business Class Limousine",
+    "fleetVClass": "Business Van",
+    "serviceAirport": "Airport Transfer",
+    "serviceChauffeur": "Chauffeur Service",
+    "serviceDiplomatic": "Diplomatic Chauffeur",
+    "serviceGroup": "Group Transfer",
+    "serviceDayTours": "Day Tours",
+    "serviceEvent": "Event Transfer",
+    "serviceFair": "Trade Fair Transfer",
+    "servicePrices": "Prices & Tariffs",
+    "allServices": "All services"
+  },
+  "Hero": {
+    "badge": "24-hour airport transfer - Professional chauffeurs",
+    "title": "TrendMyDrive",
+    "subtitle": "Exclusive airport transfers in Munich, Frankfurt, Berlin, Cologne/Bonn, Hamburg, Düsseldorf & more",
+    "aboutUs": "About us",
+    "ourServices": "Our services",
+    "scroll": "Scroll"
+  },
+  "Booking": {
+    "pickup": "Pickup",
+    "pickupPlaceholder": "Airport, hotel, address...",
+    "destination": "Destination",
+    "destinationPlaceholder": "Where to?",
+    "date": "Date",
+    "time": "Time",
+    "passengers": "Passengers",
+    "vehicle": "Vehicle",
+    "getPrice": "Get price",
+    "reserveNow": "Reserve now"
+  },
+  "Fleet": {
+    "badge": "Our vehicles",
+    "title": "Our",
+    "highlight": "fleet",
+    "description": "From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.",
+    "passengers": "Passengers",
+    "luggage": "Luggage"
+  },
+  "Services": {
+    "badge": "What we offer",
+    "title": "Our",
+    "highlight": "services",
+    "description": "We specialize in first-class chauffeur service — focused on comfort, punctuality and professionalism.",
+    "learnMore": "Learn more",
+    "airportTitle": "Airport Transfer",
+    "airportDesc": "Smooth, punctual transfers to and from all major European airports.",
+    "chauffeurTitle": "Chauffeur Service",
+    "chauffeurDesc": "Travel in comfort and elegance in our fleet of premium vehicles with professional chauffeurs.",
+    "dayToursTitle": "Day Tours",
+    "dayToursDesc": "Early morning departure or late arrival — we're on the road for you around the clock.",
+    "groupTitle": "Group Transfer",
+    "groupDesc": "From minibus to coach — reliable transport with driver for groups of any size."
+  },
+  "EasyBooking": {
+    "badge": "Easy booking",
+    "title": "In a few steps to your",
+    "highlight": "chauffeur",
+    "description": "Enter your route, receive a transparent fixed price and lean back. No waiting, no hidden costs — just a professional chauffeur ready on time."
+  },
+  "WhyUs": {
+    "badge": "Why choose us",
+    "title": "Travel with",
+    "highlight": "confidence",
+    "faqBadge": "FAQ",
+    "faqTitle": "Questions & answers",
+    "featuresTitle": "What you get"
+  },
+  "CTA": {
+    "title": "Book your chauffeur",
+    "description": "Ready for a first-class ride? Get your fixed price now.",
+    "button": "Get started"
+  },
+  "Routes": {
+    "badge": "Popular routes",
+    "title": "Routes we drive",
+    "highlight": "regularly",
+    "description": "From Munich to all major airports and cities in Germany and neighboring countries."
+  },
+  "FinalCTA": {
+    "title": "Ready for your journey?",
+    "description": "Book now or get in touch — we're here 24/7.",
+    "bookNow": "Book now",
+    "contact": "Get in touch"
+  },
+  "Auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to manage your bookings",
+    "registerTitle": "Create your account",
+    "registerSubtitle": "Book and manage your chauffeur rides",
+    "fullName": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "Min. 6 characters",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account...",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "loginFailed": "Login failed",
+    "registerFailed": "Registration failed"
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "description": "Review your booking and complete your details.",
+    "backToHome": "Back to home",
+    "yourBooking": "Your booking",
+    "pickup": "Pickup",
+    "destination": "Destination",
+    "date": "Date",
+    "time": "Time",
+    "vehicle": "Vehicle",
+    "passengers": "Passengers",
+    "distance": "Distance",
+    "duration": "Duration",
+    "rate": "Rate",
+    "total": "Total",
+    "extraInfo": "Extra info",
+    "guest": "Guest",
+    "guestDesc": "Book without an account. You'll receive a confirmation by email.",
+    "loginDesc": "Sign in to access your booking history and invoices.",
+    "registerDesc": "Create an account for booking history, invoices, and faster checkout.",
+    "signedIn": "Signed in",
+    "signedInDesc": "Your booking will be saved to your account. Review the details and continue to payment.",
+    "continueToPayment": "Continue to payment",
+    "fillAllFields": "Please fill in all fields.",
+    "fillEmailPassword": "Please fill in email and password.",
+    "fillNamePhone": "Please enter your full name and phone.",
+    "securePayment": "Secure payment with SSL encryption",
+    "freeCancellation": "Free cancellation up to 24h before pickup",
+    "support": "24/7 customer support"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "totalBookings": "Total bookings",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "totalSpent": "Total spent",
+    "newBooking": "New booking",
+    "newBookingDesc": "Need another ride? Book a chauffeur in just a few clicks.",
+    "bookNow": "Book now",
+    "bookingHistory": "Booking history",
+    "noBookings": "No bookings yet",
+    "bookFirstRide": "Book your first ride",
+    "bookedOn": "Booked on",
+    "status": "Status",
+    "route": "Route",
+    "price": "Price",
+    "pickupDate": "Pickup date",
+    "pickupTime": "Pickup time",
+    "vehicle": "Vehicle",
+    "distance": "Distance",
+    "extraInfo": "Extra info",
+    "profile": "Profile",
+    "memberSince": "Member since",
+    "invoices": "Invoices",
+    "noInvoices": "No invoices yet"
+  },
+  "Footer": {
+    "tagline": "Premium chauffeur service — 24/7 airport transfers and business rides across Germany.",
+    "fleet": "Fleet",
+    "services": "Services",
+    "company": "Company",
+    "contact": "Contact",
+    "about": "About us",
+    "rights": "All rights reserved."
+  },
+  "ServicePages": {
+    "bookNow": "Book now",
+    "callUs": "Call us",
+    "whatsIncluded": "What's included",
+    "faqTitle": "Frequently asked questions",
+    "readyToBook": "Ready to book?",
+    "readyToBookDesc": "Get a transparent fixed price in seconds. No waiting, no hidden costs.",
+    "allServices": "All services",
+    "airport": {
+      "badge": "Airport Transfer",
+      "title": "Airport",
+      "highlight": "Transfer",
+      "description": "Start your journey stress-free. Our chauffeurs track your flight in real time, adjust for delays, and wait for you inside the terminal with a name sign. Whether you're landing at Munich, Frankfurt, Berlin, or any major European airport — your chauffeur is already there before you even touch down. No queues, no luggage struggles, no last-minute taxi haggling. Just a premium vehicle waiting curbside and a professional driver ready to whisk you to your destination.",
+      "features": [
+        "Real-time flight tracking with automatic delay adjustments",
+        "Meet & greet inside the terminal with personalized name sign",
+        "60 minutes free waiting time after landing — no rush, no stress",
+        "Fixed price guaranteed at booking — no surge pricing, no meter, no surprises",
+        "Flight cancelled or delayed? We reassign automatically at no extra cost",
+        "Door-to-door service with luggage assistance included"
+      ],
+      "includes": [
+        { "label": "Flight tracking", "value": "Included" },
+        { "label": "Waiting time", "value": "60 min free" },
+        { "label": "Meet & greet", "value": "Included" },
+        { "label": "Cancellation", "value": "Free 24h" },
+        { "label": "Bottled water", "value": "Included" },
+        { "label": "WiFi", "value": "Free" }
+      ],
+      "faq": [
+        {
+          "question": "How do you track my flight?",
+          "answer": "We monitor your flight number in real time using live airport data feeds. If your flight is delayed, your chauffeur is automatically notified and adjusts the pickup time — at no extra cost to you. Early arrivals? We'll be there too."
+        },
+        {
+          "question": "Where will my chauffeur meet me?",
+          "answer": "Your chauffeur will be waiting inside the arrivals terminal holding a sign with your name. For some airports, we can also arrange curbside pickup if you prefer. You'll receive the chauffeur's name, photo, and phone number before landing."
+        },
+        {
+          "question": "What happens if my flight is delayed?",
+          "answer": "Nothing to worry about — we track every flight and adjust automatically. There are no additional charges for delays. If your flight is cancelled, simply contact us and we'll reschedule your transfer at no cost."
+        },
+        {
+          "question": "How much waiting time is included?",
+          "answer": "We include 60 minutes of free waiting time after your flight lands. This gives you plenty of time to clear customs, collect luggage, and meet your chauffeur. Additional waiting time is charged at a fixed hourly rate."
+        },
+        {
+          "question": "Can I book a return transfer too?",
+          "answer": "Absolutely. You can book both your airport pickup and return transfer in one reservation. Return transfers include the same flight tracking, meet & greet, and fixed-price guarantee."
+        },
+        {
+          "question": "What vehicles are available for airport transfers?",
+          "answer": "We offer Mercedes E-Class (Business), S-Class (First Class), and V-Class (Business Van) for airport transfers. All vehicles are premium-equipped, immaculately clean, and come with complimentary WiFi, bottled water, and phone chargers."
+        }
+      ]
+    },
+    "chauffeur": {
+      "badge": "Chauffeur Service",
+      "title": "Chauffeur",
+      "highlight": "Service",
+      "description": "More than just a ride — a first-class experience. Our professional chauffeurs are available by the hour or by the day, ready to take you wherever business or pleasure demands. Discreet, impeccably dressed, and trained in hospitality, they handle every detail: luggage, timing, route optimization, and multiple stops. Whether it's back-to-back meetings across the city, a client pickup, or a full-day executive assignment, you simply sit back and focus on what matters while we handle the road.",
+      "features": [
+        "Professional chauffeurs in suit and tie — discreet, punctual, and courteous",
+        "Book by the hour or by the day — complete flexibility for your schedule",
+        "Multiple stops, route changes, and wait time included — no extra charges",
+        "Multilingual chauffeurs available on request (EN, DE, FR, IT, ZH)",
+        "Door-to-door service with luggage handling and umbrella service",
+        "Confidentiality guaranteed — ideal for executives and high-profile clients"
+      ],
+      "includes": [
+        { "label": "Chauffeur", "value": "Professional" },
+        { "label": "Attire", "value": "Suit & tie" },
+        { "label": "Stops", "value": "Multiple" },
+        { "label": "Booking", "value": "Hourly/Daily" },
+        { "label": "Languages", "value": "On request" },
+        { "label": "Water", "value": "Included" }
+      ],
+      "faq": [
+        {
+          "question": "How does hourly booking work?",
+          "answer": "You book a chauffeur for a minimum of 3 hours. The chauffeur stays with you for the entire booked duration, ready to drive whenever and wherever you need. Additional hours beyond your booking are charged at a fixed hourly rate."
+        },
+        {
+          "question": "Can I make multiple stops during my booking?",
+          "answer": "Yes — unlimited stops are included within your booked time. Your chauffeur will wait for you at each stop, whether it's a 10-minute meeting or a 2-hour lunch. Simply tell the chauffeur your next destination and we'll handle the rest."
+        },
+        {
+          "question": "What if my meeting runs longer than expected?",
+          "answer": "No problem. Simply inform your chauffeur and we'll extend the booking at our standard hourly rate. We never abandon a client mid-assignment — your chauffeur stays until you're done."
+        },
+        {
+          "question": "Can I request a specific chauffeur or language?",
+          "answer": "Yes. We have multilingual chauffeurs (English, German, French, Italian, Chinese) available on request. For recurring bookings, we can assign the same chauffeur to ensure consistency and familiarity with your preferences."
+        },
+        {
+          "question": "What areas do you cover?",
+          "answer": "We operate across Germany and neighboring countries. Our chauffeurs are familiar with all major cities, business districts, airports, and event venues. Long-distance and cross-border transfers are available on request."
+        },
+        {
+          "question": "Is the service confidential?",
+          "answer": "Absolutely. All our chauffeurs sign strict confidentiality agreements. We serve executives, celebrities, and high-profile clients regularly. No photos, no discussions, no disclosures — your privacy is our priority."
+        }
+      ]
+    },
+    "diplomatic": {
+      "badge": "Diplomatic Chauffeur",
+      "title": "Diplomatic",
+      "highlight": "Chauffeur",
+      "description": "When protocol, security, and discretion are non-negotiable. Our diplomatic chauffeur service is trusted by embassies, consulates, and government delegations across Germany. Our chauffeurs are protocol-trained, security-cleared, and experienced in handling VIP transport with the utmost professionalism. From airport arrivals with diplomatic clearance to multi-vehicle convoys for delegations, we understand the nuances of diplomatic transport — the right etiquette, the right timing, the right level of visibility.",
+      "features": [
+        "Protocol-trained chauffeurs with security clearance",
+        "Strict confidentiality and discretion — NDA on file for every assignment",
+        "Armored vehicles available on request (B6 protection level)",
+        "24/7 availability for embassy operations and diplomatic missions",
+        "Coordinated multi-vehicle convoys for delegations and motorcades",
+        "Diplomatic airport clearance and VIP fast-track assistance"
+      ],
+      "includes": [
+        { "label": "Security", "value": "Cleared" },
+        { "label": "Protocol", "value": "Trained" },
+        { "label": "Armored", "value": "On request" },
+        { "label": "Availability", "value": "24/7" },
+        { "label": "Discretion", "value": "Guaranteed" },
+        { "label": "Multi-stop", "value": "Included" }
+      ],
+      "faq": [
+        {
+          "question": "Are your chauffeurs security-cleared?",
+          "answer": "Yes. All chauffeurs assigned to diplomatic missions undergo background checks and carry security clearance documentation. We can provide clearance certificates upon request and work closely with embassy security teams."
+        },
+        {
+          "question": "Can you provide armored vehicles?",
+          "answer": "Yes, we offer B6-level armored vehicles on request. These vehicles are certified and maintained to the highest security standards. Please book armored vehicles at least 48 hours in advance to ensure availability."
+        },
+        {
+          "question": "Do you handle diplomatic airport clearance?",
+          "answer": "Yes. We coordinate with airport authorities for diplomatic clearance, VIP fast-track through immigration, and secure pickup directly from the aircraft or VIP terminal. We handle all the logistics — your delegation simply walks off the plane."
+        },
+        {
+          "question": "Can you coordinate multi-vehicle convoys?",
+          "answer": "Absolutely. We have experience organizing motorcades and multi-vehicle delegations of any size. Each vehicle is equipped with communication systems, and our coordination team manages timing, routing, and security protocols end-to-end."
+        },
+        {
+          "question": "What protocols are your chauffeurs trained in?",
+          "answer": "Our chauffeurs are trained in diplomatic protocol, including proper forms of address, flag and rank etiquette, escort positioning, and communication discretion. They understand the importance of visibility vs. privacy and adapt to each delegation's requirements."
+        },
+        {
+          "question": "How do you ensure confidentiality?",
+          "answer": "Every chauffeur signs a binding NDA before each assignment. We do not store route data, passenger lists, or scheduling information beyond the duration of the service. All communications are encrypted and handled through secure channels."
+        }
+      ]
+    },
+    "group": {
+      "badge": "Group Transfer",
+      "title": "Group",
+      "highlight": "Transfer",
+      "description": "Whether it's 7 colleagues heading to a conference or 50 guests attending a wedding — we move groups seamlessly. Our fleet ranges from premium minibuses to full-size coaches, all driven by professional, uniformed drivers. A dedicated group coordinator handles every detail: pickup logistics, luggage management, multiple pickup points, and synchronized arrival times. No one waits, no one gets lost, and everyone arrives together, on time, and in comfort.",
+      "features": [
+        "Vehicles from 7-seater minibuses to 50+ seat coaches",
+        "Coordinated multi-vehicle bookings with synchronized arrival",
+        "Dedicated group coordinator — single point of contact for everything",
+        "Luggage trailers and extra storage available on request",
+        "Multiple pickup points with optimized routing",
+        "Name signs, boarding assistance, and group welcome service"
+      ],
+      "includes": [
+        { "label": "Capacity", "value": "7-50+ seats" },
+        { "label": "Luggage", "value": "Trailers available" },
+        { "label": "Coordinator", "value": "Dedicated" },
+        { "label": "Multi-vehicle", "value": "Coordinated" },
+        { "label": "Driver", "value": "Professional" },
+        { "label": "Water", "value": "Included" }
+      ],
+      "faq": [
+        {
+          "question": "What size groups can you accommodate?",
+          "answer": "From 7 to 50+ passengers. Our fleet includes premium minibuses (7-19 seats), mid-size buses (20-35 seats), and full-size coaches (36-50+ seats). For larger groups, we coordinate multiple vehicles with synchronized routing and arrival."
+        },
+        {
+          "question": "Can you handle multiple pickup points?",
+          "answer": "Yes. We plan optimized routes with multiple pickup points, ensuring everyone is collected efficiently. Your group coordinator will map out the route in advance and share pickup times with all passengers."
+        },
+        {
+          "question": "Is there a luggage limit?",
+          "answer": "Luggage capacity depends on the vehicle. For groups with excess luggage (ski equipment, trade fair materials, etc.), we can provide luggage trailers at no extra charge on multi-day bookings. Just let us know your luggage requirements when booking."
+        },
+        {
+          "question": "Do you provide a group coordinator?",
+          "answer": "Yes — every group booking of 15+ passengers includes a dedicated coordinator. They handle all logistics, communicate with passengers, manage timing, and are available by phone throughout the transfer. You'll never have to worry about a thing."
+        },
+        {
+          "question": "Can we book return transfers for the whole group?",
+          "answer": "Absolutely. We handle round-trip group transfers with the same level of coordination. Return pickups are scheduled in advance, and your coordinator ensures everyone is ready and at the right pickup point on time."
+        },
+        {
+          "question": "What if someone in our group is running late?",
+          "answer": "Your coordinator will contact the passenger directly and adjust the pickup if possible. For scheduled group departures, we build in a small buffer. If the delay is significant, we can arrange a separate vehicle for the late passenger at a fixed rate."
+        }
+      ]
+    },
+    "dayTours": {
+      "badge": "Day Tours",
+      "title": "Day",
+      "highlight": "Tours",
+      "description": "Your personal chauffeur for a day of exploration. Visit Neuschwanstein Castle, tour the Romantic Road, explore the Black Forest, or discover Bavaria's hidden gems — all at your own pace, with a local chauffeur who knows the best routes, the best restaurants, and the best photo spots. No rigid itineraries, no crowded tour buses. Just you, your companions, and a premium vehicle ready to take you wherever the day leads. Stop when you want, stay as long as you want, and let us handle the driving.",
+      "features": [
+        "Custom itineraries tailored to your interests — or let us suggest the best route",
+        "Unlimited stops and flexible timing — stay 10 minutes or 2 hours, it's up to you",
+        "Local chauffeur with insider knowledge of restaurants, viewpoints, and hidden gems",
+        "Full-day booking (8-12 hours) with no distance limit within the booked region",
+        "Photo stops, scenic detours, and spontaneous recommendations included",
+        "Multi-language guide service available on request"
+      ],
+      "includes": [
+        { "label": "Itinerary", "value": "Custom" },
+        { "label": "Stops", "value": "Unlimited" },
+        { "label": "Duration", "value": "Full day" },
+        { "label": "Local guide", "value": "Knowledge" },
+        { "label": "Flexibility", "value": "On the go" },
+        { "label": "Water", "value": "Included" }
+      ],
+      "faq": [
+        {
+          "question": "How long is a full-day tour?",
+          "answer": "A full-day booking includes 8-12 hours with your chauffeur. You can start and end whenever you like within that window. If you'd like to extend, additional hours are charged at a fixed hourly rate."
+        },
+        {
+          "question": "Can you suggest an itinerary?",
+          "answer": "Absolutely. Our chauffeurs know the most scenic routes, the best castles, the most charming villages, and the restaurants worth stopping for. Tell us your interests — history, nature, food, photography — and we'll craft the perfect day."
+        },
+        {
+          "question": "Which destinations can we visit?",
+          "answer": "Popular day tours include Neuschwanstein Castle, the Romantic Road, Nuremberg, the Black Forest, Lake Constance, Salzburg, and the Bavarian Alps. We can also customize routes to specific interests — wine regions, Christmas markets, historical sites, and more."
+        },
+        {
+          "question": "Is there a distance limit?",
+          "answer": "There's no strict distance limit within the booked region. Your chauffeur will advise on realistic routing to ensure you have enough time at each stop. For very long-distance tours, we may recommend an overnight stay — just ask and we'll plan accordingly."
+        },
+        {
+          "question": "Can we change the plan during the tour?",
+          "answer": "Of course — that's the beauty of a private chauffeur. Want to stay longer at a viewpoint? Skip a stop? Add a detour? Just tell your chauffeur. The itinerary is a suggestion, not a constraint."
+        },
+        {
+          "question": "Can the chauffeur act as a tour guide?",
+          "answer": "Our chauffeurs have extensive local knowledge and will share insights, history, and recommendations throughout the tour. For in-depth guided tours with a certified guide, we can arrange a dedicated tour guide to accompany you — available in multiple languages."
+        }
+      ]
+    },
+    "event": {
+      "badge": "Event Transfer",
+      "title": "Event",
+      "highlight": "Transfer",
+      "description": "Arrive at your event in style — and leave the logistics to us. Whether it's a wedding, a gala, a corporate conference, or a private celebration, we coordinate seamless transport for you and your guests. From a single elegant limousine for the bride and groom to a full fleet for 200 conference attendees, we manage every detail: arrival timing, guest coordination, VIP handling, and synchronized departures. Your event transportation manager handles it all, so you can focus on the occasion.",
+      "features": [
+        "Coordinated multi-guest arrivals with synchronized timing",
+        "Wedding car decoration (flowers, ribbons) available on request",
+        "Dedicated event transportation manager — handles all guest logistics",
+        "Flexible timing aligned to your event schedule — we wait, you don't rush",
+        "VIP and guest-of-honor handling with priority vehicles",
+        "Post-event departure coordination — everyone gets home safely"
+      ],
+      "includes": [
+        { "label": "Coordination", "value": "Multi-guest" },
+        { "label": "Decoration", "value": "On request" },
+        { "label": "Manager", "value": "Dedicated" },
+        { "label": "Timing", "value": "Flexible" },
+        { "label": "Vehicles", "value": "Elegant" },
+        { "label": "Water", "value": "Included" }
+      ],
+      "faq": [
+        {
+          "question": "Can you coordinate transport for a large wedding party?",
+          "answer": "Yes. We handle weddings of all sizes — from a single car for the couple to a full fleet for 200+ guests. Your event manager coordinates pickup times, routes, and arrival sequences so everyone arrives on time and stress-free."
+        },
+        {
+          "question": "Do you decorate the wedding car?",
+          "answer": "Yes, we offer wedding car decoration with flowers, ribbons, and custom arrangements. Let us know your color scheme and preferences, and we'll have the vehicle beautifully decorated before pickup."
+        },
+        {
+          "question": "How do you handle guest coordination?",
+          "answer": "Your dedicated event transportation manager creates a detailed transport plan with pickup times, addresses, and contact information for every guest. We communicate directly with guests, send reminders, and handle any last-minute changes — you never have to worry about who's picking up whom."
+        },
+        {
+          "question": "What if the event runs late?",
+          "answer": "No problem at all. We build buffer time into event bookings and our chauffeurs are prepared for schedule changes. If the event runs significantly late, we'll coordinate adjusted pickup times with your guests at no additional charge within the agreed window."
+        },
+        {
+          "question": "Can you provide transport for conference attendees?",
+          "answer": "Absolutely. We regularly handle corporate event transport — from airport pickups for speakers to daily shuttles between hotels and venues. We can provide a dedicated desk at your venue for on-demand transport requests during the event."
+        },
+        {
+          "question": "Do you offer late-night pickup after the event?",
+          "answer": "Yes. We operate 24/7 and are happy to arrange late-night or early-morning pickups. Whether it's a 2 AM wedding after-party departure or a 5 AM conference speaker pickup, your chauffeur will be there."
+        }
+      ]
+    },
+    "fair": {
+      "badge": "Trade Fair Transfer",
+      "title": "Trade Fair",
+      "highlight": "Transfer",
+      "description": "Trade fair season is demanding enough — your transport shouldn't be. We provide reliable, punctual transfers to and from all major German trade fair venues: Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf, and Messe Hamburg. Whether you're an exhibitor hauling materials, a buyer with a tight schedule of meetings, or a delegation attending the fair together, we get you there on time, every time. Pre-book your return transfer and forget about the taxi queue at 6 PM when the halls close.",
+      "features": [
+        "Direct transport to all major German trade fair venues",
+        "Flexible scheduling aligned to fair hours — early mornings and late evenings",
+        "Return transfers pre-booked — no waiting in taxi queues after the fair",
+        "Luggage, samples, and exhibition materials transport included",
+        "Multi-day bookings with the same chauffeur for consistency",
+        "Coordinated group transport for delegations and teams"
+      ],
+      "includes": [
+        { "label": "Venues", "value": "All major" },
+        { "label": "Scheduling", "value": "Flexible" },
+        { "label": "Return", "value": "Pre-booked" },
+        { "label": "Materials", "value": "Transported" },
+        { "label": "Driver", "value": "Professional" },
+        { "label": "Water", "value": "Included" }
+      ],
+      "faq": [
+        {
+          "question": "Which trade fair venues do you serve?",
+          "answer": "We serve all major German trade fair venues: Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf, Messe Hamburg, and Messe Stuttgart. We also cover international fairs in neighboring countries on request."
+        },
+        {
+          "question": "Can you transport exhibition materials?",
+          "answer": "Yes. Our V-Class vans and larger vehicles can accommodate exhibition materials, samples, brochures, and display equipment. For bulky or heavy items, we can arrange a dedicated cargo vehicle. Just let us know what you're bringing when booking."
+        },
+        {
+          "question": "Can I book the same chauffeur for multiple fair days?",
+          "answer": "Absolutely. For multi-day fairs, we assign the same chauffeur for the duration of your booking. This ensures consistency — your chauffeur knows your schedule, your hotel, and your preferred route to the venue."
+        },
+        {
+          "question": "What about return transfers after the fair closes?",
+          "answer": "We highly recommend pre-booking your return transfer. When the fair closes, taxi queues can be 45+ minutes long. With a pre-booked transfer, your chauffeur waits at a designated pickup point and you're on your way immediately."
+        },
+        {
+          "question": "Can you handle early morning pickups?",
+          "answer": "Yes. Many fairs start early with exhibitor access from 7 AM. We're available for pickups as early as needed — just let us know your schedule and we'll be there, on time, every day."
+        },
+        {
+          "question": "Do you offer group transport for trade fair delegations?",
+          "answer": "Yes. We coordinate group transport for delegations of any size — from a single van for a small team to multiple coaches for large groups. Your dedicated coordinator handles pickup logistics, timing, and communication with all delegation members."
+        }
+      ]
+    },
+    "prices": {
+      "badge": "Prices & Tariffs",
+      "title": "Prices &",
+      "highlight": "Tariffs",
+      "description": "Transparent, fixed pricing — no meter, no surprises. We charge per kilometer with a clear base fare, and every quote includes all taxes, tolls, and fees. What you see at booking is exactly what you pay. No surge pricing during peak hours, no hidden destination charges, no \"the route was longer\" surprises. Whether you need a Business Class sedan for an airport run or a First Class limousine for a full-day assignment, you'll know the price before you book.",
+      "features": [
+        "Fixed price per kilometer — guaranteed at booking, never changes",
+        "No surge pricing — same rate at rush hour, midnight, or holiday season",
+        "All-inclusive pricing — taxes, tolls, and fees included in every quote",
+        "Night surcharge (22:00-06:00): +25% — clearly stated, never hidden",
+        "Airport pickup fee: +€8 (covers terminal access and parking)",
+        "Free cancellation up to 24 hours before pickup — no questions asked"
+      ],
+      "includes": [
+        { "label": "E-Class", "value": "€3.0/km" },
+        { "label": "S-Class", "value": "€4.5/km" },
+        { "label": "V-Class", "value": "€3.5/km" },
+        { "label": "Base fare", "value": "€10-15" },
+        { "label": "Night", "value": "+25%" },
+        { "label": "Airport", "value": "+€8" }
+      ],
+      "faq": [
+        {
+          "question": "How is the price calculated?",
+          "answer": "The price is based on a per-kilometer rate for your vehicle class, plus a base fare. The system calculates the optimal route and gives you a fixed price at booking. That price is guaranteed — it won't change even if traffic adds time to the journey."
+        },
+        {
+          "question": "Are there any hidden fees?",
+          "answer": "None. All taxes, tolls, and fees are included in the quoted price. The only additions are clearly stated: a +25% night surcharge (22:00-06:00) and a +€8 airport pickup fee. Everything is shown transparently before you confirm your booking."
+        },
+        {
+          "question": "Do you charge more during peak hours?",
+          "answer": "No. We do not use surge pricing. The per-kilometer rate is the same at rush hour, on holidays, and during major events. You'll never pay more because demand is high."
+        },
+        {
+          "question": "What is the cancellation policy?",
+          "answer": "Free cancellation up to 24 hours before your scheduled pickup time. Cancellations within 24 hours are charged at 50% of the booking price. No-shows are charged at 100%. Refunds are processed within 5-7 business days."
+        },
+        {
+          "question": "How do I pay?",
+          "answer": "You can pay by credit card, SEPA bank transfer, or corporate invoice (for business accounts with a credit arrangement). Payment is processed after the ride is completed. For corporate clients, we offer monthly invoicing."
+        },
+        {
+          "question": "Can I get a custom quote for a complex trip?",
+          "answer": "Absolutely. For multi-stop trips, full-day bookings, or special requirements, contact us directly and we'll provide a detailed custom quote. Our team responds within 1 hour during business hours and within 4 hours outside business hours."
+        }
+      ]
+    }
+  }
+}

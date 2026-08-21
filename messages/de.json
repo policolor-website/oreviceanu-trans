@@ -1,0 +1,579 @@
+{
+  "Nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "fleet": "Fuhrpark",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "bookNow": "Jetzt buchen",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "dashboard": "Dashboard",
+    "logout": "Abmelden",
+    "fleetOverview": "Übersicht",
+    "fleetSClass": "First Class Limousine",
+    "fleetEClass": "Business Class Limousine",
+    "fleetVClass": "Business Van",
+    "serviceAirport": "Flughafentransfer",
+    "serviceChauffeur": "Fahrerservice",
+    "serviceDiplomatic": "Diplomatenfahrer",
+    "serviceGroup": "Gruppentransfer",
+    "serviceDayTours": "Tagesausflüge",
+    "serviceEvent": "Eventtransfer",
+    "serviceFair": "Messe-Transfer",
+    "servicePrices": "Preise & Tarife",
+    "allServices": "Alle Leistungen"
+  },
+  "Hero": {
+    "badge": "24-Stunden-Flughafentransfer - Professionelle Fahrer",
+    "title": "TrendMyDrive",
+    "subtitle": "Exklusive Flughafentransfers in München, Frankfurt, Berlin, Köln/Bonn, Hamburg, Düsseldorf & mehr",
+    "aboutUs": "Über uns",
+    "ourServices": "Unsere Leistungen",
+    "scroll": "Scrollen"
+  },
+  "Booking": {
+    "pickup": "Abholung",
+    "pickupPlaceholder": "Flughafen, Hotel, Adresse...",
+    "destination": "Zielort",
+    "destinationPlaceholder": "Wohin?",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "passengers": "Passagiere",
+    "vehicle": "Fahrzeug",
+    "getPrice": "Preis anfragen",
+    "reserveNow": "Jetzt reservieren"
+  },
+  "Fleet": {
+    "badge": "Unsere Fahrzeuge",
+    "title": "Unser",
+    "highlight": "Fuhrpark",
+    "description": "Von eleganten Limousinen bis zu geräumigen Bussen — wählen Sie das richtige Fahrzeug für jeden Anlass. Alle Fahrzeuge sind premium ausgestattet und einwandfrei gepflegt.",
+    "passengers": "Passagiere",
+    "luggage": "Gepäck"
+  },
+  "Services": {
+    "badge": "Was wir bieten",
+    "title": "Unsere",
+    "highlight": "Leistungen",
+    "description": "Wir sind auf erstklassigen Fahrerservice spezialisiert — mit Fokus auf Komfort, Pünktlichkeit und Professionalität.",
+    "learnMore": "Mehr erfahren",
+    "airportTitle": "Flughafentransfer",
+    "airportDesc": "Reibungslose, pünktliche Transfers zu und von allen großen europäischen Flughäfen.",
+    "chauffeurTitle": "Fahrerservice",
+    "chauffeurDesc": "Reisen Sie komfortabel und elegant in unserer Flotte an Premium-Fahrzeugen mit professionellen Fahrern.",
+    "dayToursTitle": "Tagesausflüge",
+    "dayToursDesc": "Frühe Abfahrt oder späte Ankunft — wir sind rund um die Uhr für Sie unterwegs.",
+    "groupTitle": "Gruppentransfer",
+    "groupDesc": "Vom Kleinbus bis zum Reisebus — zuverlässiger Transport mit Fahrer für Gruppen jeder Größe."
+  },
+  "EasyBooking": {
+    "badge": "Einfache Buchung",
+    "title": "In wenigen Schritten zu Ihrem",
+    "highlight": "Fahrer",
+    "description": "Geben Sie Ihre Route ein, erhalten Sie einen transparenten Festpreis und lehnen Sie sich zurück. Kein Warten, keine versteckten Kosten — nur ein professioneller Fahrer, der pünktlich bereitsteht."
+  },
+  "WhyUs": {
+    "badge": "Warum wir",
+    "title": "Reisen Sie",
+    "highlight": "sorgenfrei",
+    "faqBadge": "FAQ",
+    "faqTitle": "Fragen & Antworten",
+    "featuresTitle": "Was Sie bekommen"
+  },
+  "CTA": {
+    "title": "Buchen Sie Ihren Fahrer",
+    "description": "Bereit für eine erstklassige Fahrt? Holen Sie sich jetzt Ihren Festpreis.",
+    "button": "Loslegen"
+  },
+  "Routes": {
+    "badge": "Beliebte Routen",
+    "title": "Routen, die wir",
+    "highlight": "regelmäßig fahren",
+    "description": "Von München zu allen großen Flughäfen und Städten in Deutschland und den Nachbarländern."
+  },
+  "FinalCTA": {
+    "title": "Bereit für Ihre Reise?",
+    "description": "Buchen Sie jetzt oder nehmen Sie Kontakt auf — wir sind 24/7 für Sie da.",
+    "bookNow": "Jetzt buchen",
+    "contact": "Kontakt aufnehmen"
+  },
+  "Auth": {
+    "loginTitle": "Willkommen zurück",
+    "loginSubtitle": "Melden Sie sich an, um Ihre Buchungen zu verwalten",
+    "registerTitle": "Konto erstellen",
+    "registerSubtitle": "Buchen und verwalten Sie Ihre Fahrten",
+    "fullName": "Vollständiger Name",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "passwordPlaceholder": "Min. 6 Zeichen",
+    "signIn": "Anmelden",
+    "signingIn": "Anmeldung läuft...",
+    "createAccount": "Konto erstellen",
+    "creatingAccount": "Konto wird erstellt...",
+    "noAccount": "Noch kein Konto?",
+    "haveAccount": "Bereits ein Konto?",
+    "loginFailed": "Anmeldung fehlgeschlagen",
+    "registerFailed": "Registrierung fehlgeschlagen"
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "description": "Überprüfen Sie Ihre Buchung und vervollständigen Sie Ihre Angaben.",
+    "backToHome": "Zurück zur Startseite",
+    "yourBooking": "Ihre Buchung",
+    "pickup": "Abholung",
+    "destination": "Zielort",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "vehicle": "Fahrzeug",
+    "passengers": "Passagiere",
+    "distance": "Entfernung",
+    "duration": "Dauer",
+    "rate": "Tarif",
+    "total": "Gesamt",
+    "extraInfo": "Zusätzliche Infos",
+    "guest": "Gast",
+    "guestDesc": "Buchen Sie ohne Konto. Sie erhalten eine Bestätigung per E-Mail.",
+    "loginDesc": "Melden Sie sich an, um auf Ihren Buchungsverlauf und Ihre Rechnungen zuzugreifen.",
+    "registerDesc": "Erstellen Sie ein Konto für Buchungsverlauf, Rechnungen und schnelleren Checkout.",
+    "signedIn": "Angemeldet",
+    "signedInDesc": "Ihre Buchung wird in Ihrem Konto gespeichert. Überprüfen Sie die Details und fahren Sie mit der Zahlung fort.",
+    "continueToPayment": "Zur Zahlung fortfahren",
+    "fillAllFields": "Bitte füllen Sie alle Felder aus.",
+    "fillEmailPassword": "Bitte füllen Sie E-Mail und Passwort aus.",
+    "fillNamePhone": "Bitte geben Sie Ihren vollständigen Namen und Ihre Telefonnummer ein.",
+    "securePayment": "Sichere Zahlung mit SSL-Verschlüsselung",
+    "freeCancellation": "Kostenlose Stornierung bis zu 24 Std. vor Abholung",
+    "support": "24/7 Kundensupport"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Willkommen zurück",
+    "totalBookings": "Buchungen gesamt",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "totalSpent": "Ausgaben gesamt",
+    "newBooking": "Neue Buchung",
+    "newBookingDesc": "Brauchen Sie eine weitere Fahrt? Buchen Sie einen Fahrer in nur wenigen Klicks.",
+    "bookNow": "Jetzt buchen",
+    "bookingHistory": "Buchungsverlauf",
+    "noBookings": "Noch keine Buchungen",
+    "bookFirstRide": "Buchen Sie Ihre erste Fahrt",
+    "bookedOn": "Gebucht am",
+    "status": "Status",
+    "route": "Route",
+    "price": "Preis",
+    "pickupDate": "Abholdatum",
+    "pickupTime": "Abholzeit",
+    "vehicle": "Fahrzeug",
+    "distance": "Entfernung",
+    "extraInfo": "Zusätzliche Infos",
+    "profile": "Profil",
+    "memberSince": "Mitglied seit",
+    "invoices": "Rechnungen",
+    "noInvoices": "Noch keine Rechnungen"
+  },
+  "Footer": {
+    "tagline": "Premium-Fahrerservice — 24/7 Flughafentransfers und Geschäftsfahrten in ganz Deutschland.",
+    "fleet": "Fuhrpark",
+    "services": "Leistungen",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "ServicePages": {
+    "bookNow": "Jetzt buchen",
+    "callUs": "Rufen Sie uns an",
+    "whatsIncluded": "Was inklusive ist",
+    "faqTitle": "Häufig gestellte Fragen",
+    "readyToBook": "Bereit zu buchen?",
+    "readyToBookDesc": "Erhalten Sie in Sekunden einen transparenten Festpreis. Kein Warten, keine versteckten Kosten.",
+    "allServices": "Alle Leistungen",
+    "airport": {
+      "badge": "Flughafentransfer",
+      "title": "Flughafen",
+      "highlight": "Transfer",
+      "description": "Starten Sie stressfrei in Ihre Reise. Unsere Fahrer verfolgen Ihren Flug in Echtzeit, passen sich bei Verspätungen an und warten mit einem Namensschild im Terminal auf Sie. Egal, ob Sie in München, Frankfurt, Berlin oder an einem anderen großen europäischen Flughafen landen — Ihr Fahrer ist bereits da, bevor Sie überhaupt aufsetzen. Keine Schlangen, kein Gepäckstress, kein letztes Taxihandeln. Nur ein Premium-Fahrzeug, das am Straßenrand wartet, und ein professioneller Fahrer, der Sie sofort an Ihr Ziel bringt.",
+      "features": [
+        "Echtzeit-Flugverfolgung mit automatischer Anpassung bei Verspätungen",
+        "Meet & greet im Terminal mit persönlichem Namensschild",
+        "60 Minuten kostenlose Wartezeit nach Landung — kein Stress, keine Hetze",
+        "Festpreis bei Buchung garantiert — keine Preisspitzen, kein Zähler, keine Überraschungen",
+        "Flug annulliert oder verspätet? Wir ordnen automatisch ohne Aufpreis neu zu",
+        "Tür-zu-Tür-Service inklusive Gepäckhilfe"
+      ],
+      "includes": [
+        { "label": "Flugverfolgung", "value": "Inklusive" },
+        { "label": "Wartezeit", "value": "60 Min. gratis" },
+        { "label": "Meet & greet", "value": "Inklusive" },
+        { "label": "Stornierung", "value": "Gratis 24 Std." },
+        { "label": "Flaschenwasser", "value": "Inklusive" },
+        { "label": "WLAN", "value": "Gratis" }
+      ],
+      "faq": [
+        {
+          "question": "Wie verfolgen Sie meinen Flug?",
+          "answer": "Wir überwachen Ihre Flugnummer in Echtzeit über Live-Flughafendaten. Wenn Ihr Flug verspätet ist, wird Ihr Fahrer automatisch benachrichtigt und passt die Abholzeit an — ohne zusätzliche Kosten für Sie. Frühe Ankunft? Wir sind auch dann rechtzeitig da."
+        },
+        {
+          "question": "Wo wird mein Fahrer auf mich warten?",
+          "answer": "Ihr Fahrer wartet in der Ankunftshalle mit einem Schild mit Ihrem Namen. An einigen Flughäfen können wir auf Wunsch auch eine Abholung am Straßenrand organisieren. Vor der Landung erhalten Sie Name, Foto und Telefonnummer Ihres Fahrers."
+        },
+        {
+          "question": "Was passiert, wenn mein Flug verspätet ist?",
+          "answer": "Kein Grund zur Sorge — wir verfolgen jeden Flug und passen automatisch an. Für Verspätungen fallen keine zusätzlichen Gebühren an. Sollte Ihr Flug annulliert werden, kontaktieren Sie uns einfach und wir planen Ihren Transfer kostenlos um."
+        },
+        {
+          "question": "Wie viel Wartezeit ist inklusive?",
+          "answer": "Wir inkludieren 60 Minuten kostenlose Wartezeit nach der Landung Ihres Fluges. Das gibt Ihnen ausreichend Zeit für Zoll, Gepäckabholung und das Treffen mit Ihrem Fahrer. Zusätzliche Wartezeit wird zu einem festen Stundensatz berechnet."
+        },
+        {
+          "question": "Kann ich auch einen Rücktransfer buchen?",
+          "answer": "Absolut. Sie können sowohl Ihren Flughafen-Abholtransfer als auch den Rücktransfer in einer Reservierung buchen. Rücktransfers inkludieren dieselbe Flugverfolgung, Meet & greet und Festpreisgarantie."
+        },
+        {
+          "question": "Welche Fahrzeuge stehen für Flughafentransfers zur Verfügung?",
+          "answer": "Wir bieten Mercedes E-Class (Business), S-Class (First Class) und V-Class (Business Van) für Flughafentransfers an. Alle Fahrzeuge sind premium ausgestattet, makellos sauber und inkludieren kostenloses WLAN, Flaschenwasser und Ladegeräte."
+        }
+      ]
+    },
+    "chauffeur": {
+      "badge": "Fahrerservice",
+      "title": "Fahrer",
+      "highlight": "Service",
+      "description": "Mehr als nur eine Fahrt — ein Erlebnis der ersten Klasse. Unsere professionellen Fahrer sind stunden- oder tageweise verfügbar und bringen Sie überall hin, wo es das Geschäft oder die Freude verlangen. Diskret, einwandfrei gekleidet und in Gastfreundschaft geschult, übernehmen sie jedes Detail: Gepäck, Timing, Routenoptimierung und mehrere Stopps. Ob aufeinanderfolgende Meetings in der ganzen Stadt, eine Kundenabholung oder ein ganztägiger Executive-Einsatz — Sie lehnen sich einfach zurück und konzentrieren sich auf das Wesentliche, während wir uns um die Straße kümmern.",
+      "features": [
+        "Professionelle Fahrer in Anzug und Krawatte — diskret, pünktlich und zuvorkommend",
+        "Stunden- oder tageweise Buchung — volle Flexibilität für Ihren Zeitplan",
+        "Mehrere Stopps, Routenänderungen und Wartezeit inklusive — keine Aufpreise",
+        "Mehrsprachige Fahrer auf Anfrage (EN, DE, FR, IT, ZH)",
+        "Tür-zu-Tür-Service mit Gepäckbetreuung und Regenschirm-Service",
+        "Vertraulichkeit garantiert — ideal für Führungskräfte und prominente Kunden"
+      ],
+      "includes": [
+        { "label": "Fahrer", "value": "Professionell" },
+        { "label": "Kleidung", "value": "Anzug & Krawatte" },
+        { "label": "Stopps", "value": "Mehrere" },
+        { "label": "Buchung", "value": "Stunden-/Tageweise" },
+        { "label": "Sprachen", "value": "Auf Anfrage" },
+        { "label": "Wasser", "value": "Inklusive" }
+      ],
+      "faq": [
+        {
+          "question": "Wie funktioniert die stundenweise Buchung?",
+          "answer": "Sie buchen einen Fahrer für mindestens 3 Stunden. Der Fahrer bleibt während der gesamten gebuchten Dauer bei Ihnen und fährt, wann und wohin Sie möchten. Zusätzliche Stunden über Ihre Buchung hinaus werden zu einem festen Stundensatz berechnet."
+        },
+        {
+          "question": "Kann ich während meiner Buchung mehrere Stopps einlegen?",
+          "answer": "Ja — unbegrenzte Stopps sind innerhalb Ihrer gebuchten Zeit inklusive. Ihr Fahrer wartet an jedem Stopp, ob es ein 10-minütiges Meeting oder ein 2-stündiges Mittagessen ist. Sagen Sie dem Fahrer einfach Ihr nächstes Ziel und wir kümmern uns um den Rest."
+        },
+        {
+          "question": "Was, wenn mein Meeting länger dauert als erwartet?",
+          "answer": "Kein Problem. Informieren Sie einfach Ihren Fahrer und wir verlängern die Buchung zu unserem Standard-Stundensatz. Wir lassen einen Kunden niemals während eines Einsatzes im Stich — Ihr Fahrer bleibt, bis Sie fertig sind."
+        },
+        {
+          "question": "Kann ich einen bestimmten Fahrer oder eine Sprache anfragen?",
+          "answer": "Ja. Wir haben mehrsprachige Fahrer (Englisch, Deutsch, Französisch, Italienisch, Chinesisch) auf Anfrage. Für wiederkehrende Buchungen können wir denselben Fahrer zuweisen, um Konsistenz und Vertrautheit mit Ihren Vorlieben zu gewährleisten."
+        },
+        {
+          "question": "Welches Gebiet decken Sie ab?",
+          "answer": "Wir operieren in ganz Deutschland und den Nachbarländern. Unsere Fahrer kennen alle großen Städte, Geschäftsviertel, Flughäfen und Event-Locations. Langstrecken- und grenzüberschreitende Transfers sind auf Anfrage verfügbar."
+        },
+        {
+          "question": "Ist der Service vertraulich?",
+          "answer": "Absolut. Alle unsere Fahrer unterzeichnen strikte Vertraulichkeitsvereinbarungen. Wir bedienen regelmäßig Führungskräfte, Prominente und VIP-Kunden. Keine Fotos, keine Gespräche, keine Weitergaben — Ihre Privatsphäre hat bei uns oberste Priorität."
+        }
+      ]
+    },
+    "diplomatic": {
+      "badge": "Diplomatenfahrer",
+      "title": "Diplomaten",
+      "highlight": "Fahrer",
+      "description": "Wenn Protokoll, Sicherheit und Diskretion nicht verhandelbar sind. Unser Diplomaten-Fahrerservice wird von Botschaften, Konsulaten und Regierungsdelegationen in ganz Deutschland vertraut. Unsere Fahrer sind protokollgeschult, sicherheitsüberprüft und erfahren im Umgang mit VIP-Transport mit höchster Professionalität. Von Flughafenankünften mit diplomatischer Abfertigung bis hin zu Mehrfahrzeug-Konvois für Delegationen — wir verstehen die Nuancen des diplomatischen Transports: die richtige Etikette, das richtige Timing, der richtige Grad an Sichtbarkeit.",
+      "features": [
+        "Protokollgeschulte Fahrer mit Sicherheitsüberprüfung",
+        "Strikte Vertraulichkeit und Diskretion — NDA für jeden Einsatz hinterlegt",
+        "Gepanzerte Fahrzeuge auf Anfrage (B6-Schutzklasse)",
+        "24/7 Verfügbarkeit für Botschaftsoperationen und diplomatische Missionen",
+        "Koordinierte Mehrfahrzeug-Konvois für Delegationen und Eskorten",
+        "Diplomatische Flughafenabfertigung und VIP-Fast-Track-Unterstützung"
+      ],
+      "includes": [
+        { "label": "Sicherheit", "value": "Überprüft" },
+        { "label": "Protokoll", "value": "Geschult" },
+        { "label": "Gepanzert", "value": "Auf Anfrage" },
+        { "label": "Verfügbarkeit", "value": "24/7" },
+        { "label": "Diskretion", "value": "Garantiert" },
+        { "label": "Mehrere Stopps", "value": "Inklusive" }
+      ],
+      "faq": [
+        {
+          "question": "Sind Ihre Fahrer sicherheitsüberprüft?",
+          "answer": "Ja. Alle Fahrer, die für diplomatische Einsätze zugewiesen werden, durchlaufen Hintergrundprüfungen und verfügen über Sicherheitsüberprüfungs-Dokumentation. Auf Wunsch können wir Überprüfungs-Zertifikate bereitstellen und arbeiten eng mit den Sicherheitsteams der Botschaften zusammen."
+        },
+        {
+          "question": "Können Sie gepanzerte Fahrzeuge bereitstellen?",
+          "answer": "Ja, wir bieten B6-gepanzerte Fahrzeuge auf Anfrage. Diese Fahrzeuge sind zertifiziert und werden nach den höchsten Sicherheitsstandards gewartet. Bitte buchen Sie gepanzerte Fahrzeuge mindestens 48 Stunden im Voraus, um die Verfügbarkeit zu gewährleisten."
+        },
+        {
+          "question": "Übernehmen Sie die diplomatische Flughafenabfertigung?",
+          "answer": "Ja. Wir koordinieren mit den Flughafenbehörden für diplomatische Abfertigung, VIP-Fast-Track durch die Einreise und sichere Abholung direkt vom Flugzeug oder VIP-Terminal. Wir übernehmen die gesamte Logistik — Ihre Delegation geht einfach vom Flugzeug."
+        },
+        {
+          "question": "Können Sie Mehrfahrzeug-Konvois koordinieren?",
+          "answer": "Absolut. Wir haben Erfahrung in der Organisation von Eskorten und Mehrfahrzeug-Delegationen jeder Größe. Jedes Fahrzeug ist mit Kommunikationssystemen ausgestattet, und unser Koordinationsteam manages Timing, Routing und Sicherheitsprotokolle von A bis Z."
+        },
+        {
+          "question": "In welchen Protokollen sind Ihre Fahrer geschult?",
+          "answer": "Unsere Fahrer sind im diplomatischen Protokoll geschult, einschließlich korrekter Anredeformen, Flaggen- und Rang-Etikette, Eskorten-Positionierung und Kommunikationsdiskretion. Sie verstehen die Bedeutung von Sichtbarkeit vs. Privatsphäre und passen sich an die Anforderungen jeder Delegation an."
+        },
+        {
+          "question": "Wie stellen Sie Vertraulichkeit sicher?",
+          "answer": "Jeder Fahrer unterzeichnet vor jedem Einsatz eine verbindliche NDA. Wir speichern keine Routendaten, Passagierlisten oder Terminplanungs-Informationen über die Dauer des Service hinaus. Alle Kommunikationen sind verschlüsselt und werden über sichere Kanäle abgewickelt."
+        }
+      ]
+    },
+    "group": {
+      "badge": "Gruppentransfer",
+      "title": "Gruppen",
+      "highlight": "Transfer",
+      "description": "Ob 7 Kollegen auf dem Weg zu einer Konferenz oder 50 Gäste bei einer Hochzeit — wir bewegen Gruppen nahtlos. Unsere Flotte reicht von Premium-Kleinbussen bis zu Reisebussen, alle gefahren von professionellen, uniformierten Fahrern. Ein engagierter Gruppenkoordinator kümmert sich um jedes Detail: Abhollogistik, Gepäckmanagement, mehrere Abholpunkte und synchronisierte Ankunftszeiten. Niemand wartet, niemand geht verloren, und alle kommen gemeinsam, pünktlich und komfortabel an.",
+      "features": [
+        "Fahrzeuge von 7-sitzigen Kleinbussen bis zu Reisebussen mit 50+ Sitzen",
+        "Koordinierte Mehrfach-Fahrzeug-Buchungen mit synchronisierter Ankunft",
+        "Engagierter Gruppenkoordinator — eine zentrale Anlaufstelle für alles",
+        "Gepäckanhänger und zusätzlicher Stauraum auf Anfrage",
+        "Mehrere Abholpunkte mit optimierter Routenführung",
+        "Namensschilder, Einsteigehilfe und Gruppen-Begrüßungsservice"
+      ],
+      "includes": [
+        { "label": "Kapazität", "value": "7-50+ Sitze" },
+        { "label": "Gepäck", "value": "Anhänger verfügbar" },
+        { "label": "Koordinator", "value": "Engagiert" },
+        { "label": "Mehrere Fahrzeuge", "value": "Koordiniert" },
+        { "label": "Fahrer", "value": "Professionell" },
+        { "label": "Wasser", "value": "Inklusive" }
+      ],
+      "faq": [
+        {
+          "question": "Welche Gruppengrößen können Sie aufnehmen?",
+          "answer": "Von 7 bis 50+ Passagieren. Unsere Flotte umfasst Premium-Kleinbusse (7-19 Sitze), Mittelgroße Busse (20-35 Sitze) und Reisebusse (36-50+ Sitze). Für größere Gruppen koordinieren wir mehrere Fahrzeuge mit synchronisiertem Routing und Ankunft."
+        },
+        {
+          "question": "Können Sie mehrere Abholpunkte bewältigen?",
+          "answer": "Ja. Wir planen optimierte Routen mit mehreren Abholpunkten, um alle effizient einzusammeln. Ihr Gruppenkoordinator plant die Route im Voraus und teilt die Abholzeiten mit allen Passagieren."
+        },
+        {
+          "question": "Gibt es ein Gepäcklimit?",
+          "answer": "Die Gepäckkapazität hängt vom Fahrzeug ab. Für Gruppen mit Übergepäck (Skiausrüstung, Messematerial etc.) können wir auf Mehrtages-Buchungen kostenlos Gepäckanhänger bereitstellen. Teilen Sie uns Ihre Gepäckanforderungen einfach bei der Buchung mit."
+        },
+        {
+          "question": "Stellen Sie einen Gruppenkoordinator?",
+          "answer": "Ja — jede Gruppenbuchung ab 15 Passagieren inkludiert einen engagierten Koordinator. Er kümmert sich um die gesamte Logistik, kommuniziert mit den Passagieren, manages das Timing und ist während des gesamten Transfers telefonisch erreichbar. Sie müssen sich um nichts kümmern."
+        },
+        {
+          "question": "Können wir Rücktransfers für die ganze Gruppe buchen?",
+          "answer": "Absolut. Wir übernehmen Hin- und Rücktransfers für Gruppen mit demselben Koordinationsgrad. Rückabholungen werden im Voraus geplant, und Ihr Koordinator stellt sicher, dass alle rechtzeitig am richtigen Abholpunkt bereit sind."
+        },
+        {
+          "question": "Was, wenn jemand in unserer Gruppe zu spät ist?",
+          "answer": "Ihr Koordinator kontaktiert den Passagier direkt und passt die Abholung an, falls möglich. Für geplante Gruppenabfahrten bauen wir einen kleinen Puffer ein. Bei erheblicher Verspätung können wir ein separates Fahrzeug für den verspäteten Passagier zu einem Festpreis arrangieren."
+        }
+      ]
+    },
+    "dayTours": {
+      "badge": "Tagesausflüge",
+      "title": "Tages",
+      "highlight": "Ausflüge",
+      "description": "Ihr persönlicher Fahrer für einen Tag voller Entdeckungen. Besuchen Sie Schloss Neuschwanstein, bereisen Sie die Romantische Straße, erkunden Sie den Schwarzwald oder entdecken Sie Bayerns versteckte Juwelen — alles in Ihrem eigenen Tempo, mit einem ortskundigen Fahrer, der die besten Routen, die besten Restaurants und die besten Fotospots kennt. Keine starren Reisepläne, keine überfüllten Tourbusse. Nur Sie, Ihre Begleitung und ein Premium-Fahrzeug, das bereit ist, Sie dorthin zu bringen, wohin der Tag Sie führt. Halten Sie, wann Sie wollen, bleiben Sie, solange Sie wollen, und überlassen Sie uns das Fahren.",
+      "features": [
+        "Maßgeschneiderte Reiserouten nach Ihren Interessen — oder lassen Sie uns die beste Route vorschlagen",
+        "Unbegrenzte Stopps und flexibles Timing — bleiben Sie 10 Minuten oder 2 Stunden, wie Sie möchten",
+        "Ortskundiger Fahrer mit Insider-Wissen über Restaurants, Aussichtspunkte und versteckte Juwelen",
+        "Ganztägige Buchung (8-12 Stunden) ohne Kilometerlimit innerhalb der gebuchten Region",
+        "Fotostopps, landschaftliche Umwege und spontane Empfehlungen inklusive",
+        "Mehrsprachiger Reiseführer-Service auf Anfrage"
+      ],
+      "includes": [
+        { "label": "Reiseroute", "value": "Maßgeschneidert" },
+        { "label": "Stopps", "value": "Unbegrenzt" },
+        { "label": "Dauer", "value": "Ganzer Tag" },
+        { "label": "Ortskundiger Führer", "value": "Ortskenntnis" },
+        { "label": "Flexibilität", "value": "Spontan" },
+        { "label": "Wasser", "value": "Inklusive" }
+      ],
+      "faq": [
+        {
+          "question": "Wie lange dauert ein ganztägiger Ausflug?",
+          "answer": "Eine ganztägige Buchung umfasst 8-12 Stunden mit Ihrem Fahrer. Sie können innerhalb dieses Zeitfensters starten und enden, wann Sie möchten. Bei einer Verlängerung werden zusätzliche Stunden zu einem festen Stundensatz berechnet."
+        },
+        {
+          "question": "Können Sie eine Reiseroute vorschlagen?",
+          "answer": "Absolut. Unsere Fahrer kennen die landschaftlich schönsten Routen, die besten Schlösser, die charmantesten Dörfer und die Restaurants, für die es sich anzuhalten lohnt. Nennen Sie uns Ihre Interessen — Geschichte, Natur, Essen, Fotografie — und wir gestalten den perfekten Tag."
+        },
+        {
+          "question": "Welche Ziele können wir besuchen?",
+          "answer": "Beliebte Tagesausflüge umfassen Schloss Neuschwanstein, die Romantische Straße, Nürnberg, den Schwarzwald, den Bodensee, Salzburg und die Bayerischen Alpen. Wir können Routen auch nach spezifischen Interessen anpassen — Weinregionen, Weihnachtsmärkte, historische Stätten und mehr."
+        },
+        {
+          "question": "Gibt es ein Kilometerlimit?",
+          "answer": "Es gibt kein striktes Kilometerlimit innerhalb der gebuchten Region. Ihr Fahrer berät Sie zu realistischem Routing, damit Sie an jedem Stopp ausreichend Zeit haben. Bei sehr langen Strecken empfehlen wir möglicherweise eine Übernachtung — fragen Sie einfach an und wir planen entsprechend."
+        },
+        {
+          "question": "Können wir den Plan während der Tour ändern?",
+          "answer": "Natürlich — das ist das Schöne an einem privaten Fahrer. Länger an einem Aussichtspunkt bleiben? Einen Stopp überspringen? Einen Umweg hinzufügen? Sagen Sie es Ihrem Fahrer einfach. Die Reiseroute ist ein Vorschlag, keine Einschränkung."
+        },
+        {
+          "question": "Kann der Fahrer als Reiseführer fungieren?",
+          "answer": "Unsere Fahrer verfügen über umfangreiches Ortswissen und teilen während der Tour Einblicke, Geschichte und Empfehlungen. Für tiefgehende geführte Touren mit zertifiziertem Guide können wir einen dedizierten Reiseführer arrangieren, der Sie begleitet — in mehreren Sprachen verfügbar."
+        }
+      ]
+    },
+    "event": {
+      "badge": "Eventtransfer",
+      "title": "Event",
+      "highlight": "Transfer",
+      "description": "Kommen Sie stilvoll zu Ihrer Veranstaltung — und überlassen Sie uns die Logistik. Ob Hochzeit, Gala, Unternehmenskonferenz oder private Feier — wir koordinieren nahtlosen Transport für Sie und Ihre Gäste. Von einer einzelnen eleganten Limousine für das Brautpaar bis zu einer ganzen Flotte für 200 Konferenzteilnehmer manages wir jedes Detail: Ankunfts-Timing, Gäste-Koordination, VIP-Betreuung und synchronisierte Abfahrten. Ihr Event-Transport-Manager kümmert sich um alles, damit Sie sich auf den Anlass konzentrieren können.",
+      "features": [
+        "Koordinierte Mehrgast-Ankünfte mit synchronisiertem Timing",
+        "Hochzeitsauto-Dekoration (Blumen, Bänder) auf Anfrage",
+        "Engagierter Event-Transport-Manager — kümmert sich um die gesamte Gästelogistik",
+        "Flexibles Timing, abgestimmt auf Ihren Event-Zeitplan — wir warten, Sie hetzen nicht",
+        "VIP- und Ehrengast-Betreuung mit Prioritäts-Fahrzeugen",
+        "Koordination der Abfahrten nach dem Event — alle kommen sicher nach Hause"
+      ],
+      "includes": [
+        { "label": "Koordination", "value": "Mehrere Gäste" },
+        { "label": "Dekoration", "value": "Auf Anfrage" },
+        { "label": "Manager", "value": "Engagiert" },
+        { "label": "Zeitplanung", "value": "Flexibel" },
+        { "label": "Fahrzeuge", "value": "Elegant" },
+        { "label": "Wasser", "value": "Inklusive" }
+      ],
+      "faq": [
+        {
+          "question": "Können Sie den Transport für eine große Hochzeitsgesellschaft koordinieren?",
+          "answer": "Ja. Wir betreuen Hochzeiten aller Größen — von einem einzelnen Auto für das Paar bis zu einer ganzen Flotte für 200+ Gäste. Ihr Event-Manager koordiniert Abholzeiten, Routen und Ankunftsreihenfolgen, damit alle pünktlich und stressfrei ankommen."
+        },
+        {
+          "question": "Dekorieren Sie das Hochzeitsauto?",
+          "answer": "Ja, wir bieten Hochzeitsauto-Dekoration mit Blumen, Bändern und individuellen Arrangements. Nennen Sie uns Ihre Farbschemata und Vorlieben, und das Fahrzeug wird vor der Abholung schön dekoriert."
+        },
+        {
+          "question": "Wie gehen Sie mit der Gäste-Koordination um?",
+          "answer": "Ihr engagierter Event-Transport-Manager erstellt einen detaillierten Transportplan mit Abholzeiten, Adressen und Kontaktinformationen für jeden Gast. Wir kommunizieren direkt mit den Gästen, senden Erinnerungen und übernehmen letzte Änderungen — Sie müssen sich nie Sorgen machen, wer wen abholt."
+        },
+        {
+          "question": "Was, wenn das Event länger dauert?",
+          "answer": "Gar kein Problem. Wir bauen Pufferzeiten in Event-Buchungen ein und unsere Fahrer sind auf Zeitplanänderungen vorbereitet. Wenn das Event erheblich länger dauert, koordinieren wir angepasste Abholzeiten mit Ihren Gästen — ohne zusätzliche Kosten innerhalb des vereinbarten Zeitfensters."
+        },
+        {
+          "question": "Können Sie Transport für Konferenzteilnehmer bereitstellen?",
+          "answer": "Absolut. Wir betreuen regelmäßig Unternehmens-Event-Transport — von Flughafenabholungen für Referenten bis zu täglichen Shuttles zwischen Hotels und Veranstaltungsorten. Wir können einen dedizierten Schalter an Ihrer Venue für On-Demand-Transportanfragen während des Events bereitstellen."
+        },
+        {
+          "question": "Bieten Sie auch spätabendliche Abholungen nach dem Event an?",
+          "answer": "Ja. Wir operieren rund um die Uhr und arrangieren gerne spätabendliche oder frühmorgendliche Abholungen. Ob 2-Uhr-Hochzeits-After-Party-Abfahrt oder 5-Uhr-Konferenz-Referenten-Abholung — Ihr Fahrer ist da."
+        }
+      ]
+    },
+    "fair": {
+      "badge": "Messe-Transfer",
+      "title": "Messe",
+      "highlight": "Transfer",
+      "description": "Die Messesaison ist anstrengend genug — Ihr Transport sollte es nicht sein. Wir bieten zuverlässige, pünktliche Transfers zu und von allen großen deutschen Messegeländen: Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf und Messe Hamburg. Ob Sie Aussteller mit Material, Einkäufer mit eng getakteten Meetings oder eine Delegation auf dem Weg zur Messe sind — wir bringen Sie pünktlich ans Ziel, jedes Mal. Buchen Sie Ihren Rücktransfer im Voraus und vergessen Sie die Taxischlange um 18 Uhr, wenn die Hallen schließen.",
+      "features": [
+        "Direkttransport zu allen großen deutschen Messegeländen",
+        "Flexible Zeitplanung, abgestimmt auf Messzeiten — frühe Morgen und späte Abende",
+        "Rücktransfers im Voraus gebucht — kein Warten in Taxischlangen nach Messeende",
+        "Transport von Gepäck, Mustern und Ausstellungsmaterial inklusive",
+        "Mehrtages-Buchungen mit demselben Fahrer für Konsistenz",
+        "Koordinierter Gruppentransport für Delegationen und Teams"
+      ],
+      "includes": [
+        { "label": "Messegelände", "value": "Alle großen" },
+        { "label": "Zeitplanung", "value": "Flexibel" },
+        { "label": "Rückfahrt", "value": "Vorausgebucht" },
+        { "label": "Materialien", "value": "Transportiert" },
+        { "label": "Fahrer", "value": "Professionell" },
+        { "label": "Wasser", "value": "Inklusive" }
+      ],
+      "faq": [
+        {
+          "question": "Welche Messegelände bedienen Sie?",
+          "answer": "Wir bedienen alle großen deutschen Messegelände: Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf, Messe Hamburg und Messe Stuttgart. Auf Anfrage decken wir auch internationale Messen in den Nachbarländern ab."
+        },
+        {
+          "question": "Können Sie Ausstellungsmaterial transportieren?",
+          "answer": "Ja. Unsere V-Class-Vans und größere Fahrzeuge können Ausstellungsmaterial, Muster, Broschüren und Display-Ausrüstung aufnehmen. Für sperrige oder schwere Gegenstände können wir ein dediziertes Frachtfahrzeug arrangieren. Teilen Sie uns einfach bei der Buchung mit, was Sie mitbringen."
+        },
+        {
+          "question": "Kann ich für mehrere Messtage denselben Fahrer buchen?",
+          "answer": "Absolut. Für mehrtägige Messen weisen wir für die Dauer Ihrer Buchung denselben Fahrer zu. Das gewährleistet Konsistenz — Ihr Fahrer kennt Ihren Zeitplan, Ihr Hotel und Ihre bevorzugte Route zum Messegelände."
+        },
+        {
+          "question": "Wie ist es mit Rücktransfers nach Messeschluss?",
+          "answer": "Wir empfehlen dringend, Ihren Rücktransfer im Voraus zu buchen. Wenn die Messe schließt, können Taxischlangen 45+ Minuten lang sein. Mit einem vorausgebuchten Transfer wartet Ihr Fahrer an einem festgelegten Abholpunkt und Sie sind sofort unterwegs."
+        },
+        {
+          "question": "Können Sie frühmorgendliche Abholungen bewältigen?",
+          "answer": "Ja. Viele Messen beginnen früh mit Aussteller-Zugang ab 7 Uhr. Wir sind für Abholungen so früh wie nötig verfügbar — nennen Sie uns einfach Ihren Zeitplan und wir sind da, pünktlich, jeden Tag."
+        },
+        {
+          "question": "Bieten Sie Gruppentransport für Messedelegationen an?",
+          "answer": "Ja. Wir koordinieren Gruppentransport für Delegationen jeder Größe — von einem einzelnen Van für ein kleines Team bis zu mehreren Reisebussen für große Gruppen. Ihr engagierter Koordinator übernimmt Abhollogistik, Timing und Kommunikation mit allen Delegationsmitgliedern."
+        }
+      ]
+    },
+    "prices": {
+      "badge": "Preise & Tarife",
+      "title": "Preise &",
+      "highlight": "Tarife",
+      "description": "Transparente, feste Preise — kein Zähler, keine Überraschungen. Wir berechnen pro Kilometer mit einem klaren Grundtarif, und jedes Angebot inkludiert alle Steuern, Mauten und Gebühren. Was Sie bei der Buchung sehen, ist genau das, was Sie zahlen. Keine Preisspitzen zu Stoßzeiten, keine versteckten Zielzuschläge, keine \"die Route war länger\"-Überraschungen. Ob Sie eine Business-Class-Limousine für den Flughafen oder eine First-Class-Limousine für einen ganztägigen Einsatz brauchen — Sie kennen den Preis, bevor Sie buchen.",
+      "features": [
+        "Festpreis pro Kilometer — bei Buchung garantiert, ändert sich nie",
+        "Keine Preisspitzen — derselbe Tarif zu Stoßzeiten, um Mitternacht oder in der Ferienzeit",
+        "All-inklusive Preisgestaltung — Steuern, Mauten und Gebühren in jedem Angebot inklusive",
+        "Nachtzuschlag (22:00-06:00): +25% — klar ausgewiesen, nie versteckt",
+        "Flughafenabholgebühr: +€8 (deckt Terminalzugang und Parkgebühren)",
+        "Kostenlose Stornierung bis zu 24 Stunden vor Abholung — ohne Rückfragen"
+      ],
+      "includes": [
+        { "label": "E-Class", "value": "€3.0/km" },
+        { "label": "S-Class", "value": "€4.5/km" },
+        { "label": "V-Class", "value": "€3.5/km" },
+        { "label": "Grundtarif", "value": "€10-15" },
+        { "label": "Nacht", "value": "+25%" },
+        { "label": "Flughafen", "value": "+€8" }
+      ],
+      "faq": [
+        {
+          "question": "Wie wird der Preis berechnet?",
+          "answer": "Der Preis basiert auf einem Kilometersatz für Ihre Fahrzeugklasse plus einem Grundtarif. Das System berechnet die optimale Route und gibt Ihnen einen Festpreis bei der Buchung. Dieser Preis ist garantiert — er ändert sich nicht, auch wenn Verkehr zusätzliche Zeit kostet."
+        },
+        {
+          "question": "Gibt es versteckte Gebühren?",
+          "answer": "Keine. Alle Steuern, Mauten und Gebühren sind im angegebenen Preis inklusive. Die einzigen Zusätze sind klar ausgewiesen: ein Nachtzuschlag von +25% (22:00-06:00) und eine Flughafenabholgebühr von +€8. Alles wird transparent angezeigt, bevor Sie Ihre Buchung bestätigen."
+        },
+        {
+          "question": "Berechnen Sie mehr zu Stoßzeiten?",
+          "answer": "Nein. Wir verwenden keine Preisspitzen. Der Kilometersatz ist zu Stoßzeiten, an Feiertagen und bei großen Events derselbe. Sie zahlen nie mehr, weil die Nachfrage hoch ist."
+        },
+        {
+          "question": "Wie lautet die Stornierungsrichtlinie?",
+          "answer": "Kostenlose Stornierung bis zu 24 Stunden vor Ihrer geplanten Abholzeit. Stornierungen innerhalb von 24 Stunden werden mit 50% des Buchungspreises berechnet. Nichterscheinen wird mit 100% berechnet. Rückerstattungen werden innerhalb von 5-7 Werktagen abgewickelt."
+        },
+        {
+          "question": "Wie bezahle ich?",
+          "answer": "Sie können per Kreditkarte, SEPA-Banküberweisung oder auf Unternehmensrechnung (für Geschäftskonten mit Kreditvereinbarung) bezahlen. Die Zahlung wird nach Abschluss der Fahrt abgewickelt. Für Unternehmenskunden bieten wir monatliche Abrechnung."
+        },
+        {
+          "question": "Kann ich ein individuelles Angebot für eine komplexe Reise erhalten?",
+          "answer": "Absolut. Für Mehrstopp-Fahrten, ganztägige Buchungen oder besondere Anforderungen kontaktieren Sie uns direkt und wir erstellen ein detailliertes individuelles Angebot. Unser Team antwortet innerhalb von 1 Stunde während der Geschäftszeiten und innerhalb von 4 Stunden außerhalb der Geschäftszeiten."
+        }
+      ]
+    }
+  }
+}

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { User, Mail, Phone, Calendar, Car, MapPin, Clock, FileText, LogOut, CheckCircle2, XCircle, Clock as ClockIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase-client";
 
@@ -37,6 +38,7 @@ const statusConfig: Record<string, { label: string; color: string; icon: any }> 
 };
 
 export default function DashboardPage() {
+  const t = useTranslations("Dashboard");
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
@@ -113,8 +115,8 @@ export default function DashboardPage() {
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <div>
-            <h1 className="font-display text-4xl font-bold text-white mb-2">My Dashboard</h1>
-            <p className="text-ash">Welcome back, {profile?.full_name || user.email}</p>
+            <h1 className="font-display text-4xl font-bold text-white mb-2">{t("title")}</h1>
+            <p className="text-ash">{t("welcome")}, {profile?.full_name || user.email}</p>
           </div>
           <button
             onClick={handleLogout}
@@ -128,7 +130,7 @@ export default function DashboardPage() {
           {/* Profile card */}
           <div className="glass rounded-2xl p-6">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="font-display text-xl font-bold text-white">Profile</h2>
+              <h2 className="font-display text-xl font-bold text-white">{t("profile")}</h2>
               {!editing && (
                 <button
                   onClick={() => setEditing(true)}
@@ -207,23 +209,23 @@ export default function DashboardPage() {
             <h2 className="font-display text-xl font-bold text-white mb-6">Overview</h2>
             <div className="space-y-4">
               <div className="flex items-center justify-between py-3 border-b border-white/10">
-                <span className="text-sm text-ash">Total bookings</span>
+                <span className="text-sm text-ash">{t("totalBookings")}</span>
                 <span className="font-display text-2xl font-bold text-white">{bookings.length}</span>
               </div>
               <div className="flex items-center justify-between py-3 border-b border-white/10">
-                <span className="text-sm text-ash">Confirmed</span>
+                <span className="text-sm text-ash">{t("confirmed")}</span>
                 <span className="font-display text-2xl font-bold text-green-400">
                   {bookings.filter((b) => b.status === "confirmed").length}
                 </span>
               </div>
               <div className="flex items-center justify-between py-3 border-b border-white/10">
-                <span className="text-sm text-ash">Completed</span>
+                <span className="text-sm text-ash">{t("completed")}</span>
                 <span className="font-display text-2xl font-bold text-blue-400">
                   {bookings.filter((b) => b.status === "completed").length}
                 </span>
               </div>
               <div className="flex items-center justify-between py-3">
-                <span className="text-sm text-ash">Total spent</span>
+                <span className="text-sm text-ash">{t("totalSpent")}</span>
                 <span className="font-display text-2xl font-bold text-white">
                   €{bookings.reduce((sum, b) => sum + (b.price || 0), 0)}
                 </span>
@@ -234,30 +236,30 @@ export default function DashboardPage() {
           {/* Quick action */}
           <div className="glass rounded-2xl p-6 flex flex-col justify-between">
             <div>
-              <h2 className="font-display text-xl font-bold text-white mb-6">New booking</h2>
+              <h2 className="font-display text-xl font-bold text-white mb-6">{t("newBooking")}</h2>
               <p className="text-sm text-ash mb-6">
-                Need another ride? Book a chauffeur in just a few clicks.
+                {t("newBookingDesc")}
               </p>
             </div>
             <Link
               href="/"
               className="inline-flex items-center justify-center gap-2 bg-white text-ink font-semibold rounded-lg py-3 hover:bg-white/90 transition-colors"
             >
-              Book now <Car size={16} />
+              {t("bookNow")} <Car size={16} />
             </Link>
           </div>
         </div>
 
         {/* Bookings history */}
         <div className="mt-8">
-          <h2 className="font-display text-2xl font-bold text-white mb-6">Booking history</h2>
+          <h2 className="font-display text-2xl font-bold text-white mb-6">{t("bookingHistory")}</h2>
 
           {bookings.length === 0 ? (
             <div className="glass rounded-2xl p-12 text-center">
               <Car size={40} className="text-white/20 mx-auto mb-4" />
-              <p className="text-ash mb-2">No bookings yet</p>
+              <p className="text-ash mb-2">{t("noBookings")}</p>
               <Link href="/" className="text-sm text-white hover:underline">
-                Book your first ride →
+                {t("bookFirstRide")} →
               </Link>
             </div>
           ) : (
@@ -275,7 +277,7 @@ export default function DashboardPage() {
                             {booking.origin} → {booking.destination}
                           </p>
                           <p className="text-xs text-stone mt-1">
-                            Booked on {new Date(booking.created_at).toLocaleDateString("en-GB", {
+                            {t("bookedOn")} {new Date(booking.created_at).toLocaleDateString("en-GB", {
                               day: "numeric",
                               month: "short",
                               year: "numeric",
@@ -296,31 +298,31 @@ export default function DashboardPage() {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-white/10">
                       <div>
                         <p className="text-xs text-white/50 uppercase tracking-wide mb-1 flex items-center gap-1">
-                          <Calendar size={11} /> Date
+                          <Calendar size={11} /> {t("pickupDate")}
                         </p>
                         <p className="text-sm text-white">{booking.pickup_date || "—"}</p>
                       </div>
                       <div>
                         <p className="text-xs text-white/50 uppercase tracking-wide mb-1 flex items-center gap-1">
-                          <Clock size={11} /> Time
+                          <Clock size={11} /> {t("pickupTime")}
                         </p>
                         <p className="text-sm text-white">{booking.pickup_time || "—"}</p>
                       </div>
                       <div>
                         <p className="text-xs text-white/50 uppercase tracking-wide mb-1 flex items-center gap-1">
-                          <Car size={11} /> Vehicle
+                          <Car size={11} /> {t("vehicle")}
                         </p>
                         <p className="text-sm text-white">{booking.vehicle}</p>
                       </div>
                       <div>
-                        <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Distance / Duration</p>
+                        <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("distance")}</p>
                         <p className="text-sm text-white">{booking.distance} · {booking.duration}</p>
                       </div>
                     </div>
 
                     {booking.extra_info && (
                       <div className="mt-3 pt-3 border-t border-white/10">
-                        <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Extra info</p>
+                        <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("extraInfo")}</p>
                         <p className="text-sm text-ash">{booking.extra_info}</p>
                       </div>
                     )}

@@ -1,0 +1,579 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "fleet": "Flotta",
+    "services": "Servizi",
+    "contact": "Contatti",
+    "bookNow": "Prenota ora",
+    "login": "Accedi",
+    "register": "Registrati",
+    "dashboard": "Dashboard",
+    "logout": "Esci",
+    "fleetOverview": "Panoramica",
+    "fleetSClass": "Limousine Prima Classe",
+    "fleetEClass": "Limousine Classe Business",
+    "fleetVClass": "Van Business",
+    "serviceAirport": "Transfer Aeroporto",
+    "serviceChauffeur": "Servizio Autista",
+    "serviceDiplomatic": "Autista Diplomatico",
+    "serviceGroup": "Transfer di Gruppo",
+    "serviceDayTours": "Gite Giornaliere",
+    "serviceEvent": "Transfer Eventi",
+    "serviceFair": "Transfer Fiere",
+    "servicePrices": "Prezzi & Tariffe",
+    "allServices": "Tutti i servizi"
+  },
+  "Hero": {
+    "badge": "Transfer aeroporto 24 ore - Autisti professionisti",
+    "title": "TrendMyDrive",
+    "subtitle": "Transfer aeroporto esclusivi a Monaco, Francoforte, Berlino, Colonia/Bonn, Amburgo, Düsseldorf e altro",
+    "aboutUs": "Chi siamo",
+    "ourServices": "I nostri servizi",
+    "scroll": "Scorri"
+  },
+  "Booking": {
+    "pickup": "Ritiro",
+    "pickupPlaceholder": "Aeroporto, hotel, indirizzo...",
+    "destination": "Destinazione",
+    "destinationPlaceholder": "Dove vuoi andare?",
+    "date": "Data",
+    "time": "Ora",
+    "passengers": "Passeggeri",
+    "vehicle": "Veicolo",
+    "getPrice": "Ottieni prezzo",
+    "reserveNow": "Prenota ora"
+  },
+  "Fleet": {
+    "badge": "I nostri veicoli",
+    "title": "La nostra",
+    "highlight": "flotta",
+    "description": "Da eleganti limousine a pullman spaziosi — scegli il veicolo giusto per ogni occasione. Tutti i veicoli sono dotati di dotazioni premium e mantenuti in modo impeccabile.",
+    "passengers": "Passeggeri",
+    "luggage": "Bagagli"
+  },
+  "Services": {
+    "badge": "Cosa offriamo",
+    "title": "I nostri",
+    "highlight": "servizi",
+    "description": "Ci specializziamo in servizio autista di prima classe — focalizzato su comfort, puntualità e professionalità.",
+    "learnMore": "Scopri di più",
+    "airportTitle": "Transfer Aeroporto",
+    "airportDesc": "Transfer fluidi e puntuali da e per tutti i principali aeroporti europei.",
+    "chauffeurTitle": "Servizio Autista",
+    "chauffeurDesc": "Viaggia con comfort ed eleganza nella nostra flotta di veicoli premium con autisti professionisti.",
+    "dayToursTitle": "Gite Giornaliere",
+    "dayToursDesc": "Partenza mattutina o arrivo tardivo — siamo in strada per te a qualsiasi ora.",
+    "groupTitle": "Transfer di Gruppo",
+    "groupDesc": "Dal minibus al pullman — trasporto affidabile con autista per gruppi di qualsiasi dimensione."
+  },
+  "EasyBooking": {
+    "badge": "Prenotazione facile",
+    "title": "In pochi passi al tuo",
+    "highlight": "autista",
+    "description": "Inserisci il tuo percorso, ricevi un prezzo fisso trasparente e rilassati. Nessuna attesa, nessun costo nascosto — solo un autista professionista pronto in orario."
+  },
+  "WhyUs": {
+    "badge": "Perché sceglierci",
+    "title": "Viaggia con",
+    "highlight": "fiducia",
+    "faqBadge": "FAQ",
+    "faqTitle": "Domande & risposte",
+    "featuresTitle": "Cosa ottieni"
+  },
+  "CTA": {
+    "title": "Prenota il tuo autista",
+    "description": "Pronto per un viaggio di prima classe? Ottieni il tuo prezzo fisso ora.",
+    "button": "Inizia ora"
+  },
+  "Routes": {
+    "badge": "Percorsi popolari",
+    "title": "Percorsi che percorriamo",
+    "highlight": "regolarmente",
+    "description": "Da Monaco a tutti i principali aeroporti e città in Germania e nei paesi limitrofi."
+  },
+  "FinalCTA": {
+    "title": "Pronto per il tuo viaggio?",
+    "description": "Prenota ora o contattaci — siamo qui 24/7.",
+    "bookNow": "Prenota ora",
+    "contact": "Contattaci"
+  },
+  "Auth": {
+    "loginTitle": "Bentornato",
+    "loginSubtitle": "Accedi per gestire le tue prenotazioni",
+    "registerTitle": "Crea il tuo account",
+    "registerSubtitle": "Prenota e gestisci i tuoi viaggi con autista",
+    "fullName": "Nome completo",
+    "phone": "Telefono",
+    "email": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "Min. 6 caratteri",
+    "signIn": "Accedi",
+    "signingIn": "Accesso in corso...",
+    "createAccount": "Crea account",
+    "creatingAccount": "Creazione account...",
+    "noAccount": "Non hai un account?",
+    "haveAccount": "Hai già un account?",
+    "loginFailed": "Accesso fallito",
+    "registerFailed": "Registrazione fallita"
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "description": "Rivedi la tua prenotazione e completa i tuoi dati.",
+    "backToHome": "Torna alla home",
+    "yourBooking": "La tua prenotazione",
+    "pickup": "Ritiro",
+    "destination": "Destinazione",
+    "date": "Data",
+    "time": "Ora",
+    "vehicle": "Veicolo",
+    "passengers": "Passeggeri",
+    "distance": "Distanza",
+    "duration": "Durata",
+    "rate": "Tariffa",
+    "total": "Totale",
+    "extraInfo": "Informazioni aggiuntive",
+    "guest": "Ospite",
+    "guestDesc": "Prenota senza account. Riceverai una conferma via email.",
+    "loginDesc": "Accedi per consultare lo storico delle prenotazioni e le fatture.",
+    "registerDesc": "Crea un account per lo storico delle prenotazioni, le fatture e un checkout più veloce.",
+    "signedIn": "Connesso",
+    "signedInDesc": "La tua prenotazione verrà salvata nel tuo account. Rivedi i dettagli e continua al pagamento.",
+    "continueToPayment": "Continua al pagamento",
+    "fillAllFields": "Si prega di compilare tutti i campi.",
+    "fillEmailPassword": "Si prega di compilare email e password.",
+    "fillNamePhone": "Si prega di inserire nome completo e telefono.",
+    "securePayment": "Pagamento sicuro con crittografia SSL",
+    "freeCancellation": "Cancellazione gratuita fino a 24h prima del ritiro",
+    "support": "Assistenza clienti 24/7"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Bentornato",
+    "totalBookings": "Prenotazioni totali",
+    "confirmed": "Confermate",
+    "completed": "Completate",
+    "totalSpent": "Totale speso",
+    "newBooking": "Nuova prenotazione",
+    "newBookingDesc": "Hai bisogno di un altro viaggio? Prenota un autista in pochi clic.",
+    "bookNow": "Prenota ora",
+    "bookingHistory": "Storico prenotazioni",
+    "noBookings": "Nessuna prenotazione ancora",
+    "bookFirstRide": "Prenota il tuo primo viaggio",
+    "bookedOn": "Prenotato il",
+    "status": "Stato",
+    "route": "Percorso",
+    "price": "Prezzo",
+    "pickupDate": "Data di ritiro",
+    "pickupTime": "Ora di ritiro",
+    "vehicle": "Veicolo",
+    "distance": "Distanza",
+    "extraInfo": "Informazioni aggiuntive",
+    "profile": "Profilo",
+    "memberSince": "Membro dal",
+    "invoices": "Fatture",
+    "noInvoices": "Nessuna fattura ancora"
+  },
+  "Footer": {
+    "tagline": "Servizio autista premium — transfer aeroporto 24/7 e viaggi business in tutta la Germania.",
+    "fleet": "Flotta",
+    "services": "Servizi",
+    "company": "Azienda",
+    "contact": "Contatti",
+    "about": "Chi siamo",
+    "rights": "Tutti i diritti riservati."
+  },
+  "ServicePages": {
+    "bookNow": "Prenota ora",
+    "callUs": "Chiamaci",
+    "whatsIncluded": "Cosa è incluso",
+    "faqTitle": "Domande frequenti",
+    "readyToBook": "Pronto per prenotare?",
+    "readyToBookDesc": "Ottieni un prezzo fisso trasparente in pochi secondi. Nessuna attesa, nessun costo nascosto.",
+    "allServices": "Tutti i servizi",
+    "airport": {
+      "badge": "Transfer Aeroporto",
+      "title": "Aeroporto",
+      "highlight": "Transfer",
+      "description": "Inizia il tuo viaggio senza stress. I nostri autisti monitorano il tuo volo in tempo reale, si adattano ai ritardi e ti aspettano all'interno del terminal con un cartello con il tuo nome. Che tu stia atterrando a Monaco, Francoforte, Berlino o in qualsiasi altro grande aeroporto europeo — il tuo autista è già lì prima ancora che tu tocchi terra. Niente code, niente lotte con i bagagli, niente contrattazioni dell'ultimo minuto con i taxi. Solo un veicolo premium che ti aspetta curbside e un autista professionista pronto a portarti a destinazione.",
+      "features": [
+        "Monitoraggio volo in tempo reale con adeguamento automatico dei ritardi",
+        "Meet & greet all'interno del terminal con cartello personalizzato con il tuo nome",
+        "60 minuti di tempo di attesa gratuito dopo l'atterraggio — senza fretta, senza stress",
+        "Prezzo fisso garantito al momento della prenotazione — nessun prezzo dinamico, nessun tassametro, nessuna sorpresa",
+        "Volo cancellato o in ritardo? Riassegniamo automaticamente senza costi aggiuntivi",
+        "Servizio porta a porta con assistenza bagagli inclusa"
+      ],
+      "includes": [
+        { "label": "Monitoraggio volo", "value": "Incluso" },
+        { "label": "Tempo di attesa", "value": "60 min gratis" },
+        { "label": "Meet & greet", "value": "Incluso" },
+        { "label": "Cancellazione", "value": "Gratuita 24h" },
+        { "label": "Acqua in bottiglia", "value": "Inclusa" },
+        { "label": "WiFi", "value": "Gratuito" }
+      ],
+      "faq": [
+        {
+          "question": "Come monitorate il mio volo?",
+          "answer": "Monitoriamo il numero del tuo volo in tempo reale utilizzando feed di dati aeroportuali live. Se il tuo volo è in ritardo, il tuo autista viene automaticamente avvisato e adeguare l'orario di ritiro — senza costi aggiuntivi per te. Arrivi in anticipo? Saremo lì anche in quel caso."
+        },
+        {
+          "question": "Dove mi verrà incontro il mio autista?",
+          "answer": "Il tuo autista ti aspetterà all'interno del terminal degli arrivi tenendo un cartello con il tuo nome. Per alcuni aeroporti, possiamo anche organizzare un ritiro curbside se preferisci. Riceverai il nome, la foto e il numero di telefono dell'autista prima dell'atterraggio."
+        },
+        {
+          "question": "Cosa succede se il mio volo è in ritardo?",
+          "answer": "Non devi preoccuparti — monitoriamo ogni volo e ci adeguamo automaticamente. Non ci sono costi aggiuntivi per i ritardi. Se il tuo volo viene cancellato, contattaci semplicemente e riprogrammeremo il tuo transfer senza costi."
+        },
+        {
+          "question": "Quanto tempo di attesa è incluso?",
+          "answer": "Includiamo 60 minuti di tempo di attesa gratuito dopo l'atterraggio del tuo volo. Questo ti dà tutto il tempo necessario per passare la dogana, ritirare i bagagli e incontrare il tuo autista. Il tempo di attesa aggiuntivo viene addebitato a una tariffa oraria fissa."
+        },
+        {
+          "question": "Posso prenotare anche il transfer di ritorno?",
+          "answer": "Assolutamente. Puoi prenotare sia il ritiro all'aeroporto che il transfer di ritorno in un'unica prenotazione. I transfer di ritorno includono lo stesso monitoraggio del volo, meet & greet e garanzia di prezzo fisso."
+        },
+        {
+          "question": "Quali veicoli sono disponibili per i transfer aeroporto?",
+          "answer": "Offriamo Mercedes E-Class (Business), S-Class (First Class) e V-Class (Business Van) per i transfer aeroporto. Tutti i veicoli sono dotati di dotazioni premium, impeccabilmente puliti e dotati di WiFi gratuito, acqua in bottiglia e caricabatterie per telefono."
+        }
+      ]
+    },
+    "chauffeur": {
+      "badge": "Servizio Autista",
+      "title": "Autista",
+      "highlight": "Servizio",
+      "description": "Più di un semplice viaggio — un'esperienza di prima classe. I nostri autisti professionisti sono disponibili su base oraria o giornaliera, pronti a portarti ovunque il business o il piacere richieda. Discreti, impeccabilmente vestiti e formati nell'ospitalità, si occupano di ogni dettaglio: bagagli, tempistica, ottimizzazione del percorso e tappe multiple. Che si tratti di riunioni consecutive in città, di un ritiro cliente o di un incarico esecutivo di un'intera giornata, ti basta sederti e concentrarti su ciò che conta mentre noi ci occupiamo della strada.",
+      "features": [
+        "Autisti professionisti in giacca e cravatta — discreti, puntuali e cortesi",
+        "Prenotazione su base oraria o giornaliera — flessibilità completa per il tuo programma",
+        "Tappe multiple, cambi di percorso e tempo di attesa inclusi — nessun costo extra",
+        "Autisti multilingue disponibili su richiesta (EN, DE, FR, IT, ZH)",
+        "Servizio porta a porta con gestione bagagli e servizio ombrello",
+        "Riservatezza garantita — ideale per dirigenti e clienti di alto profilo"
+      ],
+      "includes": [
+        { "label": "Autista", "value": "Professionista" },
+        { "label": "Abbigliamento", "value": "Giacca e cravatta" },
+        { "label": "Tappe", "value": "Multiple" },
+        { "label": "Prenotazione", "value": "Oraria/Giornaliera" },
+        { "label": "Lingue", "value": "Su richiesta" },
+        { "label": "Acqua", "value": "Inclusa" }
+      ],
+      "faq": [
+        {
+          "question": "Come funziona la prenotazione su base oraria?",
+          "answer": "Prenoti un autista per un minimo di 3 ore. L'autista rimane con te per l'intera durata prenotata, pronto a guidare quando e dove vuoi. Le ore aggiuntive oltre la tua prenotazione vengono addebitate a una tariffa oraria fissa."
+        },
+        {
+          "question": "Posso fare più tappe durante la mia prenotazione?",
+          "answer": "Sì — tappe illimitate sono incluse nel tempo prenotato. Il tuo autista ti aspetterà a ogni tappa, che si tratti di una riunione di 10 minuti o di un pranzo di 2 ore. Comunicaci semplicemente la tua prossima destinazione e noi ci occupiamo del resto."
+        },
+        {
+          "question": "Cosa succede se la mia riunione dura più del previsto?",
+          "answer": "Nessun problema. Comunicalo semplicemente al tuo autista e estenderemo la prenotazione alla nostra tariffa oraria standard. Non abbandoniamo mai un cliente a metà incarico — il tuo autista rimane fino a quando non hai finito."
+        },
+        {
+          "question": "Posso richiedere un autista specifico o una lingua?",
+          "answer": "Sì. Abbiamo autisti multilingue (inglese, tedesco, francese, italiano, cinese) disponibili su richiesta. Per prenotazioni ricorrenti, possiamo assegnare lo stesso autista per garantire coerenza e familiarità con le tue preferenze."
+        },
+        {
+          "question": "Quali zone coprite?",
+          "answer": "Operiamo in tutta la Germania e nei paesi limitrofi. I nostri autisti conoscono tutte le principali città, i quartieri business, gli aeroporti e le sedi di eventi. Transfer a lunga distanza e transfrontalieri sono disponibili su richiesta."
+        },
+        {
+          "question": "Il servizio è riservato?",
+          "answer": "Assolutamente. Tutti i nostri autisti firmano accordi di riservatezza rigorosi. Serviamo regolarmente dirigenti, celebrità e clienti di alto profilo. Niente foto, niente discussioni, niente divulgazioni — la tua privacy è la nostra priorità."
+        }
+      ]
+    },
+    "diplomatic": {
+      "badge": "Autista Diplomatico",
+      "title": "Diplomatico",
+      "highlight": "Autista",
+      "description": "Quando protocollo, sicurezza e discrezione sono innegabili. Il nostro servizio di autista diplomatico è affidato da ambasciate, consolati e delegazioni governative in tutta la Germania. I nostri autisti sono formati al protocollo, autorizzati alla sicurezza ed esperti nella gestione del trasporto VIP con la massima professionalità. Dagli arrivi in aeroporto con autorizzazione diplomatica ai convogli multi-veicolo per le delegazioni, comprendiamo le sfumature del trasporto diplomatico — l'etichetta giusta, il tempismo giusto, il livello giusto di visibilità.",
+      "features": [
+        "Autisti formati al protocollo con autorizzazione di sicurezza",
+        "Riservatezza e discrezione rigorose — NDA archiviato per ogni incarico",
+        "Veicoli blindati disponibili su richiesta (livello di protezione B6)",
+        "Disponibilità 24/7 per operazioni delle ambasciate e missioni diplomatiche",
+        "Convogli multi-veicolo coordinati per delegazioni e motorcade",
+        "Autorizzazione aeroportuale diplomatica e assistenza VIP fast-track"
+      ],
+      "includes": [
+        { "label": "Sicurezza", "value": "Autorizzato" },
+        { "label": "Protocollo", "value": "Formato" },
+        { "label": "Blindato", "value": "Su richiesta" },
+        { "label": "Disponibilità", "value": "24/7" },
+        { "label": "Discrezione", "value": "Garantita" },
+        { "label": "Tappe multiple", "value": "Incluse" }
+      ],
+      "faq": [
+        {
+          "question": "I vostri autisti sono autorizzati alla sicurezza?",
+          "answer": "Sì. Tutti gli autisti assegnati a missioni diplomatiche vengono sottoposti a controlli di background e portano documentazione di autorizzazione alla sicurezza. Possiamo fornire certificati di autorizzazione su richiesta e lavoriamo a stretto contatto con i team di sicurezza delle ambasciate."
+        },
+        {
+          "question": "Potete fornire veicoli blindati?",
+          "answer": "Sì, offriamo veicoli blindati di livello B6 su richiesta. Questi veicoli sono certificati e mantenuti ai più alti standard di sicurezza. Si prega di prenotare i veicoli blindati con almeno 48 ore di anticipo per garantirne la disponibilità."
+        },
+        {
+          "question": "Gestite l'autorizzazione aeroportuale diplomatica?",
+          "answer": "Sì. Coordiniamo con le autorità aeroportuali per l'autorizzazione diplomatica, il VIP fast-track attraverso l'immigrazione e il ritiro sicuro direttamente dall'aeromobile o dal terminal VIP. Gestiamo tutta la logistica — la tua delegazione deve solo scendere dall'aereo."
+        },
+        {
+          "question": "Potete coordinare convogli multi-veicolo?",
+          "answer": "Assolutamente. Abbiamo esperienza nell'organizzazione di motorcade e delegazioni multi-veicolo di qualsiasi dimensione. Ogni veicolo è dotato di sistemi di comunicazione e il nostro team di coordinamento gestisce tempistica, percorso e protocolli di sicurezza end-to-end."
+        },
+        {
+          "question": "In quali protocolli sono formati i vostri autisti?",
+          "answer": "I nostri autisti sono formati al protocollo diplomatico, incluse le forme di indirizzo corrette, l'etichetta di bandiera e rango, il posizionamento di scorta e la discrezione nelle comunicazioni. Comprendono l'importanza della visibilità vs. privacy e si adattano alle esigenze di ogni delegazione."
+        },
+        {
+          "question": "Come garantite la riservatezza?",
+          "answer": "Ogni autista firma un NDA vincolante prima di ogni incarico. Non memorizziamo dati sui percorsi, elenchi di passeggeri o informazioni di pianificazione oltre la durata del servizio. Tutte le comunicazioni sono crittografate e gestite tramite canali sicuri."
+        }
+      ]
+    },
+    "group": {
+      "badge": "Transfer di Gruppo",
+      "title": "Gruppo",
+      "highlight": "Transfer",
+      "description": "Che si tratti di 7 colleghi diretti a una conferenza o di 50 ospiti a un matrimonio — muoviamo i gruppi senza intoppi. La nostra flotta va dai minibus premium ai pullman a grandezza intera, tutti guidati da autisti professionisti in uniforme. Un coordinatore di gruppo dedicato gestisce ogni dettaglio: logistica di ritiro, gestione dei bagagli, più punti di ritiro e orari di arrivo sincronizzati. Nessuno aspetta, nessuno si perde e tutti arrivano insieme, in orario e in comfort.",
+      "features": [
+        "Veicoli dai minibus da 7 posti ai pullman da 50+ posti",
+        "Prenotazioni multi-veicolo coordinate con arrivo sincronizzato",
+        "Coordinatore di gruppo dedicato — unico punto di contatto per tutto",
+        "Rimorchi per bagagli e spazio extra disponibili su richiesta",
+        "Più punti di ritiro con percorso ottimizzato",
+        "Cartelli con nome, assistenza all'imbarco e servizio di benvenuto per il gruppo"
+      ],
+      "includes": [
+        { "label": "Capacità", "value": "7-50+ posti" },
+        { "label": "Bagagli", "value": "Rimorchi disponibili" },
+        { "label": "Coordinatore", "value": "Dedicato" },
+        { "label": "Multi-veicolo", "value": "Coordinato" },
+        { "label": "Autista", "value": "Professionista" },
+        { "label": "Acqua", "value": "Inclusa" }
+      ],
+      "faq": [
+        {
+          "question": "Di che dimensioni di gruppi vi occupate?",
+          "answer": "Da 7 a 50+ passeggeri. La nostra flotta include minibus premium (7-19 posti), bus di media grandezza (20-35 posti) e pullman a grandezza intera (36-50+ posti). Per gruppi più grandi, coordiniamo più veicoli con percorso e arrivo sincronizzati."
+        },
+        {
+          "question": "Potete gestire più punti di ritiro?",
+          "answer": "Sì. Pianifichiamo percorsi ottimizzati con più punti di ritiro, assicurando che tutti vengano raccolti in modo efficiente. Il tuo coordinatore di gruppo mappera il percorso in anticipo e condividerà gli orari di ritiro con tutti i passeggeri."
+        },
+        {
+          "question": "C'è un limite di bagagli?",
+          "answer": "La capacità dei bagagli dipende dal veicolo. Per gruppi con bagagli in eccesso (attrezzatura da sci, materiali per fiere, ecc.), possiamo fornire rimorchi per bagagli senza costi extra su prenotazioni multi-giorno. Comunicaci semplicemente le tue esigenze di bagagli al momento della prenotazione."
+        },
+        {
+          "question": "Fornite un coordinatore di gruppo?",
+          "answer": "Sì — ogni prenotazione di gruppo di 15+ passeggeri include un coordinatore dedicato. Si occupa di tutta la logistica, comunica con i passeggeri, gestisce la tempistica ed è disponibile telefonicamente per tutta la durata del transfer. Non dovrai mai preoccuparti di nulla."
+        },
+        {
+          "question": "Possiamo prenotare i transfer di ritorno per l'intero gruppo?",
+          "answer": "Assolutamente. Gestiamo transfer di gruppo andata e ritorno con lo stesso livello di coordinamento. I ritiri di ritorno vengono programmati in anticipo e il tuo coordinatore assicura che tutti siano pronti e al punto di ritiro giusto in orario."
+        },
+        {
+          "question": "Cosa succede se qualcuno del nostro gruppo è in ritardo?",
+          "answer": "Il tuo coordinatore contatterà il passeggero direttamente e adeguerà il ritiro se possibile. Per le partenze di gruppo programmate, inseriamo un piccolo margine. Se il ritardo è significativo, possiamo organizzare un veicolo separato per il passeggero in ritardo a una tariffa fissa."
+        }
+      ]
+    },
+    "dayTours": {
+      "badge": "Gite Giornaliere",
+      "title": "Gite",
+      "highlight": "Giornaliere",
+      "description": "Il tuo autista personale per una giornata di esplorazione. Visita il Castello di Neuschwanstein, percorri la Romantische Straße, esplora la Foresta Nera o scopri i tesori nascosti della Baviera — tutto al tuo ritmo, con un autista locale che conosce le migliori strade, i migliori ristoranti e i migliori punti fotografici. Niente itinerari rigidi, niente autobus turistici affollati. Solo tu, i tuoi compagni e un veicolo premium pronto a portarti ovunque ti porti la giornata. Fermati quando vuoi, resta quanto vuoi e lascia che ci occupiamo noi della guida.",
+      "features": [
+        "Itinerari personalizzati su misura per i tuoi interessi — o lascia che suggeriamo il percorso migliore",
+        "Tappe illimitate e tempistica flessibile — resta 10 minuti o 2 ore, decidi tu",
+        "Autista locale con conoscenza interna di ristoranti, punti panoramici e tesori nascosti",
+        "Prenotazione giornaliera (8-12 ore) senza limite di distanza entro la regione prenotata",
+        "Tappe fotografiche, deviazioni panoramiche e raccomandazioni spontanee incluse",
+        "Servizio guida multilingue disponibile su richiesta"
+      ],
+      "includes": [
+        { "label": "Itinerario", "value": "Personalizzato" },
+        { "label": "Tappe", "value": "Illimitate" },
+        { "label": "Durata", "value": "Giornata intera" },
+        { "label": "Guida locale", "value": "Conoscenza" },
+        { "label": "Flessibilità", "value": "In viaggio" },
+        { "label": "Acqua", "value": "Inclusa" }
+      ],
+      "faq": [
+        {
+          "question": "Quanto dura una gita di un'intera giornata?",
+          "answer": "Una prenotazione giornaliera include 8-12 ore con il tuo autista. Puoi iniziare e finire quando vuoi entro quella finestra. Se desideri estendere, le ore aggiuntive vengono addebitate a una tariffa oraria fissa."
+        },
+        {
+          "question": "Potete suggerire un itinerario?",
+          "answer": "Assolutamente. I nostri autisti conoscono i percorsi più panoramici, i migliori castelli, i villaggi più affascinanti e i ristoranti per cui vale la pena fermarsi. Dicci i tuoi interessi — storia, natura, cibo, fotografia — e creeremo la giornata perfetta."
+        },
+        {
+          "question": "Quali destinazioni possiamo visitare?",
+          "answer": "Le gite giornaliere popolari includono il Castello di Neuschwanstein, la Romantische Straße, Norimberga, la Foresta Nera, il Lago di Costanza, Salisburgo e le Alpi Bavaresi. Possiamo anche personalizzare i percorsi secondo interessi specifici — regioni vinicole, mercatini di Natale, siti storici e altro."
+        },
+        {
+          "question": "C'è un limite di distanza?",
+          "answer": "Non c'è un limite di distanza rigido entro la regione prenotata. Il tuo autista ti consiglierà un percorso realistico per assicurarti di avere abbastanza tempo a ogni tappa. Per gite a lunga distanza, potremmo consigliare un pernottamento — chiedi e pianificheremo di conseguenza."
+        },
+        {
+          "question": "Possiamo cambiare il piano durante la gita?",
+          "answer": "Certo — questa è la bellezza di un autista privato. Vuoi restare più a lungo a un punto panoramico? Saltare una tappa? Aggiungere una deviazione? Comunicalo al tuo autista. L'itinerario è un suggerimento, non un vincolo."
+        },
+        {
+          "question": "L'autista può fare da guida turistica?",
+          "answer": "I nostri autisti hanno una conoscenza locale approfondita e condivideranno approfondimenti, storia e raccomandazioni durante la gita. Per tour guidati approfonditi con una guida certificata, possiamo organizzare una guida turistica dedicata per accompagnarti — disponibile in più lingue."
+        }
+      ]
+    },
+    "event": {
+      "badge": "Transfer Eventi",
+      "title": "Evento",
+      "highlight": "Transfer",
+      "description": "Arriva al tuo evento con stile — e lascia la logistica a noi. Che si tratti di un matrimonio, un gala, una conferenza aziendale o una celebrazione privata, coordiniamo trasporto senza soluzione di continuità per te e i tuoi ospiti. Da una singola limousine elegante per gli sposi a un'intera flotta per 200 partecipanti a una conferenza, gestiamo ogni dettaglio: tempistica degli arrivi, coordinamento degli ospiti, gestione VIP e partenze sincronizzate. Il tuo responsabile dei trasporti per eventi si occupa di tutto, così tu puoi concentrarti sull'occasione.",
+      "features": [
+        "Arrivi multi-ospite coordinati con tempistica sincronizzata",
+        "Decorazione auto da matrimonio (fiori, nastri) disponibile su richiesta",
+        "Responsabile dei trasporti per eventi dedicato — gestisce tutta la logistica degli ospiti",
+        "Tempistica flessibile allineata al programma del tuo evento — noi aspettiamo, tu non corri",
+        "Gestione VIP e ospiti d'onore con veicoli prioritari",
+        "Coordinamento delle partenze post-evento — tutti tornano a casa in sicurezza"
+      ],
+      "includes": [
+        { "label": "Coordinazione", "value": "Multi-ospite" },
+        { "label": "Decorazione", "value": "Su richiesta" },
+        { "label": "Responsabile", "value": "Dedicato" },
+        { "label": "Orari", "value": "Flessibili" },
+        { "label": "Veicoli", "value": "Eleganti" },
+        { "label": "Acqua", "value": "Inclusa" }
+      ],
+      "faq": [
+        {
+          "question": "Potete coordinare il trasporto per un grande matrimonio?",
+          "answer": "Sì. Gestiamo matrimoni di tutte le dimensioni — da una singola auto per la coppia a un'intera flotta per 200+ ospiti. Il tuo responsabile degli eventi coordina gli orari di ritiro, i percorsi e le sequenze di arrivo in modo che tutti arrivino in orario e senza stress."
+        },
+        {
+          "question": "Decorate l'auto da matrimonio?",
+          "answer": "Sì, offriamo la decorazione dell'auto da matrimonio con fiori, nastri e arrangiamenti personalizzati. Comunicaci il tuo schema di colori e le tue preferenze, e avremo il veicolo splendidamente decorato prima del ritiro."
+        },
+        {
+          "question": "Come gestite il coordinamento degli ospiti?",
+          "answer": "Il tuo responsabile dei trasporti per eventi dedicato crea un piano di trasporto dettagliato con orari di ritiro, indirizzi e informazioni di contatto per ogni ospite. Comunichiamo direttamente con gli ospiti, inviamo promemoria e gestiamo eventuali cambiamenti dell'ultimo minuto — non dovrai mai preoccuparti di chi ritira chi."
+        },
+        {
+          "question": "Cosa succede se l'evento va per le lunghe?",
+          "answer": "Nessun problema. Inseriamo un tempo di margine nelle prenotazioni degli eventi e i nostri autisti sono preparati ai cambiamenti di programma. Se l'evento va significativamente per le lunghe, coordineremo orari di ritiro adeguati con i tuoi ospiti senza costi aggiuntivi entro la finestra concordata."
+        },
+        {
+          "question": "Potete fornire trasporto per i partecipanti a una conferenza?",
+          "answer": "Assolutamente. Gestiamo regolarmente il trasporto per eventi aziendali — dai ritiri in aeroporto per i relatori alle navette giornaliere tra hotel e sedi. Possiamo fornire un desk dedicato presso la tua sede per richieste di trasporto on-demand durante l'evento."
+        },
+        {
+          "question": "Offrite ritiri notturni dopo l'evento?",
+          "answer": "Sì. Operiamo 24/7 e siamo felici di organizzare ritiri notturni o mattutini. Che si tratti di una partenza per il dopo-festa di un matrimonio alle 2 del mattino o del ritiro di un relatore alle 5, il tuo autista sarà lì."
+        }
+      ]
+    },
+    "fair": {
+      "badge": "Transfer Fiere",
+      "title": "Fiera",
+      "highlight": "Transfer",
+      "description": "La stagione delle fiere è già abbastanza impegnativa — il tuo trasporto non dovrebbe esserlo. Forniamo transfer affidabili e puntuali da e per tutte le principali sedi fieristiche tedesche: Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf e Messe Hamburg. Che tu sia un espositore che trasporta materiali, un acquirente con un fitto programma di incontri o una delegazione che partecipa alla fiera insieme, ti portiamo a destinazione in orario, ogni volta. Prenota in anticipo il tuo transfer di ritorno e dimentica la fila dei taxi alle 6 di sera quando chiudono i padiglioni.",
+      "features": [
+        "Trasporto diretto a tutte le principali sedi fieristiche tedesche",
+        "Programmazione flessibile allineata agli orari della fiera — mattine presto e sere tardi",
+        "Transfer di ritorno prenotati in anticipo — nessuna attesa nelle file dei taxi dopo la fiera",
+        "Trasporto di bagagli, campioni e materiali da esposizione inclusi",
+        "Prenotazioni multi-giorno con lo stesso autista per coerenza",
+        "Trasporto di gruppo coordinato per delegazioni e team"
+      ],
+      "includes": [
+        { "label": "Sedi", "value": "Tutte le principali" },
+        { "label": "Programmazione", "value": "Flessibile" },
+        { "label": "Ritorno", "value": "Pre-prenotato" },
+        { "label": "Materiali", "value": "Trasportati" },
+        { "label": "Autista", "value": "Professionista" },
+        { "label": "Acqua", "value": "Inclusa" }
+      ],
+      "faq": [
+        {
+          "question": "Quali sedi fieristiche servite?",
+          "answer": "Serviamo tutte le principali sedi fieristiche tedesche: Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf, Messe Hamburg e Messe Stuttgart. Copriamo anche fiere internazionali nei paesi limitrofi su richiesta."
+        },
+        {
+          "question": "Potete trasportare materiali da esposizione?",
+          "answer": "Sì. I nostri van V-Class e i veicoli più grandi possono ospitare materiali da esposizione, campioni, brochure e attrezzature per display. Per oggetti ingombranti o pesanti, possiamo organizzare un veicolo da carico dedicato. Comunicaci semplicemente cosa stai portando al momento della prenotazione."
+        },
+        {
+          "question": "Posso prenotare lo stesso autista per più giorni di fiera?",
+          "answer": "Assolutamente. Per le fiere multi-giorno, assegniamo lo stesso autista per la durata della tua prenotazione. Questo garantisce coerenza — il tuo autista conosce il tuo programma, il tuo hotel e il tuo percorso preferito verso la sede."
+        },
+        {
+          "question": "E per i transfer di ritorno dopo la chiusura della fiera?",
+          "answer": "Consigliamo vivamente di prenotare in anticipo il transfer di ritorno. Quando la fiera chiude, le file dei taxi possono durare più di 45 minuti. Con un transfer pre-prenotato, il tuo autista ti aspetta a un punto di ritiro designato e sei subito in viaggio."
+        },
+        {
+          "question": "Vi occupate di ritiri mattutini presto?",
+          "answer": "Sì. Molte fiere iniziano presto con accesso per gli espositori dalle 7 del mattino. Siamo disponibili per ritiri presto come necessario — comunicaci il tuo programma e saremo lì, in orario, ogni giorno."
+        },
+        {
+          "question": "Offrite trasporto di gruppo per le delegazioni alle fiere?",
+          "answer": "Sì. Coordiniamo il trasporto di gruppo per delegazioni di qualsiasi dimensione — da un singolo van per un piccolo team a più pullman per grandi gruppi. Il tuo coordinatore dedicato gestisce la logistica di ritiro, la tempistica e la comunicazione con tutti i membri della delegazione."
+        }
+      ]
+    },
+    "prices": {
+      "badge": "Prezzi & Tariffe",
+      "title": "Prezzi &",
+      "highlight": "Tariffe",
+      "description": "Prezzi fissi e trasparenti — niente tassametro, niente sorprese. Addebitiamo per chilometro con una chiara tariffa base e ogni preventivo include tutte le tasse, i pedaggi e le commissioni. Quello che vedi al momento della prenotazione è esattamente quello che paghi. Nessun prezzo dinamico durante le ore di punta, nessun costo nascosto sulla destinazione, nessuna sorpresa del tipo \"il percorso era più lungo\". Che tu abbia bisogno di una berlina Business Class per un transfer aeroporto o di una limousine First Class per un incarico di un'intera giornata, conoscerai il prezzo prima di prenotare.",
+      "features": [
+        "Prezzo fisso per chilometro — garantito al momento della prenotazione, non cambia mai",
+        "Nessun prezzo dinamico — stessa tariffa all'ora di punta, a mezzanotte o durante le feste",
+        "Prezzi tutto incluso — tasse, pedaggi e commissioni inclusi in ogni preventivo",
+        "Soprattassa notturna (22:00-06:00): +25% — chiaramente indicata, mai nascosta",
+        "Tariffa di ritiro in aeroporto: +€8 (copre accesso al terminal e parcheggio)",
+        "Cancellazione gratuita fino a 24 ore prima del ritiro — senza domande"
+      ],
+      "includes": [
+        { "label": "E-Class", "value": "€3.0/km" },
+        { "label": "S-Class", "value": "€4.5/km" },
+        { "label": "V-Class", "value": "€3.5/km" },
+        { "label": "Tariffa base", "value": "€10-15" },
+        { "label": "Notte", "value": "+25%" },
+        { "label": "Aeroporto", "value": "+€8" }
+      ],
+      "faq": [
+        {
+          "question": "Come viene calcolato il prezzo?",
+          "answer": "Il prezzo è basato su una tariffa per chilometro per la tua classe di veicolo, più una tariffa base. Il sistema calcola il percorso ottimale e ti dà un prezzo fisso al momento della prenotazione. Quel prezzo è garantito — non cambierà anche se il traffico aggiunge tempo al viaggio."
+        },
+        {
+          "question": "Ci sono costi nascosti?",
+          "answer": "Nessuno. Tutte le tasse, i pedagli e le commissioni sono inclusi nel prezzo quotato. Le uniche aggiunte sono chiaramente indicate: una soprattassa notturna del +25% (22:00-06:00) e una tariffa di ritiro in aeroporto di +€8. Tutto è mostrato trasparentemente prima che tu confermi la tua prenotazione."
+        },
+        {
+          "question": "Addebitate di più durante le ore di punta?",
+          "answer": "No. Non utilizziamo prezzi dinamici. La tariffa per chilometro è la stessa all'ora di punta, nei giorni festivi e durante i grandi eventi. Non pagherai mai di più perché la domanda è alta."
+        },
+        {
+          "question": "Qual è la politica di cancellazione?",
+          "answer": "Cancellazione gratuita fino a 24 ore prima dell'orario di ritiro programmato. Le cancellazioni entro le 24 ore vengono addebitate al 50% del prezzo della prenotazione. I no-show vengono addebitati al 100%. I rimborsi vengono elaborati entro 5-7 giorni lavorativi."
+        },
+        {
+          "question": "Come pago?",
+          "answer": "Puoi pagare con carta di credito, bonifico bancario SEPA o fattura aziendale (per conti business con un accordo di credito). Il pagamento viene elaborato dopo il completamento della corsa. Per i clienti aziendali, offriamo fatturazione mensile."
+        },
+        {
+          "question": "Posso ottenere un preventivo personalizzato per un viaggio complesso?",
+          "answer": "Assolutamente. Per viaggi multi-tappa, prenotazioni giornaliere o requisiti speciali, contattaci direttamente e forniremo un preventivo personalizzato dettagliato. Il nostro team risponde entro 1 ora durante l'orario di lavoro e entro 4 ore fuori dall'orario di lavoro."
+        }
+      ]
+    }
+  }
+}

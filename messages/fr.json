@@ -1,0 +1,579 @@
+{
+  "Nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "fleet": "Flotte",
+    "services": "Services",
+    "contact": "Contact",
+    "bookNow": "Réserver",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "dashboard": "Tableau de bord",
+    "logout": "Déconnexion",
+    "fleetOverview": "Aperçu",
+    "fleetSClass": "Limousine Première Classe",
+    "fleetEClass": "Limousine Classe Affaires",
+    "fleetVClass": "Van Classe Affaires",
+    "serviceAirport": "Transfert Aéroport",
+    "serviceChauffeur": "Service de Chauffeur",
+    "serviceDiplomatic": "Chauffeur Diplomatique",
+    "serviceGroup": "Transfert de Groupe",
+    "serviceDayTours": "Excursions à la Journée",
+    "serviceEvent": "Transfert Événementiel",
+    "serviceFair": "Transfert Salon Professionnel",
+    "servicePrices": "Prix & Tarifs",
+    "allServices": "Tous les services"
+  },
+  "Hero": {
+    "badge": "Transfert aéroport 24h/24 - Chauffeurs professionnels",
+    "title": "TrendMyDrive",
+    "subtitle": "Transferts aéroport exclusifs à Munich, Francfort, Berlin, Cologne/Bonn, Hambourg, Düsseldorf & plus",
+    "aboutUs": "À propos",
+    "ourServices": "Nos services",
+    "scroll": "Défiler"
+  },
+  "Booking": {
+    "pickup": "Prise en charge",
+    "pickupPlaceholder": "Aéroport, hôtel, adresse...",
+    "destination": "Destination",
+    "destinationPlaceholder": "Où allez-vous ?",
+    "date": "Date",
+    "time": "Heure",
+    "passengers": "Passagers",
+    "vehicle": "Véhicule",
+    "getPrice": "Obtenir le prix",
+    "reserveNow": "Réserver maintenant"
+  },
+  "Fleet": {
+    "badge": "Nos véhicules",
+    "title": "Notre",
+    "highlight": "flotte",
+    "description": "Des limousines élégantes aux autocars spacieux — choisissez le véhicule adapté à chaque occasion. Tous nos véhicules sont équipés premium et parfaitement entretenus.",
+    "passengers": "Passagers",
+    "luggage": "Bagages"
+  },
+  "Services": {
+    "badge": "Ce que nous offrons",
+    "title": "Nos",
+    "highlight": "services",
+    "description": "Nous sommes spécialisés dans le service de chauffeur haut de gamme — axé sur le confort, la ponctualité et le professionnalisme.",
+    "learnMore": "En savoir plus",
+    "airportTitle": "Transfert Aéroport",
+    "airportDesc": "Transferts fluides et ponctuels vers et depuis tous les grands aéroports européens.",
+    "chauffeurTitle": "Service de Chauffeur",
+    "chauffeurDesc": "Voyagez avec confort et élégance dans notre flotte de véhicules premium avec des chauffeurs professionnels.",
+    "dayToursTitle": "Excursions à la Journée",
+    "dayToursDesc": "Départ tôt le matin ou arrivée tardive — nous sommes sur la route pour vous 24h/24.",
+    "groupTitle": "Transfert de Groupe",
+    "groupDesc": "Du minibus à l'autocar — transport fiable avec chauffeur pour des groupes de toute taille."
+  },
+  "EasyBooking": {
+    "badge": "Réservation facile",
+    "title": "Votre chauffeur en quelques",
+    "highlight": "étapes",
+    "description": "Saisissez votre trajet, recevez un prix fixe transparent et détendez-vous. Pas d'attente, pas de frais cachés — juste un chauffeur professionnel prêt à l'heure."
+  },
+  "WhyUs": {
+    "badge": "Pourquoi nous choisir",
+    "title": "Voyagez en toute",
+    "highlight": "confiance",
+    "faqBadge": "FAQ",
+    "faqTitle": "Questions & réponses",
+    "featuresTitle": "Ce que vous obtenez"
+  },
+  "CTA": {
+    "title": "Réservez votre chauffeur",
+    "description": "Prêt pour un trajet haut de gamme ? Obtenez votre prix fixe maintenant.",
+    "button": "Commencer"
+  },
+  "Routes": {
+    "badge": "Itinéraires populaires",
+    "title": "Itinéraires que nous parcourons",
+    "highlight": "régulièrement",
+    "description": "De Munich vers tous les grands aéroports et villes d'Allemagne et des pays voisins."
+  },
+  "FinalCTA": {
+    "title": "Prêt pour votre voyage ?",
+    "description": "Réservez maintenant ou contactez-nous — nous sommes là 24h/24, 7j/7.",
+    "bookNow": "Réserver",
+    "contact": "Nous contacter"
+  },
+  "Auth": {
+    "loginTitle": "Bon retour",
+    "loginSubtitle": "Connectez-vous pour gérer vos réservations",
+    "registerTitle": "Créez votre compte",
+    "registerSubtitle": "Réservez et gérez vos trajets avec chauffeur",
+    "fullName": "Nom complet",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Min. 6 caractères",
+    "signIn": "Se connecter",
+    "signingIn": "Connexion...",
+    "createAccount": "Créer un compte",
+    "creatingAccount": "Création du compte...",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "loginFailed": "Échec de la connexion",
+    "registerFailed": "Échec de l'inscription"
+  },
+  "Checkout": {
+    "title": "Paiement",
+    "description": "Vérifiez votre réservation et complétez vos informations.",
+    "backToHome": "Retour à l'accueil",
+    "yourBooking": "Votre réservation",
+    "pickup": "Prise en charge",
+    "destination": "Destination",
+    "date": "Date",
+    "time": "Heure",
+    "vehicle": "Véhicule",
+    "passengers": "Passagers",
+    "distance": "Distance",
+    "duration": "Durée",
+    "rate": "Tarif",
+    "total": "Total",
+    "extraInfo": "Informations supplémentaires",
+    "guest": "Invité",
+    "guestDesc": "Réservez sans compte. Vous recevrez une confirmation par e-mail.",
+    "loginDesc": "Connectez-vous pour accéder à votre historique de réservations et vos factures.",
+    "registerDesc": "Créez un compte pour l'historique des réservations, les factures et un paiement plus rapide.",
+    "signedIn": "Connecté",
+    "signedInDesc": "Votre réservation sera enregistrée dans votre compte. Vérifiez les détails et passez au paiement.",
+    "continueToPayment": "Continuer vers le paiement",
+    "fillAllFields": "Veuillez remplir tous les champs.",
+    "fillEmailPassword": "Veuillez remplir l'e-mail et le mot de passe.",
+    "fillNamePhone": "Veuillez saisir votre nom complet et votre téléphone.",
+    "securePayment": "Paiement sécurisé avec chiffrement SSL",
+    "freeCancellation": "Annulation gratuite jusqu'à 24h avant la prise en charge",
+    "support": "Support client 24h/24, 7j/7"
+  },
+  "Dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bon retour",
+    "totalBookings": "Réservations totales",
+    "confirmed": "Confirmées",
+    "completed": "Terminées",
+    "totalSpent": "Total dépensé",
+    "newBooking": "Nouvelle réservation",
+    "newBookingDesc": "Besoin d'un autre trajet ? Réservez un chauffeur en quelques clics.",
+    "bookNow": "Réserver",
+    "bookingHistory": "Historique des réservations",
+    "noBookings": "Aucune réservation pour le moment",
+    "bookFirstRide": "Réservez votre premier trajet",
+    "bookedOn": "Réservé le",
+    "status": "Statut",
+    "route": "Itinéraire",
+    "price": "Prix",
+    "pickupDate": "Date de prise en charge",
+    "pickupTime": "Heure de prise en charge",
+    "vehicle": "Véhicule",
+    "distance": "Distance",
+    "extraInfo": "Informations supplémentaires",
+    "profile": "Profil",
+    "memberSince": "Membre depuis",
+    "invoices": "Factures",
+    "noInvoices": "Aucune facture pour le moment"
+  },
+  "Footer": {
+    "tagline": "Service de chauffeur premium — transferts aéroport 24h/24 et trajets d'affaires dans toute l'Allemagne.",
+    "fleet": "Flotte",
+    "services": "Services",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "about": "À propos",
+    "rights": "Tous droits réservés."
+  },
+  "ServicePages": {
+    "bookNow": "Réserver",
+    "callUs": "Appelez-nous",
+    "whatsIncluded": "Ce qui est inclus",
+    "faqTitle": "Questions fréquentes",
+    "readyToBook": "Prêt à réserver ?",
+    "readyToBookDesc": "Obtenez un prix fixe transparent en quelques secondes. Pas d'attente, pas de frais cachés.",
+    "allServices": "Tous les services",
+    "airport": {
+      "badge": "Transfert Aéroport",
+      "title": "Aéroport",
+      "highlight": "Transfert",
+      "description": "Commencez votre voyage sans stress. Nos chauffeurs suivent votre vol en temps réel, s'adaptent aux retards et vous attendent à l'intérieur du terminal avec une pancarte à votre nom. Que vous atterrissiez à Munich, Francfort, Berlin ou tout autre grand aéroport européen — votre chauffeur est déjà là avant même que vous ne touchiez le sol. Pas de file d'attente, pas de lutte avec les bagages, pas de négociation de dernière minute avec les taxis. Juste un véhicule premium qui vous attend au bord du trottoir et un chauffeur professionnel prêt à vous emmener à destination.",
+      "features": [
+        "Suivi de vol en temps réel avec ajustements automatiques des retards",
+        "Accueil à l'intérieur du terminal avec pancarte personnalisée à votre nom",
+        "60 minutes de temps d'attente gratuit après l'atterrissage — sans précipitation, sans stress",
+        "Prix fixe garanti à la réservation — pas de tarification dynamique, pas de compteur, pas de surprises",
+        "Vol annulé ou retardé ? Nous réassignons automatiquement sans frais supplémentaires",
+        "Service porte-à-porte avec assistance aux bagages incluse"
+      ],
+      "includes": [
+        { "label": "Suivi de vol", "value": "Inclus" },
+        { "label": "Temps d'attente", "value": "60 min gratuites" },
+        { "label": "Accueil", "value": "Inclus" },
+        { "label": "Annulation", "value": "Gratuite 24h" },
+        { "label": "Eau en bouteille", "value": "Incluse" },
+        { "label": "WiFi", "value": "Gratuit" }
+      ],
+      "faq": [
+        {
+          "question": "Comment suivez-vous mon vol ?",
+          "answer": "Nous surveillons votre numéro de vol en temps réel grâce aux flux de données en direct des aéroports. Si votre vol est retardé, votre chauffeur est automatiquement informé et ajuste l'heure de prise en charge — sans frais supplémentaires pour vous. Arrivée anticipée ? Nous serons là aussi."
+        },
+        {
+          "question": "Où mon chauffeur va-t-il me rencontrer ?",
+          "answer": "Votre chauffeur vous attendra à l'intérieur du terminal des arrivées avec une pancarte à votre nom. Pour certains aéroports, nous pouvons également organiser une prise en charge au bord du trottoir si vous préférez. Vous recevrez le nom, la photo et le numéro de téléphone de votre chauffeur avant l'atterrissage."
+        },
+        {
+          "question": "Que se passe-t-il si mon vol est retardé ?",
+          "answer": "Aucune inquiétude — nous suivons chaque vol et nous ajustons automatiquement. Il n'y a aucun frais supplémentaire pour les retards. Si votre vol est annulé, contactez-nous simplement et nous reprogrammerons votre transfert sans frais."
+        },
+        {
+          "question": "Combien de temps d'attente est inclus ?",
+          "answer": "Nous incluons 60 minutes de temps d'attente gratuit après l'atterrissage de votre vol. Cela vous laisse amplement le temps de passer la douane, récupérer vos bagages et rejoindre votre chauffeur. Le temps d'attente supplémentaire est facturé à un tarif horaire fixe."
+        },
+        {
+          "question": "Puis-je réserver un transfert retour également ?",
+          "answer": "Absolument. Vous pouvez réserver votre prise en charge à l'aéroport et votre transfert retour en une seule réservation. Les transferts retour incluent le même suivi de vol, accueil et garantie de prix fixe."
+        },
+        {
+          "question": "Quels véhicules sont disponibles pour les transferts aéroport ?",
+          "answer": "Nous proposons Mercedes E-Class (Business), S-Class (First Class) et V-Class (Business Van) pour les transferts aéroport. Tous les véhicules sont équipés premium, impeccablement propres et dotés du WiFi gratuit, d'eau en bouteille et de chargeurs de téléphone."
+        }
+      ]
+    },
+    "chauffeur": {
+      "badge": "Service de Chauffeur",
+      "title": "Chauffeur",
+      "highlight": "Service",
+      "description": "Plus qu'un simple trajet — une expérience haut de gamme. Nos chauffeurs professionnels sont disponibles à l'heure ou à la journée, prêts à vous emmener partout où les affaires ou le plaisir l'exigent. Discrets, impeccablement habillés et formés à l'hôtellerie, ils s'occupent de chaque détail : bagages, timing, optimisation d'itinéraire et arrêts multiples. Qu'il s'agisse de réunions consécutives à travers la ville, d'une prise en charge de client ou d'une mission exécutive d'une journée complète, vous vous détendez et vous concentrez sur l'essentiel pendant que nous gérons la route.",
+      "features": [
+        "Chauffeurs professionnels en costume et cravate — discrets, ponctuels et courtois",
+        "Réservation à l'heure ou à la journée — flexibilité totale pour votre emploi du temps",
+        "Arrêts multiples, changements d'itinéraire et temps d'attente inclus — sans frais supplémentaires",
+        "Chauffeurs multilingues disponibles sur demande (EN, DE, FR, IT, ZH)",
+        "Service porte-à-porte avec gestion des bagages et service parapluie",
+        "Confidentialité garantie — idéal pour les cadres dirigeants et les clients de haut niveau"
+      ],
+      "includes": [
+        { "label": "Chauffeur", "value": "Professionnel" },
+        { "label": "Tenue", "value": "Costume & cravate" },
+        { "label": "Arrêts", "value": "Multiples" },
+        { "label": "Réservation", "value": "À l'heure/À la journée" },
+        { "label": "Langues", "value": "Sur demande" },
+        { "label": "Eau", "value": "Incluse" }
+      ],
+      "faq": [
+        {
+          "question": "Comment fonctionne la réservation à l'heure ?",
+          "answer": "Vous réservez un chauffeur pour un minimum de 3 heures. Le chauffeur reste avec vous pendant toute la durée réservée, prêt à conduire quand et où vous le souhaitez. Les heures supplémentaires au-delà de votre réservation sont facturées à un tarif horaire fixe."
+        },
+        {
+          "question": "Puis-je faire plusieurs arrêts pendant ma réservation ?",
+          "answer": "Oui — des arrêts illimités sont inclus dans votre temps réservé. Votre chauffeur vous attendra à chaque arrêt, qu'il s'agisse d'une réunion de 10 minutes ou d'un déjeuner de 2 heures. Indiquez simplement au chauffeur votre prochaine destination et nous nous occupons du reste."
+        },
+        {
+          "question": "Que faire si ma réunion dure plus longtemps que prévu ?",
+          "answer": "Aucun problème. Informez simplement votre chauffeur et nous prolongerons la réservation à notre tarif horaire standard. Nous n'abandonnons jamais un client en cours de mission — votre chauffeur reste jusqu'à ce que vous ayez terminé."
+        },
+        {
+          "question": "Puis-je demander un chauffeur ou une langue spécifique ?",
+          "answer": "Oui. Nous disposons de chauffeurs multilingues (anglais, allemand, français, italien, chinois) disponibles sur demande. Pour les réservations récurrentes, nous pouvons assigner le même chauffeur pour assurer la cohérence et la familiarité avec vos préférences."
+        },
+        {
+          "question": "Quelles zones couvrez-vous ?",
+          "answer": "Nous opérons dans toute l'Allemagne et les pays voisins. Nos chauffeurs connaissent toutes les grandes villes, quartiers d'affaires, aéroports et lieux d'événements. Les transferts longue distance et transfrontaliers sont disponibles sur demande."
+        },
+        {
+          "question": "Le service est-il confidentiel ?",
+          "answer": "Absolument. Tous nos chauffeurs signent des accords de confidentialité stricts. Nous servons régulièrement des cadres dirigeants, des célébrités et des clients de haut niveau. Pas de photos, pas de discussions, pas de divulgations — votre vie privée est notre priorité."
+        }
+      ]
+    },
+    "diplomatic": {
+      "badge": "Chauffeur Diplomatique",
+      "title": "Diplomatique",
+      "highlight": "Chauffeur",
+      "description": "Quand le protocole, la sécurité et la discrétion sont non négociables. Notre service de chauffeur diplomatique est plébiscité par les ambassades, les consulats et les délégations gouvernementales dans toute l'Allemagne. Nos chauffeurs sont formés au protocole, habilités de sécurité et expérimentés dans le transport VIP avec le plus grand professionnalisme. Des arrivées aéroportuaires avec clearance diplomatique aux convois multi-véhicules pour les délégations, nous maîtrisons les subtilités du transport diplomatique — la bonne étiquette, le bon timing, le bon niveau de visibilité.",
+      "features": [
+        "Chauffeurs formés au protocole avec habilitation de sécurité",
+        "Confidentialité et discrétion strictes — NDA enregistré pour chaque mission",
+        "Véhicules blindés disponibles sur demande (niveau de protection B6)",
+        "Disponibilité 24h/24, 7j/7 pour les opérations d'ambassade et les missions diplomatiques",
+        "Convois multi-véhicules coordonnés pour les délégations et les cortèges",
+        "Clearance aéroportuaire diplomatique et assistance voie rapide VIP"
+      ],
+      "includes": [
+        { "label": "Sécurité", "value": "Habilitée" },
+        { "label": "Protocole", "value": "Formé" },
+        { "label": "Blindage", "value": "Sur demande" },
+        { "label": "Disponibilité", "value": "24h/24, 7j/7" },
+        { "label": "Discrétion", "value": "Garantie" },
+        { "label": "Multi-arrêts", "value": "Inclus" }
+      ],
+      "faq": [
+        {
+          "question": "Vos chauffeurs sont-ils habilités de sécurité ?",
+          "answer": "Oui. Tous les chauffeurs assignés aux missions diplomatiques passent par des vérifications d'antécédents et disposent d'une documentation d'habilitation de sécurité. Nous pouvons fournir des certificats d'habilitation sur demande et travaillons en étroite collaboration avec les équipes de sécurité des ambassades."
+        },
+        {
+          "question": "Pouvez-vous fournir des véhicules blindés ?",
+          "answer": "Oui, nous proposons des véhicules blindés de niveau B6 sur demande. Ces véhicules sont certifiés et entretenus selon les plus hauts standards de sécurité. Veuillez réserver les véhicules blindés au moins 48 heures à l'avance pour garantir leur disponibilité."
+        },
+        {
+          "question": "Gérez-vous la clearance aéroportuaire diplomatique ?",
+          "answer": "Oui. Nous coordonnons avec les autorités aéroportuaires pour la clearance diplomatique, la voie rapide VIP à l'immigration et la prise en charge sécurisée directement depuis l'avion ou le terminal VIP. Nous gérons toute la logistique — votre délégation descend simplement de l'avion."
+        },
+        {
+          "question": "Pouvez-vous coordonner des convois multi-véhicules ?",
+          "answer": "Absolument. Nous avons l'expérience de l'organisation de cortèges et de délégations multi-véhicules de toute taille. Chaque véhicule est équipé de systèmes de communication, et notre équipe de coordination gère le timing, l'itinéraire et les protocoles de sécurité de bout en bout."
+        },
+        {
+          "question": "À quels protocoles vos chauffeurs sont-ils formés ?",
+          "answer": "Nos chauffeurs sont formés au protocole diplomatique, notamment les formes d'adresse appropriées, l'étiquette des drapeaux et des rangs, le positionnement d'escorte et la discrétion dans les communications. Ils comprennent l'importance de la visibilité par rapport à la vie privée et s'adaptent aux exigences de chaque délégation."
+        },
+        {
+          "question": "Comment garantissez-vous la confidentialité ?",
+          "answer": "Chaque chauffeur signe un NDA contraignant avant chaque mission. Nous ne stockons pas les données d'itinéraire, les listes de passagers ou les informations de planification au-delà de la durée du service. Toutes les communications sont chiffrées et traitées via des canaux sécurisés."
+        }
+      ]
+    },
+    "group": {
+      "badge": "Transfert de Groupe",
+      "title": "Groupe",
+      "highlight": "Transfert",
+      "description": "Qu'il s'agisse de 7 collègues se rendant à une conférence ou de 50 invités assistant à un mariage — nous transportons les groupes sans faille. Notre flotte va des minibus premium aux autocars grande capacité, tous conduits par des chauffeurs professionnels en uniforme. Un coordinateur de groupe dédié gère chaque détail : logistique de prise en charge, gestion des bagages, points de prise en charge multiples et heures d'arrivée synchronisées. Personne n'attend, personne ne se perd, et tout le monde arrive ensemble, à l'heure et dans le confort.",
+      "features": [
+        "Véhicules de 7 places aux autocars de 50+ places",
+        "Réservations multi-véhicules coordonnées avec arrivée synchronisée",
+        "Coordinateur de groupe dédié — point de contact unique pour tout",
+        "Remorques à bagages et stockage supplémentaire disponibles sur demande",
+        "Points de prise en charge multiples avec itinéraire optimisé",
+        "Pancartes nominatives, assistance à l'embarquement et service d'accueil de groupe"
+      ],
+      "includes": [
+        { "label": "Capacité", "value": "7-50+ places" },
+        { "label": "Bagages", "value": "Remorques disponibles" },
+        { "label": "Coordinateur", "value": "Dédié" },
+        { "label": "Multi-véhicules", "value": "Coordonnés" },
+        { "label": "Chauffeur", "value": "Professionnel" },
+        { "label": "Eau", "value": "Incluse" }
+      ],
+      "faq": [
+        {
+          "question": "Quelles tailles de groupes pouvez-vous accueillir ?",
+          "answer": "De 7 à 50+ passagers. Notre flotte comprend des minibus premium (7-19 places), des bus de taille moyenne (20-35 places) et des autocars grande capacité (36-50+ places). Pour les groupes plus importants, nous coordonnons plusieurs véhicules avec un itinéraire et une arrivée synchronisés."
+        },
+        {
+          "question": "Pouvez-vous gérer plusieurs points de prise en charge ?",
+          "answer": "Oui. Nous planifions des itinéraires optimisés avec plusieurs points de prise en charge, garantissant que chacun soit récupéré efficacement. Votre coordinateur de groupe établira l'itinéraire à l'avance et partagera les heures de prise en charge avec tous les passagers."
+        },
+        {
+          "question": "Y a-t-il une limite de bagages ?",
+          "answer": "La capacité de bagages dépend du véhicule. Pour les groupes avec des bagages excédentaires (équipement de ski, matériel de salon professionnel, etc.), nous pouvons fournir des remorques à bagages sans frais supplémentaires sur les réservations de plusieurs jours. Indiquez-nous simplement vos besoins en bagages lors de la réservation."
+        },
+        {
+          "question": "Fournissez-vous un coordinateur de groupe ?",
+          "answer": "Oui — chaque réservation de groupe de 15+ passagers inclut un coordinateur dédié. Il gère toute la logistique, communique avec les passagers, gère le timing et est disponible par téléphone tout au long du transfert. Vous n'aurez jamais à vous soucier de rien."
+        },
+        {
+          "question": "Pouvons-nous réserver des transferts retour pour tout le groupe ?",
+          "answer": "Absolument. Nous gérons les transferts de groupe aller-retour avec le même niveau de coordination. Les prises en charge retour sont planifiées à l'avance, et votre coordinateur s'assure que tout le monde est prêt et au bon point de prise en charge à l'heure."
+        },
+        {
+          "question": "Que faire si quelqu'un dans notre groupe est en retard ?",
+          "answer": "Votre coordinateur contactera le passager directement et ajustera la prise en charge si possible. Pour les départs de groupe programmés, nous prévoyons une petite marge. Si le retard est significatif, nous pouvons organiser un véhicule séparé pour le passager en retard à un tarif fixe."
+        }
+      ]
+    },
+    "dayTours": {
+      "badge": "Excursions à la Journée",
+      "title": "Excursions",
+      "highlight": "à la Journée",
+      "description": "Votre chauffeur personnel pour une journée d'exploration. Visitez le château de Neuschwanstein, parcourez la Route Romantique, explorez la Forêt Noire ou découvrez les trésors cachés de Bavière — à votre propre rythme, avec un chauffeur local qui connaît les meilleurs itinéraires, les meilleurs restaurants et les meilleurs spots photo. Pas d'itinéraires rigides, pas de bus touristiques bondés. Juste vous, vos compagnons et un véhicule premium prêt à vous emmener où la journée vous mène. Arrêtez-vous quand vous voulez, restez aussi longtemps que vous voulez, et laissez-nous gérer la conduite.",
+      "features": [
+        "Itinéraires sur mesure adaptés à vos centres d'intérêt — ou laissez-nous suggérer le meilleur itinéraire",
+        "Arrêts illimités et horaires flexibles — restez 10 minutes ou 2 heures, c'est vous qui décidez",
+        "Chauffeur local avec une connaissance approfondie des restaurants, points de vue et trésors cachés",
+        "Réservation à la journée (8-12 heures) sans limite de distance dans la région réservée",
+        "Arrêts photo, détours panoramiques et recommandations spontanées inclus",
+        "Service de guide multilingue disponible sur demande"
+      ],
+      "includes": [
+        { "label": "Itinéraire", "value": "Sur mesure" },
+        { "label": "Arrêts", "value": "Illimités" },
+        { "label": "Durée", "value": "Journée complète" },
+        { "label": "Guide local", "value": "Connaissance" },
+        { "label": "Flexibilité", "value": "En route" },
+        { "label": "Eau", "value": "Incluse" }
+      ],
+      "faq": [
+        {
+          "question": "Combien de temps dure une excursion d'une journée complète ?",
+          "answer": "Une réservation à la journée complète inclut 8-12 heures avec votre chauffeur. Vous pouvez commencer et terminer quand vous le souhaitez dans cette fenêtre. Si vous souhaitez prolonger, les heures supplémentaires sont facturées à un tarif horaire fixe."
+        },
+        {
+          "question": "Pouvez-vous suggérer un itinéraire ?",
+          "answer": "Absolument. Nos chauffeurs connaissent les itinéraires les plus pittoresques, les meilleurs châteaux, les villages les plus charmants et les restaurants où il vaut la peine de s'arrêter. Dites-nous vos centres d'intérêt — histoire, nature, gastronomie, photographie — et nous composerons la journée parfaite."
+        },
+        {
+          "question": "Quelles destinations pouvons-nous visiter ?",
+          "answer": "Les excursions populaires incluent le château de Neuschwanstein, la Route Romantique, Nuremberg, la Forêt Noire, le lac de Constance, Salzbourg et les Alpes bavaroises. Nous pouvons également personnaliser les itinéraires selon des intérêts spécifiques — régions viticoles, marchés de Noël, sites historiques, et plus encore."
+        },
+        {
+          "question": "Y a-t-il une limite de distance ?",
+          "answer": "Il n'y a pas de limite de distance stricte dans la région réservée. Votre chauffeur vous conseillera sur l'itinéraire réaliste pour garantir suffisamment de temps à chaque arrêt. Pour les excursions très longue distance, nous pouvons recommander une nuit sur place — demandez-nous et nous planifierons en conséquence."
+        },
+        {
+          "question": "Pouvons-nous changer le programme pendant l'excursion ?",
+          "answer": "Bien sûr — c'est la beauté d'un chauffeur privé. Envie de rester plus longtemps à un point de vue ? Sauter un arrêt ? Ajouter un détour ? Dites-le simplement à votre chauffeur. L'itinéraire est une suggestion, pas une contrainte."
+        },
+        {
+          "question": "Le chauffeur peut-il faire office de guide touristique ?",
+          "answer": "Nos chauffeurs ont une connaissance locale approfondie et partageront des informations, de l'histoire et des recommandations tout au long de l'excursion. Pour des visites guidées approfondies avec un guide certifié, nous pouvons organiser un guide touristique dédié pour vous accompagner — disponible en plusieurs langues."
+        }
+      ]
+    },
+    "event": {
+      "badge": "Transfert Événementiel",
+      "title": "Événement",
+      "highlight": "Transfert",
+      "description": "Arrivez à votre événement avec style — et laissez-nous la logistique. Qu'il s'agisse d'un mariage, d'un gala, d'une conférence d'entreprise ou d'une célébration privée, nous coordonnons un transport sans faille pour vous et vos invités. D'une seule limousine élégante pour les mariés à une flotte complète pour 200 participants à une conférence, nous gérons chaque détail : timing d'arrivée, coordination des invités, traitement VIP et départs synchronisés. Votre responsable du transport événementiel s'occupe de tout, pour que vous puissiez vous concentrer sur l'occasion.",
+      "features": [
+        "Arrivées multi-invités coordonnées avec timing synchronisé",
+        "Décoration de voiture de mariage (fleurs, rubans) disponible sur demande",
+        "Responsable du transport événementiel dédié — gère toute la logistique des invités",
+        "Horaires flexibles alignés sur le programme de votre événement — nous attendons, vous ne vous précipitez pas",
+        "Traitement VIP et des invités d'honneur avec véhicules prioritaires",
+        "Coordination des départs post-événement — tout le monde rentre en sécurité"
+      ],
+      "includes": [
+        { "label": "Coordination", "value": "Multi-invités" },
+        { "label": "Décoration", "value": "Sur demande" },
+        { "label": "Gestionnaire", "value": "Dédié" },
+        { "label": "Horaires", "value": "Flexibles" },
+        { "label": "Véhicules", "value": "Élégants" },
+        { "label": "Eau", "value": "Incluse" }
+      ],
+      "faq": [
+        {
+          "question": "Pouvez-vous coordonner le transport pour un grand mariage ?",
+          "answer": "Oui. Nous gérons des mariages de toutes tailles — d'une seule voiture pour le couple à une flotte complète pour 200+ invités. Votre responsable événementiel coordonne les heures de prise en charge, les itinéraires et les séquences d'arrivée pour que tout le monde arrive à l'heure et sans stress."
+        },
+        {
+          "question": "Décorez-vous la voiture de mariage ?",
+          "answer": "Oui, nous proposons la décoration de voiture de mariage avec fleurs, rubans et arrangements personnalisés. Indiquez-nous votre palette de couleurs et vos préférences, et nous aurons le véhicule magnifiquement décoré avant la prise en charge."
+        },
+        {
+          "question": "Comment gérez-vous la coordination des invités ?",
+          "answer": "Votre responsable du transport événementiel dédié crée un plan de transport détaillé avec les heures de prise en charge, les adresses et les coordonnées de chaque invité. Nous communiquons directement avec les invités, envoyons des rappels et gérons les changements de dernière minute — vous n'avez jamais à vous soucier de qui récupère qui."
+        },
+        {
+          "question": "Que faire si l'événement se prolonge ?",
+          "answer": "Aucun problème. Nous intégrons une marge de temps dans les réservations événementielles et nos chauffeurs sont préparés aux changements d'horaire. Si l'événement se prolonge significativement, nous coordonnerons les heures de prise en charge ajustées avec vos invités sans frais supplémentaires dans la fenêtre convenue."
+        },
+        {
+          "question": "Pouvez-vous fournir du transport pour les participants à une conférence ?",
+          "answer": "Absolument. Nous gérons régulièrement le transport d'événements d'entreprise — des prises en charge aéroportuaires pour les intervenants aux navettes quotidiennes entre les hôtels et les lieux. Nous pouvons fournir un comptoir dédié sur votre lieu pour les demandes de transport à la demande pendant l'événement."
+        },
+        {
+          "question": "Proposez-vous des prises en charge tardives après l'événement ?",
+          "answer": "Oui. Nous opérons 24h/24 et sommes heureux d'organiser des prises en charge tardives ou matinales. Qu'il s'agisse d'un départ de after-party de mariage à 2h du matin ou d'une prise en charge d'intervenant de conférence à 5h, votre chauffeur sera là."
+        }
+      ]
+    },
+    "fair": {
+      "badge": "Transfert Salon Professionnel",
+      "title": "Salon",
+      "highlight": "Professionnel",
+      "description": "La saison des salons professionnels est déjà assez exigeante — votre transport ne devrait pas l'être. Nous fournissons des transferts fiables et ponctuels vers et depuis tous les grands sites de salons allemands : Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf et Messe Hamburg. Que vous soyez un exposant transportant du matériel, un acheteur avec un emploi du temps chargé de réunions ou une délégation assistant au salon ensemble, nous vous y emmenons à l'heure, à chaque fois. Pré-réservez votre transfert retour et oubliez la file de taxis à 18h quand les halls ferment.",
+      "features": [
+        "Transport direct vers tous les grands sites de salons allemands",
+        "Planification flexible alignée sur les horaires du salon — matins tôt et soirées tardives",
+        "Transferts retour pré-réservés — pas d'attente dans les files de taxis après le salon",
+        "Transport de bagages, échantillons et matériel d'exposition inclus",
+        "Réservations multi-jours avec le même chauffeur pour la cohérence",
+        "Transport de groupe coordonné pour les délégations et les équipes"
+      ],
+      "includes": [
+        { "label": "Sites", "value": "Tous les grands" },
+        { "label": "Planification", "value": "Flexible" },
+        { "label": "Retour", "value": "Pré-réservé" },
+        { "label": "Matériel", "value": "Transporté" },
+        { "label": "Chauffeur", "value": "Professionnel" },
+        { "label": "Eau", "value": "Incluse" }
+      ],
+      "faq": [
+        {
+          "question": "Quels sites de salons servez-vous ?",
+          "answer": "Nous desservons tous les grands sites de salons allemands : Messe München, Messe Frankfurt, Messe Berlin, Messe Köln, Messe Düsseldorf, Messe Hamburg et Messe Stuttgart. Nous couvrons également les salons internationaux dans les pays voisins sur demande."
+        },
+        {
+          "question": "Pouvez-vous transporter du matériel d'exposition ?",
+          "answer": "Oui. Nos vans V-Class et véhicules plus grands peuvent accueillir du matériel d'exposition, des échantillons, des brochures et de l'équipement de présentation. Pour les articles volumineux ou lourds, nous pouvons organiser un véhicule de fret dédié. Indiquez-nous simplement ce que vous apportez lors de la réservation."
+        },
+        {
+          "question": "Puis-je réserver le même chauffeur pour plusieurs jours de salon ?",
+          "answer": "Absolument. Pour les salons multi-jours, nous assignons le même chauffeur pour la durée de votre réservation. Cela garantit la cohérence — votre chauffeur connaît votre emploi du temps, votre hôtel et votre itinéraire préféré vers le site."
+        },
+        {
+          "question": "Qu'en est-il des transferts retour après la fermeture du salon ?",
+          "answer": "Nous recommandons vivement de pré-réserver votre transfert retour. Quand le salon ferme, les files de taxis peuvent durer 45+ minutes. Avec un transfert pré-réservé, votre chauffeur attend à un point de prise en charge désigné et vous êtes en route immédiatement."
+        },
+        {
+          "question": "Pouvez-vous gérer les prises en charge tôt le matin ?",
+          "answer": "Oui. De nombreux salons commencent tôt avec un accès exposants dès 7h. Nous sommes disponibles pour des prises en charge aussi tôt que nécessaire — indiquez-nous simplement votre emploi du temps et nous serons là, à l'heure, chaque jour."
+        },
+        {
+          "question": "Proposez-vous du transport de groupe pour les délégations de salon ?",
+          "answer": "Oui. Nous coordonnons le transport de groupe pour les délégations de toute taille — d'un seul van pour une petite équipe à plusieurs autocars pour les grands groupes. Votre coordinateur dédié gère la logistique de prise en charge, le timing et la communication avec tous les membres de la délégation."
+        }
+      ]
+    },
+    "prices": {
+      "badge": "Prix & Tarifs",
+      "title": "Prix &",
+      "highlight": "Tarifs",
+      "description": "Tarification transparente et fixe — pas de compteur, pas de surprises. Nous facturons au kilomètre avec un tarif de base clair, et chaque devis inclut toutes les taxes, péages et frais. Ce que vous voyez à la réservation est exactement ce que vous payez. Pas de tarification dynamique aux heures de pointe, pas de frais de destination cachés, pas de surprises du type « l'itinéraire était plus long ». Que vous ayez besoin d'une berline Business Class pour un trajet aéroport ou d'une limousine First Class pour une mission d'une journée complète, vous connaîtrez le prix avant de réserver.",
+      "features": [
+        "Prix fixe au kilomètre — garanti à la réservation, ne change jamais",
+        "Pas de tarification dynamique — même tarif aux heures de pointe, à minuit ou en période de fêtes",
+        "Tarification tout inclus — taxes, péages et frais inclus dans chaque devis",
+        "Supplément de nuit (22h00-06h00) : +25% — clairement indiqué, jamais caché",
+        "Frais de prise en charge aéroport : +€8 (couvre l'accès au terminal et le stationnement)",
+        "Annulation gratuite jusqu'à 24 heures avant la prise en charge — sans questions"
+      ],
+      "includes": [
+        { "label": "E-Class", "value": "€3.0/km" },
+        { "label": "S-Class", "value": "€4.5/km" },
+        { "label": "V-Class", "value": "€3.5/km" },
+        { "label": "Tarif de base", "value": "€10-15" },
+        { "label": "Nuit", "value": "+25%" },
+        { "label": "Aéroport", "value": "+€8" }
+      ],
+      "faq": [
+        {
+          "question": "Comment le prix est-il calculé ?",
+          "answer": "Le prix est basé sur un tarif au kilomètre pour votre catégorie de véhicule, plus un tarif de base. Le système calcule l'itinéraire optimal et vous donne un prix fixe à la réservation. Ce prix est garanti — il ne changera pas même si le trafic ajoute du temps au trajet."
+        },
+        {
+          "question": "Y a-t-il des frais cachés ?",
+          "answer": "Aucun. Toutes les taxes, péages et frais sont inclus dans le prix indiqué. Les seuls ajouts sont clairement indiqués : un supplément de nuit de +25% (22h00-06h00) et un frais de prise en charge aéroport de +€8. Tout est affiché de manière transparente avant que vous ne confirmiez votre réservation."
+        },
+        {
+          "question": "Facturez-vous plus aux heures de pointe ?",
+          "answer": "Non. Nous n'utilisons pas de tarification dynamique. Le tarif au kilomètre est le même aux heures de pointe, les jours fériés et lors des grands événements. Vous ne paierez jamais plus parce que la demande est élevée."
+        },
+        {
+          "question": "Quelle est la politique d'annulation ?",
+          "answer": "Annulation gratuite jusqu'à 24 heures avant votre heure de prise en charge programmée. Les annulations dans les 24 heures sont facturées à 50% du prix de la réservation. Les absences sont facturées à 100%. Les remboursements sont traités sous 5-7 jours ouvrés."
+        },
+        {
+          "question": "Comment puis-je payer ?",
+          "answer": "Vous pouvez payer par carte de crédit, virement bancaire SEPA ou facture d'entreprise (pour les comptes d'entreprise avec un arrangement de crédit). Le paiement est traité après la fin du trajet. Pour les clients d'entreprise, nous proposons une facturation mensuelle."
+        },
+        {
+          "question": "Puis-je obtenir un devis personnalisé pour un trajet complexe ?",
+          "answer": "Absolument. Pour les trajets multi-arrêts, les réservations à la journée complète ou les exigences spéciales, contactez-nous directement et nous fournirons un devis personnalisé détaillé. Notre équipe répond sous 1 heure pendant les heures ouvrables et sous 4 heures en dehors des heures ouvrables."
+        }
+      ]
+    }
+  }
+}

@@ -2,60 +2,61 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, ChevronDown, Globe, User, LogOut, LayoutDashboard } from "lucide-react";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { brand } from "@/lib/brand";
 import { supabase } from "@/lib/supabase-client";
 
 interface NavItem {
   href: string;
-  label: string;
-  children?: { href: string; label: string }[];
+  labelKey: string;
+  children?: { href: string; labelKey: string }[];
 }
 
 const navItems: NavItem[] = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About us" },
+  { href: "/", labelKey: "home" },
+  { href: "/about", labelKey: "about" },
   {
     href: "/fleet",
-    label: "Fleet",
+    labelKey: "fleet",
     children: [
-      { href: "/fleet", label: "Overview" },
-      { href: "/fleet/s-class", label: "First Class Limousine" },
-      { href: "/fleet/e-class", label: "Business Class Limousine" },
-      { href: "/fleet/v-class", label: "Business Van" },
+      { href: "/fleet", labelKey: "fleetOverview" },
+      { href: "/fleet/s-class", labelKey: "fleetSClass" },
+      { href: "/fleet/e-class", labelKey: "fleetEClass" },
+      { href: "/fleet/v-class", labelKey: "fleetVClass" },
     ],
   },
   {
     href: "/services",
-    label: "Services",
+    labelKey: "services",
     children: [
-      { href: "/services/airport-transfer", label: "Airport Transfer" },
-      { href: "/services/chauffeur", label: "Chauffeur Service" },
-      { href: "/services/diplomatic", label: "Diplomatic Chauffeur" },
-      { href: "/services/group-transfer", label: "Group Transfer" },
-      { href: "/services/day-tours", label: "Day Tours" },
-      { href: "/services/event-transfer", label: "Event Transfer" },
-      { href: "/services/fair-transfer", label: "Trade Fair Transfer" },
-      { href: "/services/prices", label: "Prices & Tariffs" },
+      { href: "/services/airport-transfer", labelKey: "serviceAirport" },
+      { href: "/services/chauffeur", labelKey: "serviceChauffeur" },
+      { href: "/services/diplomatic", labelKey: "serviceDiplomatic" },
+      { href: "/services/group-transfer", labelKey: "serviceGroup" },
+      { href: "/services/day-tours", labelKey: "serviceDayTours" },
+      { href: "/services/event-transfer", labelKey: "serviceEvent" },
+      { href: "/services/fair-transfer", labelKey: "serviceFair" },
+      { href: "/services/prices", labelKey: "servicePrices" },
     ],
   },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", labelKey: "contact" },
 ];
 
 const languages = [
-  { code: "EN", label: "English" },
-  { code: "DE", label: "Deutsch" },
-  { code: "FR", label: "Français" },
-  { code: "IT", label: "Italiano" },
-  { code: "ZH", label: "中文" },
+  { code: "en", label: "English" },
+  { code: "de", label: "Deutsch" },
+  { code: "fr", label: "Français" },
+  { code: "it", label: "Italiano" },
+  { code: "zh", label: "中文" },
 ];
 
 export default function Header() {
+  const t = useTranslations("Nav");
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const [activeLang, setActiveLang] = useState("EN");
+  const [activeLang, setActiveLang] = useState("en");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [user, setUser] = useState<any>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
@@ -81,6 +82,13 @@ export default function Header() {
     setOpenDropdown(null);
     setMobileExpanded(null);
   }, [pathname]);
+
+  const switchLang = (code: string) => {
+    setActiveLang(code);
+    setLangOpen(false);
+    const currentPath = pathname;
+    router.replace(currentPath, { locale: code });
+  };
 
   return (
     <header
@@ -116,7 +124,7 @@ export default function Header() {
             <div
               key={item.href}
               className="relative"
-              onMouseEnter={() => setOpenDropdown(item.children ? item.label : null)}
+              onMouseEnter={() => setOpenDropdown(item.children ? item.labelKey : null)}
             >
               <Link
                 href={item.href}
@@ -127,12 +135,12 @@ export default function Header() {
                     : "text-white/70 hover:text-white"
                 }`}
               >
-                {item.label}
+                {t(item.labelKey)}
                 {item.children && <ChevronDown size={14} className="opacity-50" />}
               </Link>
 
               {/* Dropdown */}
-              {item.children && openDropdown === item.label && (
+              {item.children && openDropdown === item.labelKey && (
                 <div className="absolute top-full left-0 pt-4 -ml-4">
                   <div className="glass rounded-xl py-3 min-w-[240px] shadow-2xl">
                     {item.children.map((child) => (
@@ -141,7 +149,7 @@ export default function Header() {
                         href={child.href}
                         className="block px-5 py-2.5 text-sm text-ash hover:text-white hover:bg-white/5 transition-colors"
                       >
-                        {child.label}
+                        {t(child.labelKey)}
                       </Link>
                     ))}
                   </div>
@@ -161,7 +169,7 @@ export default function Header() {
               className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
             >
               <Globe size={15} />
-              <span>{activeLang}</span>
+              <span>{activeLang.toUpperCase()}</span>
               <ChevronDown size={12} className="opacity-50" />
             </button>
             {langOpen && (
@@ -170,10 +178,7 @@ export default function Header() {
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
-                      onClick={() => {
-                        setActiveLang(lang.code);
-                        setLangOpen(false);
-                      }}
+                      onClick={() => switchLang(lang.code)}
                       className={`block w-full text-left px-5 py-2 text-sm transition-colors ${
                         activeLang === lang.code
                           ? "text-white"
@@ -193,7 +198,7 @@ export default function Header() {
             className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
           >
             <Phone size={14} />
-            <span>Book now</span>
+            <span>{t("bookNow")}</span>
           </a>
 
           {/* Auth buttons */}
@@ -204,7 +209,7 @@ export default function Header() {
                 className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
               >
                 <LayoutDashboard size={15} />
-                <span>Dashboard</span>
+                <span>{t("dashboard")}</span>
               </Link>
               <button
                 onClick={async () => {
@@ -214,7 +219,7 @@ export default function Header() {
                 className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
               >
                 <LogOut size={15} />
-                <span>Logout</span>
+                <span>{t("logout")}</span>
               </button>
             </div>
           ) : (
@@ -224,13 +229,13 @@ export default function Header() {
                 className="flex items-center gap-1.5 text-sm text-white/70 hover:text-white transition-colors"
               >
                 <User size={15} />
-                <span>Login</span>
+                <span>{t("login")}</span>
               </Link>
               <Link
                 href="/register"
                 className="px-4 py-2 text-sm font-semibold bg-electric text-ink rounded-lg hover:bg-electric/80 transition-colors"
               >
-                Register
+                {t("register")}
               </Link>
             </div>
           )}
@@ -254,13 +259,13 @@ export default function Header() {
               <div key={item.href}>
                 {item.children ? (
                   <button
-                    onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
+                    onClick={() => setMobileExpanded(mobileExpanded === item.labelKey ? null : item.labelKey)}
                     className="w-full flex items-center justify-between text-white text-base py-3 border-b border-white/5"
                   >
-                    <span>{item.label}</span>
+                    <span>{t(item.labelKey)}</span>
                     <ChevronDown
                       size={16}
-                      className={`transition-transform duration-300 ${mobileExpanded === item.label ? "rotate-180" : ""}`}
+                      className={`transition-transform duration-300 ${mobileExpanded === item.labelKey ? "rotate-180" : ""}`}
                     />
                   </button>
                 ) : (
@@ -268,10 +273,10 @@ export default function Header() {
                     href={item.href}
                     className="text-white hover:text-white text-base block py-3 border-b border-white/5"
                   >
-                    {item.label}
+                    {t(item.labelKey)}
                   </Link>
                 )}
-                {item.children && mobileExpanded === item.label && (
+                {item.children && mobileExpanded === item.labelKey && (
                   <div className="pl-4 pb-2">
                     {item.children.map((child) => (
                       <Link
@@ -279,7 +284,7 @@ export default function Header() {
                         href={child.href}
                         className="text-ash hover:text-white text-sm block py-2"
                       >
-                        {child.label}
+                        {t(child.labelKey)}
                       </Link>
                     ))}
                   </div>
@@ -293,10 +298,10 @@ export default function Header() {
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  onClick={() => setActiveLang(lang.code)}
+                  onClick={() => switchLang(lang.code)}
                   className={`text-sm ${activeLang === lang.code ? "text-white" : "text-ash"}`}
                 >
-                  {lang.code}
+                  {lang.code.toUpperCase()}
                 </button>
               ))}
             </div>
@@ -313,7 +318,7 @@ export default function Header() {
               {user ? (
                 <>
                   <Link href="/dashboard" className="flex items-center gap-2 text-white text-sm">
-                    <LayoutDashboard size={16} /> Dashboard
+                    <LayoutDashboard size={16} /> {t("dashboard")}
                   </Link>
                   <button
                     onClick={async () => {
@@ -322,19 +327,19 @@ export default function Header() {
                     }}
                     className="flex items-center gap-2 text-ash text-sm ml-auto"
                   >
-                    <LogOut size={16} /> Logout
+                    <LogOut size={16} /> {t("logout")}
                   </button>
                 </>
               ) : (
                 <>
                   <Link href="/login" className="flex items-center gap-2 text-white text-sm">
-                    <User size={16} /> Login
+                    <User size={16} /> {t("login")}
                   </Link>
                   <Link
                     href="/register"
                     className="px-4 py-2 text-sm font-semibold bg-electric text-ink rounded-lg ml-auto"
                   >
-                    Register
+                    {t("register")}
                   </Link>
                 </>
               )}

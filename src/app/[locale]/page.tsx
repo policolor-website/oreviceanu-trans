@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
   ArrowRight,
   Plane,
@@ -71,26 +72,26 @@ const whyUsImages = [
 const services = [
   {
     icon: Plane,
-    title: "Airport Transfer",
-    desc: "Smooth, punctual transfers to and from all major European airports.",
+    titleKey: "airportTitle" as const,
+    descKey: "airportDesc" as const,
     image: "/fleet/chauffeur-driven-passenger-1.webp",
   },
   {
     icon: Car,
-    title: "Chauffeur Service",
-    desc: "Travel in comfort and elegance in our fleet of premium vehicles with professional chauffeurs.",
+    titleKey: "chauffeurTitle" as const,
+    descKey: "chauffeurDesc" as const,
     image: "/fleet/off-limousine.webp",
   },
   {
     icon: Calendar,
-    title: "Day Tours",
-    desc: "Early morning departure or late arrival — we're on the road for you around the clock.",
+    titleKey: "dayToursTitle" as const,
+    descKey: "dayToursDesc" as const,
     image: "/fleet/gal-1.webp",
   },
   {
     icon: Users,
-    title: "Group Transfer",
-    desc: "From minibus to coach — reliable transport with driver for groups of any size.",
+    titleKey: "groupTitle" as const,
+    descKey: "groupDesc" as const,
     image: "/fleet/bento-wide.webp",
   },
 ];
@@ -182,6 +183,17 @@ const faqItems = [
 // COMPONENT
 // ============================================
 export default function HomePage() {
+  const t = useTranslations("Hero");
+  const tBooking = useTranslations("Booking");
+  const tFleet = useTranslations("Fleet");
+  const tServices = useTranslations("Services");
+  const tEasy = useTranslations("EasyBooking");
+  const tWhyUs = useTranslations("WhyUs");
+  const tCTA = useTranslations("CTA");
+  const tRoutes = useTranslations("Routes");
+  const tFinalCTA = useTranslations("FinalCTA");
+  const tNav = useTranslations("Nav");
+
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textVisible, setTextVisible] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -280,7 +292,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass"
             >
               <span className="w-2 h-2 rounded-full bg-electric animate-pulse" />
-              <span className="text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] uppercase text-white whitespace-nowrap">24-hour airport transfer - Professional chauffeurs</span>
+              <span className="text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] uppercase text-white whitespace-nowrap">{t("badge")}</span>
             </motion.div>
           </div>
 
@@ -303,7 +315,7 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-white text-sm md:text-lg italic font-normal text-center px-4"
             >
-              Exclusive airport transfers in Munich, Frankfurt, Berlin, Cologne/Bonn, Hamburg, Düsseldorf &amp; more
+              {t("subtitle")}
             </motion.p>
           </div>
 
@@ -321,13 +333,13 @@ export default function HomePage() {
                 href="/about"
                 className="inline-flex items-center gap-2 px-8 py-4 glass text-white font-semibold rounded-lg hover:border-electric/50 hover:shadow-[0_4px_30px_rgba(0,128,255,0.15)] transition-all duration-300"
               >
-                About us <ArrowRight size={18} />
+                {t("aboutUs")} <ArrowRight size={18} />
               </Link>
               <Link
                 href="/services"
                 className="inline-flex items-center gap-2 px-8 py-4 glass text-white font-semibold rounded-lg hover:border-electric/50 hover:shadow-[0_4px_30px_rgba(0,128,255,0.15)] transition-all duration-300"
               >
-                Our services <ArrowRight size={18} />
+                {t("ourServices")} <ArrowRight size={18} />
               </Link>
             </motion.div>
           </div>
@@ -336,7 +348,7 @@ export default function HomePage() {
             className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 transition-opacity duration-700"
             style={{ opacity: textVisible ? 1 : 0 }}
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white">Scroll</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white">{t("scroll")}</span>
             <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent" />
           </div>
         </div>
@@ -356,23 +368,23 @@ export default function HomePage() {
           >
             <form onSubmit={handleGetPrice} className="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
               <div className="md:col-span-3">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Pickup</label>
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("pickup")}</label>
                 <PlacesInput
                   value={bookingForm.origin}
                   onChange={(val) => setBookingForm({ ...bookingForm, origin: val })}
-                  placeholder="Airport, hotel, address..."
+                  placeholder={tBooking("pickupPlaceholder")}
                 />
               </div>
               <div className="md:col-span-3">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Destination</label>
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("destination")}</label>
                 <PlacesInput
                   value={bookingForm.destination}
                   onChange={(val) => setBookingForm({ ...bookingForm, destination: val })}
-                  placeholder="Where to?"
+                  placeholder={tBooking("destinationPlaceholder")}
                 />
               </div>
               <div className="md:col-span-2">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Date</label>
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("date")}</label>
                 <input
                   type="date"
                   value={bookingForm.date}
@@ -381,7 +393,7 @@ export default function HomePage() {
                 />
               </div>
               <div className="md:col-span-1">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Time</label>
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("time")}</label>
                 <input
                   type="time"
                   value={bookingForm.time}
@@ -390,7 +402,7 @@ export default function HomePage() {
                 />
               </div>
               <div className="md:col-span-2">
-                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">Vehicle</label>
+                <label className="text-xs text-white/60 uppercase tracking-wide mb-2 block">{tBooking("vehicle")}</label>
                 <select
                   value={bookingForm.vehicle}
                   onChange={(e) => setBookingForm({ ...bookingForm, vehicle: e.target.value })}
@@ -410,7 +422,7 @@ export default function HomePage() {
                   {priceLoading ? (
                     <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                   ) : (
-                    <>Go <ArrowRight size={14} /></>
+                    <>{tBooking("getPrice")} <ArrowRight size={14} /></>
                   )}
                 </button>
               </div>
@@ -509,7 +521,7 @@ export default function HomePage() {
                   }}
                   className="inline-flex items-center gap-2 px-10 py-4 bg-white text-ink font-semibold rounded-lg hover:bg-white/90 transition-colors duration-300"
                 >
-                  Reserve now <ArrowRight size={18} />
+                  {tBooking("reserveNow")} <ArrowRight size={18} />
                 </button>
               </div>
               </>
@@ -530,12 +542,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="md:hidden text-center mb-16"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Our vehicles</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tFleet("badge")}</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              Our <span className="neon-text">fleet</span>
+              {tFleet("title")} <span className="neon-text">{tFleet("highlight")}</span>
             </h2>
             <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
-              From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.
+              {tFleet("description")}
             </p>
           </motion.div>
 
@@ -592,12 +604,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">What we offer</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tServices("badge")}</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              Our <span className="neon-text">services</span>
+              {tServices("title")} <span className="neon-text">{tServices("highlight")}</span>
             </h2>
             <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
-              We specialize in first-class chauffeur service — focused on comfort, punctuality and professionalism.
+              {tServices("description")}
             </p>
           </motion.div>
 
@@ -618,7 +630,7 @@ export default function HomePage() {
                   <div className="relative h-56 overflow-hidden">
                     <img
                       src={srv.image}
-                      alt={srv.title}
+                      alt={tServices(srv.titleKey)}
                       className="w-full h-full object-cover bw-image group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
@@ -626,13 +638,13 @@ export default function HomePage() {
                       <div className="w-10 h-10 rounded-lg bg-electric/20 backdrop-blur-sm flex items-center justify-center">
                         <srv.icon size={20} className="text-electric" />
                       </div>
-                      <h3 className="font-display text-lg font-bold text-cream">{srv.title}</h3>
+                      <h3 className="font-display text-lg font-bold text-cream">{tServices(srv.titleKey)}</h3>
                     </div>
                   </div>
                   <div className="p-5">
-                    <p className="text-sm text-ash leading-relaxed mb-4">{srv.desc}</p>
+                    <p className="text-sm text-ash leading-relaxed mb-4">{tServices(srv.descKey)}</p>
                     <span className="text-white text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Learn more <ArrowRight size={14} />
+                      {tServices("learnMore")} <ArrowRight size={14} />
                     </span>
                   </div>
                 </Link>
@@ -657,12 +669,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Easy booking</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tEasy("badge")}</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-cream mb-6">
-              In a few steps to your <span className="neon-text">chauffeur</span>
+              {tEasy("title")} <span className="neon-text">{tEasy("highlight")}</span>
             </h2>
             <p className="text-lg text-ash max-w-2xl mx-auto">
-              Enter your route, receive a transparent fixed price and lean back. No waiting, no hidden costs — just a professional chauffeur ready on time.
+              {tEasy("description")}
             </p>
           </motion.div>
 
@@ -700,9 +712,9 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Why choose us</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tWhyUs("badge")}</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              Travel with <span className="neon-text">confidence</span>
+              {tWhyUs("title")} <span className="neon-text">{tWhyUs("highlight")}</span>
             </h2>
           </motion.div>
 
@@ -714,8 +726,8 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">FAQ</span>
-              <h3 className="font-display text-2xl font-bold text-cream mb-8">Frequently asked questions</h3>
+              <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tWhyUs("faqBadge")}</span>
+              <h3 className="font-display text-2xl font-bold text-cream mb-8">{tWhyUs("faqTitle")}</h3>
               <div className="space-y-4">
                 {faqItems.map((item, i) => (
                   <div key={i} className="glass rounded-xl overflow-hidden">
@@ -747,7 +759,7 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Our promise</span>
+              <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tWhyUs("featuresTitle")}</span>
               <h3 className="font-display text-2xl font-bold text-cream mb-6">
                 Your comfort and safety, <span className="neon-text">redefined</span>
               </h3>
@@ -789,16 +801,16 @@ export default function HomePage() {
           className="max-w-3xl mx-auto text-center relative z-10"
         >
           <h2 className="font-display text-4xl md:text-5xl font-bold text-cream mb-6">
-            Book your chauffeur today — <span className="neon-text">wherever you are in Europe</span>
+            {tCTA("title")}
           </h2>
           <p className="text-lg text-ash mb-10">
-            Whether flight, business appointment or special event — we ensure a smooth, punctual and luxurious ride. With 24/7 availability and coverage of all major European airports, your perfect ride is just one click away.
+            {tCTA("description")}
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-10 py-5 bg-ink text-white font-semibold rounded-lg border border-white/20 hover:bg-ink/80 hover:border-white/40 transition-colors duration-300 text-lg"
           >
-            Request a quote <ArrowRight size={20} />
+            {tCTA("button")} <ArrowRight size={20} />
           </Link>
         </motion.div>
       </section>
@@ -873,12 +885,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">Popular routes</span>
+            <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">{tRoutes("badge")}</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-cream">
-              Routes we drive <span className="neon-text">regularly</span>
+              {tRoutes("title")} <span className="neon-text">{tRoutes("highlight")}</span>
             </h2>
             <p className="text-lg text-ash mt-4 max-w-2xl mx-auto">
-              From the city center to the airport, into the mountains or across the border. Distance and approximate travel time from Munich.
+              {tRoutes("description")}
             </p>
           </motion.div>
 
@@ -924,13 +936,13 @@ export default function HomePage() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="font-display text-4xl md:text-5xl font-bold text-cream mb-6">
-            Experience chauffeur travel <span className="neon-text">as it should be</span>
+            {tFinalCTA("title")}
           </h2>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-10 py-5 bg-ink text-white font-semibold rounded-lg border border-white/20 hover:bg-ink/80 hover:border-white/40 transition-colors duration-300 text-lg"
           >
-            Get in touch <ArrowRight size={20} />
+            {tFinalCTA("contact")} <ArrowRight size={20} />
           </Link>
         </motion.div>
       </section>
@@ -946,6 +958,7 @@ function FleetStackedSection({
 }: {
   fleet: { name: string; class: string; passengers: number; luggage: number; image: string }[];
 }) {
+  const tFleet = useTranslations("Fleet");
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -971,13 +984,13 @@ function FleetStackedSection({
             transition={{ duration: 0.6 }}
           >
             <span className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 block">
-              Our vehicles
+              {tFleet("badge")}
             </span>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-cream leading-tight">
-              Our <span className="neon-text">fleet</span>
+              {tFleet("title")} <span className="neon-text">{tFleet("highlight")}</span>
             </h2>
             <p className="text-lg text-ash mt-6">
-              From elegant limousines to spacious coaches — choose the right vehicle for any occasion. All vehicles are premium equipped and impeccably maintained.
+              {tFleet("description")}
             </p>
             <div className="mt-8 rounded-2xl overflow-hidden border border-white/10">
               <img
@@ -1020,6 +1033,7 @@ function FleetStackCard({
   transitions: number;
   progress: ReturnType<typeof useScroll>["scrollYProgress"];
 }) {
+  const tFleet = useTranslations("Fleet");
   // Card 0 is visible from the start at y=0
   // Card i (i>0) slides up from y=offset to y=0 during its segment
   // Hold time: animations complete at 0.8, leaving 20% for last card to stay visible
@@ -1084,13 +1098,13 @@ function FleetStackCard({
             <span className="flex items-center gap-2">
               <Users size={18} className="text-electric" />
               <span>
-                <span className="text-cream font-bold">{vehicle.passengers}</span> Passengers
+                <span className="text-cream font-bold">{vehicle.passengers}</span> {tFleet("passengers")}
               </span>
             </span>
             <span className="flex items-center gap-2">
               <Plane size={18} className="text-electric" />
               <span>
-                <span className="text-cream font-bold">{vehicle.luggage}</span> Luggage
+                <span className="text-cream font-bold">{vehicle.luggage}</span> {tFleet("luggage")}
               </span>
             </span>
           </div>

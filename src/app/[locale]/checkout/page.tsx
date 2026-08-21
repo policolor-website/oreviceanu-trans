@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight, ArrowLeft, User, Mail, Phone, Lock, MapPin, Clock, Calendar, Car, CheckCircle2 } from "lucide-react";
 import { supabase } from "@/lib/supabase-client";
 
@@ -19,6 +20,8 @@ interface BookingData {
 }
 
 export default function CheckoutPage() {
+  const t = useTranslations("Checkout");
+  const tNav = useTranslations("Nav");
   const router = useRouter();
   const [booking, setBooking] = useState<BookingData | null>(null);
   const [mode, setMode] = useState<"guest" | "login" | "register">("guest");
@@ -73,16 +76,16 @@ export default function CheckoutPage() {
     if (!user) {
       if (mode === "guest") {
         if (!form.fullName || !form.email || !form.phone) {
-          setError("Please fill in all fields.");
+          setError(t("fillAllFields"));
           return;
         }
       } else {
         if (!form.email || !form.password) {
-          setError("Please fill in email and password.");
+          setError(t("fillEmailPassword"));
           return;
         }
         if (mode === "register" && (!form.fullName || !form.phone)) {
-          setError("Please enter your full name and phone.");
+          setError(t("fillNamePhone"));
           return;
         }
       }
@@ -164,11 +167,11 @@ export default function CheckoutPage() {
           href="/"
           className="inline-flex items-center gap-2 text-sm text-ash hover:text-white transition-colors mb-8"
         >
-          <ArrowLeft size={16} /> Back to home
+          <ArrowLeft size={16} /> {t("backToHome")}
         </Link>
 
-        <h1 className="font-display text-4xl font-bold text-white mb-2">Checkout</h1>
-        <p className="text-ash mb-10">Review your booking and complete your details.</p>
+        <h1 className="font-display text-4xl font-bold text-white mb-2">{t("title")}</h1>
+        <p className="text-ash mb-10">{t("description")}</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* LEFT — Booking summary (read-only) */}
@@ -176,7 +179,7 @@ export default function CheckoutPage() {
             <div className="glass rounded-2xl p-6 mb-6">
               <h2 className="font-display text-xl font-bold text-white mb-6 flex items-center gap-2">
                 <CheckCircle2 size={20} className="text-white/60" />
-                Your booking
+                {t("yourBooking")}
               </h2>
 
               {/* Route */}
@@ -184,14 +187,14 @@ export default function CheckoutPage() {
                 <div className="flex items-start gap-3">
                   <MapPin size={18} className="text-white/40 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Pickup</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("pickup")}</p>
                     <p className="text-sm text-white">{route?.startAddress || booking.origin}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin size={18} className="text-white/40 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Destination</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("destination")}</p>
                     <p className="text-sm text-white">{route?.endAddress || booking.destination}</p>
                   </div>
                 </div>
@@ -201,24 +204,24 @@ export default function CheckoutPage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                 <div>
                   <p className="text-xs text-white/50 uppercase tracking-wide mb-1 flex items-center gap-1">
-                    <Calendar size={12} /> Date
+                    <Calendar size={12} /> {t("date")}
                   </p>
                   <p className="text-sm text-white">{booking.date || "—"}</p>
                 </div>
                 <div>
                   <p className="text-xs text-white/50 uppercase tracking-wide mb-1 flex items-center gap-1">
-                    <Clock size={12} /> Time
+                    <Clock size={12} /> {t("time")}
                   </p>
                   <p className="text-sm text-white">{booking.time || "—"}</p>
                 </div>
                 <div>
                   <p className="text-xs text-white/50 uppercase tracking-wide mb-1 flex items-center gap-1">
-                    <Car size={12} /> Vehicle
+                    <Car size={12} /> {t("vehicle")}
                   </p>
                   <p className="text-sm text-white">{booking.vehicle}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Passengers</p>
+                  <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("passengers")}</p>
                   <p className="text-sm text-white">{booking.passengers}</p>
                 </div>
               </div>
@@ -227,15 +230,15 @@ export default function CheckoutPage() {
               {route && (
                 <div className="grid grid-cols-3 gap-4 mb-6 py-4 border-t border-white/10">
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Distance</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("distance")}</p>
                     <p className="text-sm text-white">{route.distance}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Duration</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("duration")}</p>
                     <p className="text-sm text-white">{route.duration}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">Rate</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wide mb-1">{t("rate")}</p>
                     <p className="text-sm text-white">€{price?.perKm}/km</p>
                   </div>
                 </div>
@@ -243,14 +246,14 @@ export default function CheckoutPage() {
 
               {/* Price */}
               <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                <span className="text-sm text-ash uppercase tracking-wide">Total</span>
+                <span className="text-sm text-ash uppercase tracking-wide">{t("total")}</span>
                 <span className="font-display text-4xl font-bold text-white">€{price?.total}</span>
               </div>
 
               {/* Extra info */}
               {booking.extraInfo && (
                 <div className="mt-4 pt-4 border-t border-white/10">
-                  <p className="text-xs text-white/50 uppercase tracking-wide mb-2">Extra info</p>
+                  <p className="text-xs text-white/50 uppercase tracking-wide mb-2">{t("extraInfo")}</p>
                   <p className="text-sm text-ash">{booking.extraInfo}</p>
                 </div>
               )}
@@ -283,11 +286,11 @@ export default function CheckoutPage() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-white">{user.user_metadata?.full_name || user.email}</p>
-                      <p className="text-xs text-ash">Signed in</p>
+                      <p className="text-xs text-ash">{t("signedIn")}</p>
                     </div>
                   </div>
                   <p className="text-xs text-ash mb-5">
-                    Your booking will be saved to your account. Review the details and continue to payment.
+                    {t("signedInDesc")}
                   </p>
                 </>
               ) : (
@@ -300,7 +303,7 @@ export default function CheckoutPage() {
                         mode === "guest" ? "bg-white text-ink" : "text-ash hover:text-white"
                       }`}
                     >
-                      Guest
+                      {t("guest")}
                     </button>
                     <button
                       onClick={() => setMode("login")}
@@ -308,7 +311,7 @@ export default function CheckoutPage() {
                         mode === "login" ? "bg-white text-ink" : "text-ash hover:text-white"
                       }`}
                     >
-                      Login
+                      {tNav("login")}
                     </button>
                     <button
                       onClick={() => setMode("register")}
@@ -316,23 +319,23 @@ export default function CheckoutPage() {
                         mode === "register" ? "bg-white text-ink" : "text-ash hover:text-white"
                       }`}
                     >
-                      Register
+                      {tNav("register")}
                     </button>
                   </div>
 
                   {mode === "guest" && (
                     <p className="text-xs text-ash mb-5">
-                      Book without an account. You&apos;ll receive a confirmation by email.
+                      {t("guestDesc")}
                     </p>
                   )}
                   {mode === "login" && (
                     <p className="text-xs text-ash mb-5">
-                      Sign in to access your booking history and invoices.
+                      {t("loginDesc")}
                     </p>
                   )}
                   {mode === "register" && (
                     <p className="text-xs text-ash mb-5">
-                      Create an account for booking history, invoices, and faster checkout.
+                      {t("registerDesc")}
                     </p>
                   )}
                 </>
@@ -422,7 +425,7 @@ export default function CheckoutPage() {
                     <span className="w-4 h-4 border-2 border-ink/30 border-t-ink rounded-full animate-spin" />
                   ) : (
                     <>
-                      Continue to payment <ArrowRight size={18} />
+                      {t("continueToPayment")} <ArrowRight size={18} />
                     </>
                   )}
                 </button>
@@ -432,13 +435,13 @@ export default function CheckoutPage() {
             {/* Trust badges */}
             <div className="mt-6 space-y-2">
               <p className="text-xs text-stone flex items-center gap-2">
-                <Lock size={12} /> Secure payment with SSL encryption
+                <Lock size={12} /> {t("securePayment")}
               </p>
               <p className="text-xs text-stone flex items-center gap-2">
-                <CheckCircle2 size={12} /> Free cancellation up to 24h before pickup
+                <CheckCircle2 size={12} /> {t("freeCancellation")}
               </p>
               <p className="text-xs text-stone flex items-center gap-2">
-                <Clock size={12} /> 24/7 customer support
+                <Clock size={12} /> {t("support")}
               </p>
             </div>
           </div>

@@ -1,8 +1,12 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { brand } from "@/lib/brand";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Nav");
+
   return (
     <footer className="bg-ink border-t border-white/10 pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
@@ -14,39 +18,39 @@ export default function Footer() {
               <span className="text-[10px] tracking-[0.3em] uppercase text-ash mt-1">{brand.tagline}</span>
             </div>
             <p className="text-sm text-ash leading-relaxed mb-6">
-              {brand.description}
+              {t("tagline")}
             </p>
             <p className="text-xs text-stone">24/7 — Available across Germany & Europe</p>
           </div>
 
           {/* Fleet */}
           <div>
-            <h4 className="font-display text-lg text-white mb-5">Fleet</h4>
+            <h4 className="font-display text-lg text-white mb-5">{tNav("fleet")}</h4>
             <ul className="space-y-3">
-              <li><Link href="/fleet/s-class" className="text-sm text-ash hover:text-white transition-colors">First Class Limousine</Link></li>
-              <li><Link href="/fleet/e-class" className="text-sm text-ash hover:text-white transition-colors">Business Class Limousine</Link></li>
-              <li><Link href="/fleet/v-class" className="text-sm text-ash hover:text-white transition-colors">Business Van</Link></li>
+              <li><Link href="/fleet/s-class" className="text-sm text-ash hover:text-white transition-colors">{tNav("fleetSClass")}</Link></li>
+              <li><Link href="/fleet/e-class" className="text-sm text-ash hover:text-white transition-colors">{tNav("fleetEClass")}</Link></li>
+              <li><Link href="/fleet/v-class" className="text-sm text-ash hover:text-white transition-colors">{tNav("fleetVClass")}</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-display text-lg text-white mb-5">Services</h4>
+            <h4 className="font-display text-lg text-white mb-5">{tNav("services")}</h4>
             <ul className="space-y-3">
-              <li><Link href="/services/airport-transfer" className="text-sm text-ash hover:text-white transition-colors">Airport Transfer</Link></li>
-              <li><Link href="/services/chauffeur" className="text-sm text-ash hover:text-white transition-colors">Chauffeur Service</Link></li>
-              <li><Link href="/services/diplomatic" className="text-sm text-ash hover:text-white transition-colors">Diplomatic Chauffeur</Link></li>
-              <li><Link href="/services/group-transfer" className="text-sm text-ash hover:text-white transition-colors">Group Transfer</Link></li>
-              <li><Link href="/services/day-tours" className="text-sm text-ash hover:text-white transition-colors">Day Tours</Link></li>
-              <li><Link href="/services/event-transfer" className="text-sm text-ash hover:text-white transition-colors">Event Transfer</Link></li>
-              <li><Link href="/services/fair-transfer" className="text-sm text-ash hover:text-white transition-colors">Trade Fair Transfer</Link></li>
-              <li><Link href="/services/prices" className="text-sm text-ash hover:text-white transition-colors">Prices & Tariffs</Link></li>
+              <li><Link href="/services/airport-transfer" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceAirport")}</Link></li>
+              <li><Link href="/services/chauffeur" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceChauffeur")}</Link></li>
+              <li><Link href="/services/diplomatic" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceDiplomatic")}</Link></li>
+              <li><Link href="/services/group-transfer" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceGroup")}</Link></li>
+              <li><Link href="/services/day-tours" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceDayTours")}</Link></li>
+              <li><Link href="/services/event-transfer" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceEvent")}</Link></li>
+              <li><Link href="/services/fair-transfer" className="text-sm text-ash hover:text-white transition-colors">{tNav("serviceFair")}</Link></li>
+              <li><Link href="/services/prices" className="text-sm text-ash hover:text-white transition-colors">{tNav("servicePrices")}</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-lg text-white mb-5">Contact</h4>
+            <h4 className="font-display text-lg text-white mb-5">{t("contact")}</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-white/50 mt-0.5 shrink-0" />
@@ -71,12 +75,12 @@ export default function Footer() {
         <div className="h-px w-full mb-8 bg-white/10" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-stone">
-            © {new Date().getFullYear()} {brand.name}. All rights reserved.
+            © {new Date().getFullYear()} {brand.name}. {t("rights")}
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/" className="text-xs text-stone hover:text-white transition-colors">Home</Link>
-            <Link href="/about" className="text-xs text-stone hover:text-white transition-colors">About</Link>
-            <Link href="/contact" className="text-xs text-stone hover:text-white transition-colors">Contact</Link>
+            <Link href="/" className="text-xs text-stone hover:text-white transition-colors">{tNav("home")}</Link>
+            <Link href="/about" className="text-xs text-stone hover:text-white transition-colors">{tNav("about")}</Link>
+            <Link href="/contact" className="text-xs text-stone hover:text-white transition-colors">{tNav("contact")}</Link>
           </div>
         </div>
       </div>
