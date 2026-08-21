@@ -5,12 +5,12 @@ import Chef3DWrapper from "@/components/chef-3d-wrapper";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Oreviceanu Logistic | Transport Marfă București și Național",
-  description: "Transport marfă național, transport mobilă și obiecte voluminoase, mutări rezidențiale și sedii. Flotă modernă, șoferi profesioniști, livrări rapide și sigure.",
+  title: "TrendMyDrive | Premium Chauffeur Service & Airport Transfers",
+  description: "Exclusive airport transfers and chauffeur service in Munich, Frankfurt, Berlin, Cologne, Hamburg, Düsseldorf. First-class vehicles, professional chauffeurs, 24/7 availability.",
   openGraph: {
-    title: "Oreviceanu Logistic | Transport Marfă București și Național",
-    description: "Transport marfă, mobilă și mutări în toată țara. Flotă modernă, șoferi profesioniști, livrări rapide și sigure. Laureați Șoimii Transporturilor 2024-2026.",
-    locale: "ro_RO",
+    title: "TrendMyDrive | Premium Chauffeur Service & Airport Transfers",
+    description: "Exclusive airport transfers and chauffeur service in Germany. First-class vehicles, professional chauffeurs, 24/7 availability.",
+    locale: "en_US",
     type: "website",
   },
 };
